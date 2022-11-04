@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "libShapeDescriptor/fast-lzma2",
+		"source" : "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2"
+	}
+}

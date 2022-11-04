@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/quicciviewer.dir/tools/quicciviewer/main.cpp.o -o quicciviewer   -L/usr/local/cuda/targets/x86_64-linux/lib/stubs  -L/usr/local/cuda/targets/x86_64-linux/lib  libShapeDescriptor.a /usr/local/cuda/lib64/libcudart_static.a -ldl -Wl,-Bstatic -lrt fast-lzma2/libfast-lzma2.a -Wl,-Bdynamic -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

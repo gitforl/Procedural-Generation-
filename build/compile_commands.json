@@ -1,0 +1,282 @@
+[
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -g -o CMakeFiles/simple_example.dir/main.cpp.o -c /lhome/lukashg/Procedural-Generation-/main.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/main.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/lib/fast-obj/fast_obj.cpp.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-obj/fast_obj.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-obj/fast_obj.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/lib/lodepng/lodepng.cpp.o -c /lhome/lukashg/libShapeDescriptor/lib/lodepng/lodepng.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/lodepng/lodepng.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/cpu/quickIntersectionCountImageGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/quickIntersectionCountImageGenerator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/quickIntersectionCountImageGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/cpu/radialIntersectionCountImageGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/radialIntersectionCountImageGenerator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/radialIntersectionCountImageGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/cpu/spinImageGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/spinImageGenerator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/spinImageGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/cpu/types/Mesh.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/types/CudaLaunchDimensions.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/CudaLaunchDimensions.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/CudaLaunchDimensions.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/types/Mesh.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/CUDAAvailability.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAAvailability.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAAvailability.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/CUDAContextCreator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/compress/byteCompressor.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/compress/byteCompressor.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/compress/byteCompressor.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/copy/VertexList.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/VertexList.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/VertexList.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/copy/mesh.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/copy/pointCloud.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/pointCloud.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/pointCloud.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/dump/QUICCIDescriptors.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/QUICCIDescriptors.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/QUICCIDescriptors.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/dump/descriptorImages.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/dump/meshDumper.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/fileutils.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/fileutils.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/fileutils.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/free/mesh.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/free/pointCloud.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/pointCloud.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/pointCloud.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/print/QuicciDescriptor.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/print/QuicciDescriptor.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/print/QuicciDescriptor.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/MeshLoadUtils.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/MeshLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoader.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/OBJLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/OFFLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OFFLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OFFLoader.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PLYLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/3dscTests.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/3dscTests.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/3dscTests.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/indexTests.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/indexTests.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/indexTests.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/pointDensities.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/pointDensities.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/pointDensities.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/radialIntersectionCountImageCorrelation.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/radialIntersectionCountImageCorrelation.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/radialIntersectionCountImageCorrelation.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/spinImageCorrelation.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/spinImageCorrelation.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/spinImageCorrelation.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/testMain.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/testMain.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/testMain.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/utilities/spinImageGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/utilities/spinImageGenerator.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/utilities/spinImageGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -I/lhome/lukashg/libShapeDescriptor/lib/Catch2/single_include -g -o CMakeFiles/runTests.dir/tests/vectorTypes.cpp.o -c /lhome/lukashg/libShapeDescriptor/tests/vectorTypes.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tests/vectorTypes.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/imagerenderer.dir/tools/imagerenderer/main.cpp.o -c /lhome/lukashg/libShapeDescriptor/tools/imagerenderer/main.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tools/imagerenderer/main.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/quiccidumper.dir/tools/quiccidumper/main.cpp.o -c /lhome/lukashg/libShapeDescriptor/tools/quiccidumper/main.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tools/quiccidumper/main.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/quicciviewer.dir/tools/quicciviewer/main.cpp.o -c /lhome/lukashg/libShapeDescriptor/tools/quicciviewer/main.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/tools/quicciviewer/main.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/dict_buffer.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/dict_buffer.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/dict_buffer.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/fl2_common.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_common.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_common.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/fl2_compress.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_compress.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_compress.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/fl2_decompress.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_decompress.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_decompress.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/fl2_pool.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_pool.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_pool.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/fl2_threading.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_threading.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/fl2_threading.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/lzma2_dec.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/lzma2_dec.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/lzma2_dec.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/lzma2_enc.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/lzma2_enc.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/lzma2_enc.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/radix_bitpack.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_bitpack.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_bitpack.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/radix_mf.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_mf.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_mf.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/radix_struct.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_struct.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/radix_struct.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/range_enc.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/range_enc.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/range_enc.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/util.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/util.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/util.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/fast-lzma2",
+  "command": "/usr/bin/gcc  -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src  -fopenmp -fPIC -lpthread -g -o CMakeFiles/fast-lzma2.dir/src/xxhash.c.o -c /lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/xxhash.c",
+  "file": "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src/xxhash.c"
+}
+]
