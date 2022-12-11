@@ -882,6 +882,30 @@ src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.s:
 	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.s
 .PHONY : src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.s
 
+src/shapeDescriptor/utilities/read/XYZLoader.o: src/shapeDescriptor/utilities/read/XYZLoader.cpp.o
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.o
+
+# target to build an object file
+src/shapeDescriptor/utilities/read/XYZLoader.cpp.o:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.cpp.o
+
+src/shapeDescriptor/utilities/read/XYZLoader.i: src/shapeDescriptor/utilities/read/XYZLoader.cpp.i
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.i
+
+# target to preprocess a source file
+src/shapeDescriptor/utilities/read/XYZLoader.cpp.i:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.i
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.cpp.i
+
+src/shapeDescriptor/utilities/read/XYZLoader.s: src/shapeDescriptor/utilities/read/XYZLoader.cpp.s
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.s
+
+# target to generate assembly for a file
+src/shapeDescriptor/utilities/read/XYZLoader.cpp.s:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.s
+.PHONY : src/shapeDescriptor/utilities/read/XYZLoader.cpp.s
+
 src/shapeDescriptor/utilities/spinOriginsGenerator.o: src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o
 .PHONY : src/shapeDescriptor/utilities/spinOriginsGenerator.o
 
@@ -1270,6 +1294,9 @@ help:
 	@echo "... src/shapeDescriptor/utilities/read/QUICCIDescriptors.o"
 	@echo "... src/shapeDescriptor/utilities/read/QUICCIDescriptors.i"
 	@echo "... src/shapeDescriptor/utilities/read/QUICCIDescriptors.s"
+	@echo "... src/shapeDescriptor/utilities/read/XYZLoader.o"
+	@echo "... src/shapeDescriptor/utilities/read/XYZLoader.i"
+	@echo "... src/shapeDescriptor/utilities/read/XYZLoader.s"
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.o"
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.i"
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.s"

@@ -201,4 +201,5 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.h
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.h

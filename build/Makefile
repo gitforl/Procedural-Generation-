@@ -231,6 +231,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utilities/meshFunctions.o: utilities/meshFunctions.cpp.o
+.PHONY : utilities/meshFunctions.o
+
+# target to build an object file
+utilities/meshFunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o
+.PHONY : utilities/meshFunctions.cpp.o
+
+utilities/meshFunctions.i: utilities/meshFunctions.cpp.i
+.PHONY : utilities/meshFunctions.i
+
+# target to preprocess a source file
+utilities/meshFunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.i
+.PHONY : utilities/meshFunctions.cpp.i
+
+utilities/meshFunctions.s: utilities/meshFunctions.cpp.s
+.PHONY : utilities/meshFunctions.s
+
+# target to generate assembly for a file
+utilities/meshFunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.s
+.PHONY : utilities/meshFunctions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,6 +273,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utilities/meshFunctions.o"
+	@echo "... utilities/meshFunctions.i"
+	@echo "... utilities/meshFunctions.s"
 .PHONY : help
 
 

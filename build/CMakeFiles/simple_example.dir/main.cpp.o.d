@@ -178,8 +178,7 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/bits/fs_dir.h \
  /usr/include/c++/11/bits/fs_ops.h \
- /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.h \
- /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -206,9 +205,61 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
  /usr/local/cuda/include/vector_types.h \
  /usr/local/cuda/include/crt/host_defines.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
  /usr/include/c++/11/cstddef \
- /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/float2.h
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/float2.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+ /usr/local/cuda/include/cuda_runtime_api.h \
+ /usr/local/cuda/include/builtin_types.h \
+ /usr/local/cuda/include/device_types.h \
+ /usr/local/cuda/include/driver_types.h \
+ /usr/local/cuda/include/vector_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/local/cuda/include/surface_types.h \
+ /usr/local/cuda/include/texture_types.h \
+ /usr/local/cuda/include/cuda_device_runtime_api.h \
+ /usr/local/cuda/include/device_launch_parameters.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+ /usr/local/cuda/include/cuda_runtime.h \
+ /usr/local/cuda/include/crt/host_config.h \
+ /usr/local/cuda/include/library_types.h \
+ /usr/local/cuda/include/channel_descriptor.h \
+ /usr/local/cuda/include/cuda_runtime_api.h \
+ /usr/local/cuda/include/driver_functions.h \
+ /usr/local/cuda/include/vector_functions.h \
+ /usr/local/cuda/include/vector_functions.hpp \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/types/methods/QUICCIDescriptor.h \
+ /lhome/lukashg/Procedural-Generation-/./utilities/aliases.hpp \
+ /lhome/lukashg/Procedural-Generation-/./utilities/meshFunctions.hpp

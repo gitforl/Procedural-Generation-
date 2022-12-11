@@ -69,6 +69,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp.o.d"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o.d"
+  "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o"
+  "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o.d"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o.d"
   "libShapeDescriptor.a"

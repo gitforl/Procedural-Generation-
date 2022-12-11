@@ -1,8 +1,13 @@
 [
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
-  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -g -o CMakeFiles/simple_example.dir/main.cpp.o -c /lhome/lukashg/Procedural-Generation-/main.cpp",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -o CMakeFiles/simple_example.dir/main.cpp.o -c /lhome/lukashg/Procedural-Generation-/main.cpp",
   "file": "/lhome/lukashg/Procedural-Generation-/main.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -o CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
@@ -148,6 +153,11 @@
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
   "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp",
   "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",

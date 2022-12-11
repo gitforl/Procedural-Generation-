@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHelperFunctions.a CMakeFiles/HelperFunctions.dir/HelperFunctions/meshFunctions.cpp.o
+/usr/bin/ranlib libHelperFunctions.a

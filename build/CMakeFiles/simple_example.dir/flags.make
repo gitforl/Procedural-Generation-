@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DDESCRIPTOR_CUDA_KERNELS_ENABLED
 
-CXX_INCLUDES = -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src
+CXX_INCLUDES = -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common
 
 CXX_FLAGS = -g
 

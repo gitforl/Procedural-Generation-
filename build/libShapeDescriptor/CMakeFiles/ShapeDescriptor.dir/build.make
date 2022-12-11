@@ -4325,10 +4325,24 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.s"
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.s
 
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/flags.make
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o -MF CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o.d -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp
+
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.i"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp > CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.i
+
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.s"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.s
+
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/flags.make
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o -MF CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o.d -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp
 
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.i: cmake_force
@@ -4370,6 +4384,7 @@ ShapeDescriptor_OBJECTS = \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PLYLoader.cpp.o" \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp.o" \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o" \
+"CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o" \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
 
 # External object files for target ShapeDescriptor
@@ -4416,6 +4431,7 @@ libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDesc
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PLYLoader.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o
+libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextGenerator.cu.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o
@@ -4431,7 +4447,7 @@ libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDesc
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_pointCloudUtils.cu.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX static library libShapeDescriptor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX static library libShapeDescriptor.a"
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && $(CMAKE_COMMAND) -P CMakeFiles/ShapeDescriptor.dir/cmake_clean_target.cmake
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ShapeDescriptor.dir/link.txt --verbose=$(VERBOSE)
 
