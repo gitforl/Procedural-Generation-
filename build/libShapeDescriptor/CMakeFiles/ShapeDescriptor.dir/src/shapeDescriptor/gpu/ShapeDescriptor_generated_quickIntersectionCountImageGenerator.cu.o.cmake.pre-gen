@@ -72,7 +72,7 @@ set(generated_file_internal "/lhome/lukashg/Procedural-Generation-/build/libShap
 set(generated_cubin_file_internal "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/./ShapeDescriptor_generated_quickIntersectionCountImageGenerator.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
-set(CUDA_NVCC_FLAGS -arch=sm_52;-gencode=arch=compute_52,code=sm_52;-gencode=arch=compute_60,code=sm_60;-gencode=arch=compute_61,code=sm_61;-gencode=arch=compute_70,code=sm_70;-gencode=arch=compute_75,code=sm_75;-gencode=arch=compute_75,code=compute_75;-lcurand;-lineinfo;-lcudart ;; ) # list
+set(CUDA_NVCC_FLAGS -lcurand;-lineinfo;-lcudart ;; ) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )

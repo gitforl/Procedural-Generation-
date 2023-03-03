@@ -690,6 +690,30 @@ src/shapeDescriptor/utilities/mesh/MeshScaler.cpp.s:
 	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp.s
 .PHONY : src/shapeDescriptor/utilities/mesh/MeshScaler.cpp.s
 
+src/shapeDescriptor/utilities/meshSampler.o: src/shapeDescriptor/utilities/meshSampler.cpp.o
+.PHONY : src/shapeDescriptor/utilities/meshSampler.o
+
+# target to build an object file
+src/shapeDescriptor/utilities/meshSampler.cpp.o:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/meshSampler.cpp.o
+.PHONY : src/shapeDescriptor/utilities/meshSampler.cpp.o
+
+src/shapeDescriptor/utilities/meshSampler.i: src/shapeDescriptor/utilities/meshSampler.cpp.i
+.PHONY : src/shapeDescriptor/utilities/meshSampler.i
+
+# target to preprocess a source file
+src/shapeDescriptor/utilities/meshSampler.cpp.i:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/meshSampler.cpp.i
+.PHONY : src/shapeDescriptor/utilities/meshSampler.cpp.i
+
+src/shapeDescriptor/utilities/meshSampler.s: src/shapeDescriptor/utilities/meshSampler.cpp.s
+.PHONY : src/shapeDescriptor/utilities/meshSampler.s
+
+# target to generate assembly for a file
+src/shapeDescriptor/utilities/meshSampler.cpp.s:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/meshSampler.cpp.s
+.PHONY : src/shapeDescriptor/utilities/meshSampler.cpp.s
+
 src/shapeDescriptor/utilities/print/QuicciDescriptor.o: src/shapeDescriptor/utilities/print/QuicciDescriptor.cpp.o
 .PHONY : src/shapeDescriptor/utilities/print/QuicciDescriptor.o
 
@@ -1270,6 +1294,9 @@ help:
 	@echo "... src/shapeDescriptor/utilities/mesh/MeshScaler.o"
 	@echo "... src/shapeDescriptor/utilities/mesh/MeshScaler.i"
 	@echo "... src/shapeDescriptor/utilities/mesh/MeshScaler.s"
+	@echo "... src/shapeDescriptor/utilities/meshSampler.o"
+	@echo "... src/shapeDescriptor/utilities/meshSampler.i"
+	@echo "... src/shapeDescriptor/utilities/meshSampler.s"
 	@echo "... src/shapeDescriptor/utilities/print/QuicciDescriptor.o"
 	@echo "... src/shapeDescriptor/utilities/print/QuicciDescriptor.i"
 	@echo "... src/shapeDescriptor/utilities/print/QuicciDescriptor.s"

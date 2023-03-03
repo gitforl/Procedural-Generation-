@@ -246,11 +246,17 @@ libShapeDescriptor/CMakeFiles/runTests.dir/tests/3dscTests.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
- /usr/local/cuda/include/vector_types.h /usr/include/c++/11/iostream \
+ /usr/local/cuda/include/vector_types.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+ /usr/include/c++/11/iostream \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
  /usr/local/cuda/include/library_types.h \
@@ -259,4 +265,8 @@ libShapeDescriptor/CMakeFiles/runTests.dir/tests/3dscTests.cpp.o: \
  /usr/local/cuda/include/driver_functions.h \
  /usr/local/cuda/include/vector_functions.h \
  /usr/local/cuda/include/vector_functions.hpp \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+ /usr/include/c++/11/math.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/3DSCDescriptor.h

@@ -55,7 +55,9 @@ StringFloat3Map MeshFunctions::VertexToAverageNormalMap(ShapeDescriptor::cpu::Me
     return normalMap;
 }
 
-void MeshFunctions::MoveVerticesAlongAverageNormal(ShapeDescriptor::cpu::Mesh * mesh, StringUIntMap &indexMap){
+void MeshFunctions::MoveVerticesAlongAverageNormal(ShapeDescriptor::cpu::Mesh * mesh, StringUIntMap &indexMap, float maxDistance){
+    
+    std::cout << "current range for normal movement: [-" << maxDistance << ", " << maxDistance << "]" << std::endl;  
 
     for(const auto & [key, indices]: indexMap){
         
@@ -67,7 +69,8 @@ void MeshFunctions::MoveVerticesAlongAverageNormal(ShapeDescriptor::cpu::Mesh * 
 
         averageNormal = averageNormal / indices.size();
 
-        float distance = ((rand() % 1024) - 512) / 128;
+        
+        float distance = (((rand() % 1024) - 512) * maxDistance) / 128;
 
         for(auto index: indices){
             mesh->vertices[index] += averageNormal * distance;

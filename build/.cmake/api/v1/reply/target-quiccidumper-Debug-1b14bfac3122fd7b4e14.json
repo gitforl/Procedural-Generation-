@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libShapeDescriptor/quicciviewer"
+			"path" : "libShapeDescriptor/quiccidumper"
 		}
 	],
 	"backtrace" : 1,
@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 93,
+				"line" : 90,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 94,
+				"line" : 91,
 				"parent" : 0
 			},
 			{
@@ -134,7 +134,7 @@
 			"id" : "fast-lzma2::@f86b2dd7130382e38d02"
 		}
 	],
-	"id" : "quicciviewer::@ba4df1e3298f180bb94a",
+	"id" : "quiccidumper::@ba4df1e3298f180bb94a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -207,8 +207,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "quicciviewer",
-	"nameOnDisk" : "quicciviewer",
+	"name" : "quiccidumper",
+	"nameOnDisk" : "quiccidumper",
 	"paths" : 
 	{
 		"build" : "libShapeDescriptor",
@@ -229,7 +229,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/lhome/lukashg/libShapeDescriptor/tools/quicciviewer/main.cpp",
+			"path" : "/lhome/lukashg/libShapeDescriptor/tools/quiccidumper/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

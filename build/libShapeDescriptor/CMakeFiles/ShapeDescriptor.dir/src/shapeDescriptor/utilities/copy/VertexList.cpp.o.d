@@ -206,9 +206,8 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
- /usr/include/c++/11/iostream \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
  /usr/local/cuda/include/library_types.h \
@@ -217,4 +216,9 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
  /usr/local/cuda/include/driver_functions.h \
  /usr/local/cuda/include/vector_functions.h \
  /usr/local/cuda/include/vector_functions.hpp /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h
+ /usr/include/c++/11/bits/stl_relops.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/iostream \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h

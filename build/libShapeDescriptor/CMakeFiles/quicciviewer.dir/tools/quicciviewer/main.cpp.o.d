@@ -193,6 +193,39 @@ libShapeDescriptor/CMakeFiles/quicciviewer.dir/tools/quicciviewer/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+ /usr/include/c++/11/cstddef \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+ /usr/local/cuda/include/cuda_runtime_api.h \
+ /usr/local/cuda/include/crt/host_defines.h \
+ /usr/local/cuda/include/builtin_types.h \
+ /usr/local/cuda/include/device_types.h \
+ /usr/local/cuda/include/driver_types.h \
+ /usr/local/cuda/include/vector_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/local/cuda/include/surface_types.h \
+ /usr/local/cuda/include/texture_types.h \
+ /usr/local/cuda/include/cuda_device_runtime_api.h \
+ /usr/local/cuda/include/device_launch_parameters.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -219,39 +252,24 @@ libShapeDescriptor/CMakeFiles/quicciviewer.dir/tools/quicciviewer/main.cpp.o: \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
  /usr/local/cuda/include/vector_types.h \
- /usr/local/cuda/include/crt/host_defines.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
- /usr/include/c++/11/cstddef \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
- /usr/local/cuda/include/builtin_types.h \
- /usr/local/cuda/include/device_types.h \
- /usr/local/cuda/include/driver_types.h \
- /usr/local/cuda/include/vector_types.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/local/cuda/include/surface_types.h \
- /usr/local/cuda/include/texture_types.h \
  /usr/local/cuda/include/library_types.h \
  /usr/local/cuda/include/channel_descriptor.h \
  /usr/local/cuda/include/cuda_runtime_api.h \
- /usr/local/cuda/include/cuda_device_runtime_api.h \
  /usr/local/cuda/include/driver_functions.h \
  /usr/local/cuda/include/vector_functions.h \
  /usr/local/cuda/include/vector_functions.hpp \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+ /usr/include/c++/11/math.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.h \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \

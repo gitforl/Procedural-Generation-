@@ -72,14 +72,14 @@ set(generated_file_internal "/lhome/lukashg/Procedural-Generation-/build/libShap
 set(generated_cubin_file_internal "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/./ShapeDescriptor_generated_pointCloudUtils.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
-set(CUDA_NVCC_FLAGS -arch=sm_52;-gencode=arch=compute_52,code=sm_52;-gencode=arch=compute_60,code=sm_60;-gencode=arch=compute_61,code=sm_61;-gencode=arch=compute_70,code=sm_70;-gencode=arch=compute_75,code=sm_75;-gencode=arch=compute_75,code=compute_75;-lcurand;-lineinfo;-lcudart ;; ) # list
+set(CUDA_NVCC_FLAGS -lcurand;-lineinfo;-lcudart ;; ) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64) # list
-set(CUDA_NVCC_INCLUDE_DIRS [==[/usr/local/cuda/include;/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common;/usr/local/cuda/include;/lhome/lukashg/libShapeDescriptor/src;/lhome/lukashg/libShapeDescriptor/lib/glm;/lhome/lukashg/libShapeDescriptor/lib/lodepng;/lhome/lukashg/libShapeDescriptor/lib/arrrgh;/lhome/lukashg/libShapeDescriptor/lib/json;/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src;/lhome/lukashg/libShapeDescriptor/lib;/lhome/lukashg/libShapeDescriptor/lib/fast-obj;/lhome/lukashg/libShapeDescriptor/src/;/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common]==]) # list (needs to be in lua quotes to address backslashes)
+set(CUDA_NVCC_INCLUDE_DIRS [==[/usr/local/cuda/include;/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common;/usr/local/cuda/include;/lhome/lukashg/libShapeDescriptor/src;/lhome/lukashg/libShapeDescriptor/lib/glm;/lhome/lukashg/libShapeDescriptor/lib/lodepng;/lhome/lukashg/libShapeDescriptor/lib/arrrgh;/lhome/lukashg/libShapeDescriptor/lib/json;/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src;/lhome/lukashg/libShapeDescriptor/lib;/lhome/lukashg/libShapeDescriptor/lib/fast-obj;/usr/local/cuda/include;/lhome/lukashg/libShapeDescriptor/src/;/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common]==]) # list (needs to be in lua quotes to address backslashes)
 string(REPLACE "\\" "/" CUDA_NVCC_INCLUDE_DIRS "${CUDA_NVCC_INCLUDE_DIRS}")
 set(CUDA_NVCC_COMPILE_DEFINITIONS [==[DESCRIPTOR_CUDA_KERNELS_ENABLED]==]) # list (needs to be in lua quotes see #16510 ).
 set(format_flag "-c") # string

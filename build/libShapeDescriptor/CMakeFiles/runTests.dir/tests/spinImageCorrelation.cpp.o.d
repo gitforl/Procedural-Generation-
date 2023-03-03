@@ -217,6 +217,8 @@ libShapeDescriptor/CMakeFiles/runTests.dir/tests/spinImageCorrelation.cpp.o: \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
  /usr/local/cuda/include/builtin_types.h \
@@ -241,10 +243,6 @@ libShapeDescriptor/CMakeFiles/runTests.dir/tests/spinImageCorrelation.cpp.o: \
  /usr/local/cuda/include/driver_functions.h \
  /usr/local/cuda/include/vector_functions.h \
  /usr/local/cuda/include/vector_functions.hpp \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.h \
  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
  /usr/include/c++/11/stdlib.h /usr/include/string.h \
  /usr/include/strings.h \
@@ -254,7 +252,13 @@ libShapeDescriptor/CMakeFiles/runTests.dir/tests/spinImageCorrelation.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+ /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+ /usr/include/c++/11/math.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageSearcher.cuh \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h \
- /usr/include/c++/11/iostream \
- /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h
+ /usr/include/c++/11/iostream

@@ -259,13 +259,6 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /usr/local/cuda/include/crt/host_defines.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
-  /usr/include/c++/11/cstddef \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float2.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
@@ -273,6 +266,7 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /usr/include/assert.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+  /usr/include/c++/11/cstddef \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
   /usr/local/cuda/include/cuda_runtime_api.h \
   /usr/local/cuda/include/builtin_types.h \
@@ -301,8 +295,12 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
   /usr/local/cuda/include/cuda_runtime.h \
   /usr/local/cuda/include/crt/host_config.h \
   /usr/local/cuda/include/library_types.h \
@@ -311,11 +309,29 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /usr/local/cuda/include/driver_functions.h \
   /usr/local/cuda/include/vector_functions.h \
   /usr/local/cuda/include/vector_functions.hpp \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+  /usr/include/c++/11/math.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float2.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/QUICCIDescriptor.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/FPFHDescriptor.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h \
   ../utilities/aliases.hpp \
   ../utilities/meshFunctions.hpp
 
@@ -549,6 +565,43 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
   /usr/local/cuda/include/vector_types.h \
   /usr/local/cuda/include/crt/host_defines.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+  /usr/include/c++/11/cstddef \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+  /usr/local/cuda/include/cuda_runtime_api.h \
+  /usr/local/cuda/include/builtin_types.h \
+  /usr/local/cuda/include/device_types.h \
+  /usr/local/cuda/include/driver_types.h \
+  /usr/local/cuda/include/vector_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/local/cuda/include/surface_types.h \
+  /usr/local/cuda/include/texture_types.h \
+  /usr/local/cuda/include/cuda_device_runtime_api.h \
+  /usr/local/cuda/include/device_launch_parameters.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h
@@ -558,9 +611,31 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 ../utilities/aliases.hpp:
 
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cuh:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cuh:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/FPFHDescriptor.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h:
+
+/usr/include/c++/11/math.h:
+
+/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h:
+
 /usr/local/cuda/include/vector_functions.h:
 
 /usr/local/cuda/include/driver_functions.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageGenerator.cuh:
 
 /usr/local/cuda/include/channel_descriptor.h:
 
@@ -570,7 +645,9 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h:
 
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h:
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -623,12 +700,6 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h:
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h:
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h:
 
@@ -764,6 +835,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/c++/11/exception:
@@ -894,6 +967,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/c++/11/cstdlib:
 
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageGenerator.cuh:
+
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -913,6 +988,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
@@ -1004,6 +1081,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
@@ -1084,6 +1163,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/c++/11/bits/vector.tcc:
 
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh:
+
 /usr/include/c++/11/bits/stl_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
@@ -1101,6 +1182,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/endian.h:
 
 /usr/include/c++/11/bits/erase_if.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramGenerator.cuh:
 
 /usr/include/c++/11/filesystem:
 
@@ -1139,6 +1222,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/math.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.h:
 
 /usr/include/c++/11/sstream:
 

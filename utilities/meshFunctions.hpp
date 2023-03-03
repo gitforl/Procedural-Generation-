@@ -9,6 +9,6 @@ namespace MeshFunctions{
     void MoveVertexAlongNormal(ShapeDescriptor::cpu::Mesh * mesh);
     StringUIntMap MapVertexIndices(ShapeDescriptor::cpu::Mesh * mesh);
     StringFloat3Map VertexToAverageNormalMap(ShapeDescriptor::cpu::Mesh &mesh, StringUIntMap &indexMap);
-    void MoveVerticesAlongAverageNormal(ShapeDescriptor::cpu::Mesh * mesh, StringUIntMap &indexMap);
+    void MoveVerticesAlongAverageNormal(ShapeDescriptor::cpu::Mesh * mesh, StringUIntMap &indexMap, float maxDistance = 0.0f);
     void RecomputeVertices(ShapeDescriptor::cpu::Mesh &mesh, StringFloat3Map &normalMap);
 }

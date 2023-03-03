@@ -42,7 +42,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 75,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
@@ -135,7 +135,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				12,
 				13,
 				14,
 				15,
@@ -165,7 +164,9 @@
 				39,
 				40,
 				41,
-				42
+				42,
+				43,
+				44
 			]
 		}
 	],
@@ -201,14 +202,14 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				12,
 				13,
 				14,
 				15,
@@ -239,10 +240,8 @@
 				40,
 				41,
 				42,
-				114,
-				115,
-				116,
-				117,
+				43,
+				44,
 				118,
 				119,
 				120,
@@ -250,15 +249,18 @@
 				122,
 				123,
 				124,
-				125
+				125,
+				126,
+				127,
+				128,
+				129,
+				130
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				43,
-				44,
 				45,
 				46,
 				47,
@@ -279,13 +281,13 @@
 				62,
 				63,
 				64,
-				75,
-				76,
-				77,
+				65,
+				66,
+				71,
 				78,
+				79,
 				80,
 				81,
-				82,
 				83,
 				84,
 				85,
@@ -302,10 +304,10 @@
 				96,
 				97,
 				98,
+				99,
 				100,
-				102,
+				101,
 				103,
-				104,
 				105,
 				106,
 				107,
@@ -313,27 +315,31 @@
 				109,
 				110,
 				111,
-				112
+				112,
+				113,
+				114,
+				115,
+				116
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				65,
-				66,
 				67,
 				68,
 				69,
 				70,
-				71,
 				72,
 				73,
 				74,
-				79,
-				99,
-				101,
-				113
+				75,
+				76,
+				77,
+				82,
+				102,
+				104,
+				117
 			]
 		}
 	],
@@ -402,13 +408,19 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_meshSampler.cu.o",
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
 			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_pointCloudUtils.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_setValue.cu.o",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -535,6 +547,12 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/meshSampler.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -729,6 +747,11 @@
 		},
 		{
 			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
 			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh",
 			"sourceGroupIndex" : 3
 		},
@@ -879,7 +902,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/meshSampler.cuh",
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cuh",
 			"sourceGroupIndex" : 3
 		},
 		{
@@ -895,6 +918,11 @@
 		{
 			"backtrace" : 2,
 			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/meshSampler.h",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1004,12 +1032,17 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/meshSampler.cu",
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cu",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
 			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/pointCloudUtils.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cu",
 			"sourceGroupIndex" : 1
 		}
 	],
