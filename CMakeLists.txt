@@ -6,6 +6,12 @@ find_package(CUDA REQUIRED)
 # Add main.cpp file of project root directory as source file
 set(SOURCE_FILES main.cpp
                  utilities/meshFunctions.cpp
+                 utilities/mathUtilities.cpp
+                 descriptors/BaseDescriptor.cpp
+                 descriptors/QUICCIDescriptor.cpp
+                 descriptors/RICIDescriptorTester.cpp
+                 descriptors/SIDescriptorTester.cpp
+                 descriptors/FPFHDescriptorTester.cpp
     )
 
 
@@ -31,4 +37,5 @@ target_include_directories(
     ../libShapeDescriptor/lib/nvidia-samples-common/
     "${CMAKE_CURRENT_SOURCE_DIR}"
     )
+
 
