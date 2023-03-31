@@ -41,3 +41,32 @@ void QUICCIDescriptor::Compare(){
         comparisonValues.push_back((float) comparisons.content[i].weightedHammingDistance);
 
 }
+
+void QUICCIDescriptor::RankDescriptors(){
+
+    gpuMesh = ShapeDescriptor::copy::hostMeshToDevice(mesh);
+
+    float supportRadius = 1.0f;
+
+    auto testDescriptors = ShapeDescriptor::gpu::generateQUICCImages(
+        gpuMesh,
+        gpuDescriptorOrigins,
+        supportRadius);
+
+    ShapeDescriptor::free::mesh(gpuMesh);
+
+
+    auto firstCopy = testDescriptors.content[0];
+    for(int i = 1; i < testDescriptors.length; i++){
+        auto content = testDescriptors.content[i];
+        for(int j = 0; j < 32; j++)
+            content.contents[j] = firstCopy.contents[j];
+    }
+
+    auto distances = ShapeDescriptor::gpu::computeQUICCIElementWiseWeightedHammingDistances(testDescriptors, alteredDescriptors);
+
+    for(int i = 0; i < 10; i++){
+        std::cout << distances.content[i] << std::endl;
+    }
+    
+}

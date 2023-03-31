@@ -477,6 +477,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeD
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/bits/unordered_map.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/bits/uses_allocator.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/bits/vector.tcc
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/cassert
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/cctype
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/cerrno
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o: /usr/include/c++/11/cfloat
@@ -1053,6 +1054,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeD
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /usr/include/alloca.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o: /usr/include/asm-generic/errno-base.h
@@ -1694,6 +1696,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeD
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o: /usr/include/alloca.h
@@ -2366,6 +2369,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeD
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /usr/include/alloca.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o: /usr/include/asm-generic/errno-base.h
@@ -3032,6 +3036,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeD
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /usr/include/alloca.h
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o: /usr/include/asm-generic/errno-base.h
@@ -3427,6 +3432,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/initializer_list
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/ios
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/iosfwd
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/iostream
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/istream
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/limits
 libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o: /usr/include/c++/11/math.h
@@ -4695,6 +4701,20 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.s"
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.s
 
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/flags.make
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o: /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o -MF CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o.d -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp
+
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.i"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp > CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.i
+
+libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.s"
+	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.s
+
 # Object files for target ShapeDescriptor
 ShapeDescriptor_OBJECTS = \
 "CMakeFiles/ShapeDescriptor.dir/lib/fast-obj/fast_obj.cpp.o" \
@@ -4728,7 +4748,8 @@ ShapeDescriptor_OBJECTS = \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp.o" \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o" \
 "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o" \
-"CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
+"CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o" \
+"CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o"
 
 # External object files for target ShapeDescriptor
 ShapeDescriptor_EXTERNAL_OBJECTS = \
@@ -4778,6 +4799,7 @@ libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDesc
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o
+libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextGenerator.cu.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramGenerator.cu.o
@@ -4793,7 +4815,7 @@ libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDesc
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_setValue.cu.o
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make
 libShapeDescriptor/libShapeDescriptor.a: libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX static library libShapeDescriptor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX static library libShapeDescriptor.a"
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && $(CMAKE_COMMAND) -P CMakeFiles/ShapeDescriptor.dir/cmake_clean_target.cmake
 	cd /lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ShapeDescriptor.dir/link.txt --verbose=$(VERBOSE)
 

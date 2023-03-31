@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /lhome/lukashg/Procedural-Generation-/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /lhome/lukashg/Procedural-Generation-/build && /usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /lhome/lukashg/Procedural-Generation-/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /lhome/lukashg/Procedural-Generation-/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -954,6 +974,30 @@ src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.s:
 	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.s
 .PHONY : src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.s
 
+src/shapeDescriptor/utilities/write/XYZWriter.o: src/shapeDescriptor/utilities/write/XYZWriter.cpp.o
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.o
+
+# target to build an object file
+src/shapeDescriptor/utilities/write/XYZWriter.cpp.o:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.cpp.o
+
+src/shapeDescriptor/utilities/write/XYZWriter.i: src/shapeDescriptor/utilities/write/XYZWriter.cpp.i
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.i
+
+# target to preprocess a source file
+src/shapeDescriptor/utilities/write/XYZWriter.cpp.i:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.i
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.cpp.i
+
+src/shapeDescriptor/utilities/write/XYZWriter.s: src/shapeDescriptor/utilities/write/XYZWriter.cpp.s
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.s
+
+# target to generate assembly for a file
+src/shapeDescriptor/utilities/write/XYZWriter.cpp.s:
+	cd /lhome/lukashg/Procedural-Generation-/build && $(MAKE) $(MAKESILENT) -f libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/build.make libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.s
+.PHONY : src/shapeDescriptor/utilities/write/XYZWriter.cpp.s
+
 tests/3dscTests.o: tests/3dscTests.cpp.o
 .PHONY : tests/3dscTests.o
 
@@ -1225,6 +1269,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... ShapeDescriptor"
 	@echo "... imagerenderer"
@@ -1327,6 +1373,9 @@ help:
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.o"
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.i"
 	@echo "... src/shapeDescriptor/utilities/spinOriginsGenerator.s"
+	@echo "... src/shapeDescriptor/utilities/write/XYZWriter.o"
+	@echo "... src/shapeDescriptor/utilities/write/XYZWriter.i"
+	@echo "... src/shapeDescriptor/utilities/write/XYZWriter.s"
 	@echo "... tests/3dscTests.o"
 	@echo "... tests/3dscTests.i"
 	@echo "... tests/3dscTests.s"

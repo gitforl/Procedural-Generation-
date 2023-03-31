@@ -230,4 +230,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
  /usr/include/c++/11/math.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/pointCloud.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h \
+ /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/pointCloud.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/meshSampler.h

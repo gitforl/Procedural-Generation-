@@ -179,6 +179,7 @@ libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/
  /usr/include/c++/11/cstddef \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
  /usr/local/cuda/include/cuda_runtime.h \

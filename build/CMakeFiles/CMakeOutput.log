@@ -1366,3 +1366,87 @@ int main(void)
   return 0;
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8271a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8271a.dir/build.make CMakeFiles/cmTC_8271a.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8271a.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_8271a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8271a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8271a.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_8271a.dir/CheckFunctionExists.c.o -o cmTC_8271a  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d2a03/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d2a03.dir/build.make CMakeFiles/cmTC_d2a03.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2a03.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_d2a03.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d2a03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2a03.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_d2a03.dir/CheckFunctionExists.c.o -o cmTC_d2a03 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6574/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6574.dir/build.make CMakeFiles/cmTC_e6574.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6574.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_e6574.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e6574
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6574.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_e6574.dir/CheckFunctionExists.c.o -o cmTC_e6574 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_63d40/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_63d40.dir/build.make CMakeFiles/cmTC_63d40.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63d40.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_63d40.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63d40
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63d40.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_63d40.dir/CheckFunctionExists.c.o -o cmTC_63d40 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14012/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14012.dir/build.make CMakeFiles/cmTC_14012.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14012.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_14012.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_14012
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14012.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_14012.dir/CheckFunctionExists.c.o -o cmTC_14012 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5195c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5195c.dir/build.make CMakeFiles/cmTC_5195c.dir/build
+gmake[1]: Entering directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5195c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_5195c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5195c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5195c.dir/link.txt --verbose=1
+/usr/bin/gcc  -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_5195c.dir/CheckFunctionExists.c.o -o cmTC_5195c  -lICE 
+gmake[1]: Leaving directory '/lhome/lukashg/Procedural-Generation-/build/CMakeFiles/CMakeTmp'
+
+
+

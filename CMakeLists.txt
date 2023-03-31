@@ -7,12 +7,27 @@ find_package(CUDA REQUIRED)
 set(SOURCE_FILES main.cpp
                  utilities/meshFunctions.cpp
                  utilities/mathUtilities.cpp
+                 utilities/generalUtilities.cpp
                  descriptors/BaseDescriptor.cpp
                  descriptors/QUICCIDescriptor.cpp
                  descriptors/RICIDescriptorTester.cpp
                  descriptors/SIDescriptorTester.cpp
                  descriptors/FPFHDescriptorTester.cpp
+                 meshModifier/meshModifier.cpp
+                 openglHandler/openglHandler.cpp
+                 openglHandler/openglMesh.cpp
+                 lib/glad/src/glad.cpp
     )
+
+
+#
+# GLFW options
+#
+option (GLFW_INSTALL OFF)
+option (GLFW_BUILD_DOCS OFF)
+option (GLFW_BUILD_EXAMPLES OFF)
+option (GLFW_BUILD_TESTS OFF)
+add_subdirectory (lib/glfw)
 
 
 add_subdirectory(../libShapeDescriptor ${CMAKE_CURRENT_BINARY_DIR}/libShapeDescriptor)
@@ -26,9 +41,23 @@ include_directories(
 )
 
 
+include_directories (
+    lib/
+    lib/glm/
+    lib/glad/include/
+    lib/glfw/include/
+)
+
+find_package(CGAL)
+set(CGAL_DO_NOT_WARN_ABOUT_CMAKE_BUILD_TYPE TRUE)
+
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(simple_example ${SOURCE_FILES})
-target_link_libraries(simple_example PRIVATE ShapeDescriptor)
+target_link_libraries(simple_example PRIVATE ShapeDescriptor glfw)
+
+if(CGAL_FOUND)
+    target_link_libraries(simple_example PUBLIC CGAL::CGAL)
+endif()
 
 target_include_directories(
     simple_example PRIVATE 
@@ -37,5 +66,4 @@ target_include_directories(
     ../libShapeDescriptor/lib/nvidia-samples-common/
     "${CMAKE_CURRENT_SOURCE_DIR}"
     )
-
 

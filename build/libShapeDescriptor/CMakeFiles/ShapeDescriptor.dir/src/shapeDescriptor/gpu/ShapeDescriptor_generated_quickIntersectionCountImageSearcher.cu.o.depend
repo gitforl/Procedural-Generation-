@@ -24,6 +24,7 @@ SET(CUDA_NVCC_DEPEND
  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h"
  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h"
  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h"
+ "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h"
  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh"
  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh"
  "/usr/include/alloca.h"

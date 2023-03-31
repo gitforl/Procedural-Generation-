@@ -34,6 +34,11 @@
 #include <descriptors/SIDescriptorTester.hpp>
 #include <descriptors/FPFHDescriptorTester.hpp>
 
+#include <meshModifier/meshModifier.hpp>
+#include <openglHandler/openglHandler.hpp>
+
+#include <openglHandler/shader.hpp>
+
 
 struct face
 {
@@ -141,19 +146,87 @@ void run3DContextDescriptor()
     // ShapeDescriptor::dump::descriptors(hostDescriptors, "../images/test3DSC.png", true, 50);
 }
 
+void FindMeshSpatialSpan(ShapeDescriptor::cpu::Mesh &mesh)
+{
+    ShapeDescriptor::cpu::float3 meshCenter = {0.0, 0.0, 0.0};
+
+    for(unsigned int i = 0; i < mesh.vertexCount; i++)
+    {
+        meshCenter += mesh.vertices[i];   
+    }
+
+    meshCenter.x /= float(mesh.vertexCount);
+    meshCenter.y /= float(mesh.vertexCount);
+    meshCenter.z /= float(mesh.vertexCount);
+
+    float maxDistance = 0.0f;
+    float maxOriginDistance = 0.0f;
+    ShapeDescriptor::cpu::float3 maxDistancePosition = {0.0, 0.0, 0.0};
+
+    std::cout << "Center: " << meshCenter.x << ", " << meshCenter.y << ", " << meshCenter.z << std::endl;
+
+    for(unsigned int i = 0; i < mesh.vertexCount; i++)
+    {
+        float originDistance = length(mesh.vertices[i]);
+        if(originDistance > maxOriginDistance)
+        {
+            maxOriginDistance = originDistance;
+        }
+        auto vertexDistanceFromMeshCenter = mesh.vertices[i] - meshCenter;
+        float distance = length(vertexDistanceFromMeshCenter);
+        if( distance > maxDistance)
+        {
+            maxDistance = distance;
+            maxDistancePosition = mesh.vertices[i];
+        }  
+    }
+
+    std::cout << "max: " << maxDistance << std::endl;
+    std::cout << "origin max: " << maxOriginDistance << std::endl;
+    // std::cout << "Center: " << meshCenter.x << ", " << meshCenter.y << ", " << meshCenter.z << std::endl;
+
+}
 
 int main()
 {
     const std::string objSrcPath = "../objects/T100.obj";
+    const std::string t34SrcPath = "../objects/T34.obj";
+    // const std::string objSrcPath = "../objects/OCCLUDED.obj";
     
-    FPFHDescriptorTester testDescriptor(objSrcPath);
+    // QUICCIDescriptor testDescriptor(objSrcPath);
 
-    std::vector<float> noiseLevels({0.0f, 0.01f, 0.1f, 1.0f});
+    // // testDescriptor.MeshSelfIntersects();
+    // testDescriptor.CGALMeshTest();
 
-    // testDescriptor.RunSingleNoiseTest(0.0f);
-    // testDescriptor.RunSingleNoiseTest(0.1f);
+    // MeshModifier meshModifier(objSrcPath);
+    // meshModifier.DrawScreen();
+
+    std::cout << "her" << std::endl;
+
+    auto mesh = ShapeDescriptor::utilities::loadOBJ(objSrcPath, true);
+    auto t34 = ShapeDescriptor::utilities::loadOBJ(t34SrcPath, true);
+
+    OpenGLHandler openGLHandler;
+    openGLHandler.AddMesh(mesh);
+    // openGLHandler.AddMesh(t34);
+    openGLHandler.Draw();
+    // openGLHandler.CreateMeshFromVisibleTriangles();
+
+    // FindMeshSpatialSpan(mesh);
+
+    // meshModifier.CheckMesh();
+
+    // std::vector<float> noiseLevels({0.0f, 0.01f, 0.1f, 1.0f});
+
+    // testDescriptor.RunNoiseTestAtLevel(0.0f);
+    // testDescriptor.RankDescriptors();
+    // testDescriptor.RunNoiseTestAtLevel(0.1f);
+
+    // testDescriptor.RankDescriptors();
 
 
-    testDescriptor.RunNoiseTestVaryingLevels(noiseLevels);
+    // testDescriptor.RunNoiseTestAtVaryingLevels(noiseLevels);
+
+    std::cout << "closing program" << std::endl;
 
 }

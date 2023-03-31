@@ -13,6 +13,7 @@
 
 #include <utilities/meshFunctions.hpp>
 #include <utilities/mathUtilities.hpp>
+#include <utilities/generalUtilities.hpp>
 
 class QUICCIDescriptor : public BaseDescriptor {
 private:
@@ -22,5 +23,7 @@ public:
     QUICCIDescriptor(std::string objSrcPath);
     void CreateReferenceDescriptors();
     void CreateAlteredDescriptors();
+    void CompareWithinDescriptors();
+    void RankDescriptors();
     void Compare();
 };

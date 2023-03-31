@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /lhome/lukashg/Procedural-Generation-/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /lhome/lukashg/Procedural-Generation-/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -128,6 +148,19 @@ simple_example: cmake_check_build_system
 simple_example/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/build
 .PHONY : simple_example/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/glfw.dir/build.make lib/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
 
 #=============================================================================
 # Target rules for targets named ShapeDescriptor
@@ -207,6 +240,150 @@ fast-lzma2/fast:
 	$(MAKE) $(MAKESILENT) -f libShapeDescriptor/fast-lzma2/CMakeFiles/fast-lzma2.dir/build.make libShapeDescriptor/fast-lzma2/CMakeFiles/fast-lzma2.dir/build
 .PHONY : fast-lzma2/fast
 
+descriptors/BaseDescriptor.o: descriptors/BaseDescriptor.cpp.o
+.PHONY : descriptors/BaseDescriptor.o
+
+# target to build an object file
+descriptors/BaseDescriptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o
+.PHONY : descriptors/BaseDescriptor.cpp.o
+
+descriptors/BaseDescriptor.i: descriptors/BaseDescriptor.cpp.i
+.PHONY : descriptors/BaseDescriptor.i
+
+# target to preprocess a source file
+descriptors/BaseDescriptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.i
+.PHONY : descriptors/BaseDescriptor.cpp.i
+
+descriptors/BaseDescriptor.s: descriptors/BaseDescriptor.cpp.s
+.PHONY : descriptors/BaseDescriptor.s
+
+# target to generate assembly for a file
+descriptors/BaseDescriptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.s
+.PHONY : descriptors/BaseDescriptor.cpp.s
+
+descriptors/FPFHDescriptorTester.o: descriptors/FPFHDescriptorTester.cpp.o
+.PHONY : descriptors/FPFHDescriptorTester.o
+
+# target to build an object file
+descriptors/FPFHDescriptorTester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o
+.PHONY : descriptors/FPFHDescriptorTester.cpp.o
+
+descriptors/FPFHDescriptorTester.i: descriptors/FPFHDescriptorTester.cpp.i
+.PHONY : descriptors/FPFHDescriptorTester.i
+
+# target to preprocess a source file
+descriptors/FPFHDescriptorTester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.i
+.PHONY : descriptors/FPFHDescriptorTester.cpp.i
+
+descriptors/FPFHDescriptorTester.s: descriptors/FPFHDescriptorTester.cpp.s
+.PHONY : descriptors/FPFHDescriptorTester.s
+
+# target to generate assembly for a file
+descriptors/FPFHDescriptorTester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.s
+.PHONY : descriptors/FPFHDescriptorTester.cpp.s
+
+descriptors/QUICCIDescriptor.o: descriptors/QUICCIDescriptor.cpp.o
+.PHONY : descriptors/QUICCIDescriptor.o
+
+# target to build an object file
+descriptors/QUICCIDescriptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o
+.PHONY : descriptors/QUICCIDescriptor.cpp.o
+
+descriptors/QUICCIDescriptor.i: descriptors/QUICCIDescriptor.cpp.i
+.PHONY : descriptors/QUICCIDescriptor.i
+
+# target to preprocess a source file
+descriptors/QUICCIDescriptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.i
+.PHONY : descriptors/QUICCIDescriptor.cpp.i
+
+descriptors/QUICCIDescriptor.s: descriptors/QUICCIDescriptor.cpp.s
+.PHONY : descriptors/QUICCIDescriptor.s
+
+# target to generate assembly for a file
+descriptors/QUICCIDescriptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.s
+.PHONY : descriptors/QUICCIDescriptor.cpp.s
+
+descriptors/RICIDescriptorTester.o: descriptors/RICIDescriptorTester.cpp.o
+.PHONY : descriptors/RICIDescriptorTester.o
+
+# target to build an object file
+descriptors/RICIDescriptorTester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o
+.PHONY : descriptors/RICIDescriptorTester.cpp.o
+
+descriptors/RICIDescriptorTester.i: descriptors/RICIDescriptorTester.cpp.i
+.PHONY : descriptors/RICIDescriptorTester.i
+
+# target to preprocess a source file
+descriptors/RICIDescriptorTester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.i
+.PHONY : descriptors/RICIDescriptorTester.cpp.i
+
+descriptors/RICIDescriptorTester.s: descriptors/RICIDescriptorTester.cpp.s
+.PHONY : descriptors/RICIDescriptorTester.s
+
+# target to generate assembly for a file
+descriptors/RICIDescriptorTester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.s
+.PHONY : descriptors/RICIDescriptorTester.cpp.s
+
+descriptors/SIDescriptorTester.o: descriptors/SIDescriptorTester.cpp.o
+.PHONY : descriptors/SIDescriptorTester.o
+
+# target to build an object file
+descriptors/SIDescriptorTester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o
+.PHONY : descriptors/SIDescriptorTester.cpp.o
+
+descriptors/SIDescriptorTester.i: descriptors/SIDescriptorTester.cpp.i
+.PHONY : descriptors/SIDescriptorTester.i
+
+# target to preprocess a source file
+descriptors/SIDescriptorTester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.i
+.PHONY : descriptors/SIDescriptorTester.cpp.i
+
+descriptors/SIDescriptorTester.s: descriptors/SIDescriptorTester.cpp.s
+.PHONY : descriptors/SIDescriptorTester.s
+
+# target to generate assembly for a file
+descriptors/SIDescriptorTester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.s
+.PHONY : descriptors/SIDescriptorTester.cpp.s
+
+lib/glad/src/glad.o: lib/glad/src/glad.cpp.o
+.PHONY : lib/glad/src/glad.o
+
+# target to build an object file
+lib/glad/src/glad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o
+.PHONY : lib/glad/src/glad.cpp.o
+
+lib/glad/src/glad.i: lib/glad/src/glad.cpp.i
+.PHONY : lib/glad/src/glad.i
+
+# target to preprocess a source file
+lib/glad/src/glad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.i
+.PHONY : lib/glad/src/glad.cpp.i
+
+lib/glad/src/glad.s: lib/glad/src/glad.cpp.s
+.PHONY : lib/glad/src/glad.s
+
+# target to generate assembly for a file
+lib/glad/src/glad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s
+.PHONY : lib/glad/src/glad.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -230,6 +407,126 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+meshModifier/meshModifier.o: meshModifier/meshModifier.cpp.o
+.PHONY : meshModifier/meshModifier.o
+
+# target to build an object file
+meshModifier/meshModifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o
+.PHONY : meshModifier/meshModifier.cpp.o
+
+meshModifier/meshModifier.i: meshModifier/meshModifier.cpp.i
+.PHONY : meshModifier/meshModifier.i
+
+# target to preprocess a source file
+meshModifier/meshModifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.i
+.PHONY : meshModifier/meshModifier.cpp.i
+
+meshModifier/meshModifier.s: meshModifier/meshModifier.cpp.s
+.PHONY : meshModifier/meshModifier.s
+
+# target to generate assembly for a file
+meshModifier/meshModifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.s
+.PHONY : meshModifier/meshModifier.cpp.s
+
+openglHandler/openglHandler.o: openglHandler/openglHandler.cpp.o
+.PHONY : openglHandler/openglHandler.o
+
+# target to build an object file
+openglHandler/openglHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o
+.PHONY : openglHandler/openglHandler.cpp.o
+
+openglHandler/openglHandler.i: openglHandler/openglHandler.cpp.i
+.PHONY : openglHandler/openglHandler.i
+
+# target to preprocess a source file
+openglHandler/openglHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.i
+.PHONY : openglHandler/openglHandler.cpp.i
+
+openglHandler/openglHandler.s: openglHandler/openglHandler.cpp.s
+.PHONY : openglHandler/openglHandler.s
+
+# target to generate assembly for a file
+openglHandler/openglHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.s
+.PHONY : openglHandler/openglHandler.cpp.s
+
+openglHandler/openglMesh.o: openglHandler/openglMesh.cpp.o
+.PHONY : openglHandler/openglMesh.o
+
+# target to build an object file
+openglHandler/openglMesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o
+.PHONY : openglHandler/openglMesh.cpp.o
+
+openglHandler/openglMesh.i: openglHandler/openglMesh.cpp.i
+.PHONY : openglHandler/openglMesh.i
+
+# target to preprocess a source file
+openglHandler/openglMesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.i
+.PHONY : openglHandler/openglMesh.cpp.i
+
+openglHandler/openglMesh.s: openglHandler/openglMesh.cpp.s
+.PHONY : openglHandler/openglMesh.s
+
+# target to generate assembly for a file
+openglHandler/openglMesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.s
+.PHONY : openglHandler/openglMesh.cpp.s
+
+utilities/generalUtilities.o: utilities/generalUtilities.cpp.o
+.PHONY : utilities/generalUtilities.o
+
+# target to build an object file
+utilities/generalUtilities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o
+.PHONY : utilities/generalUtilities.cpp.o
+
+utilities/generalUtilities.i: utilities/generalUtilities.cpp.i
+.PHONY : utilities/generalUtilities.i
+
+# target to preprocess a source file
+utilities/generalUtilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.i
+.PHONY : utilities/generalUtilities.cpp.i
+
+utilities/generalUtilities.s: utilities/generalUtilities.cpp.s
+.PHONY : utilities/generalUtilities.s
+
+# target to generate assembly for a file
+utilities/generalUtilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.s
+.PHONY : utilities/generalUtilities.cpp.s
+
+utilities/mathUtilities.o: utilities/mathUtilities.cpp.o
+.PHONY : utilities/mathUtilities.o
+
+# target to build an object file
+utilities/mathUtilities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o
+.PHONY : utilities/mathUtilities.cpp.o
+
+utilities/mathUtilities.i: utilities/mathUtilities.cpp.i
+.PHONY : utilities/mathUtilities.i
+
+# target to preprocess a source file
+utilities/mathUtilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.i
+.PHONY : utilities/mathUtilities.cpp.i
+
+utilities/mathUtilities.s: utilities/mathUtilities.cpp.s
+.PHONY : utilities/mathUtilities.s
+
+# target to generate assembly for a file
+utilities/mathUtilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.s
+.PHONY : utilities/mathUtilities.cpp.s
 
 utilities/meshFunctions.o: utilities/meshFunctions.cpp.o
 .PHONY : utilities/meshFunctions.o
@@ -262,17 +559,53 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... ShapeDescriptor"
 	@echo "... fast-lzma2"
+	@echo "... glfw"
 	@echo "... imagerenderer"
 	@echo "... quiccidumper"
 	@echo "... quicciviewer"
 	@echo "... runTests"
 	@echo "... simple_example"
+	@echo "... descriptors/BaseDescriptor.o"
+	@echo "... descriptors/BaseDescriptor.i"
+	@echo "... descriptors/BaseDescriptor.s"
+	@echo "... descriptors/FPFHDescriptorTester.o"
+	@echo "... descriptors/FPFHDescriptorTester.i"
+	@echo "... descriptors/FPFHDescriptorTester.s"
+	@echo "... descriptors/QUICCIDescriptor.o"
+	@echo "... descriptors/QUICCIDescriptor.i"
+	@echo "... descriptors/QUICCIDescriptor.s"
+	@echo "... descriptors/RICIDescriptorTester.o"
+	@echo "... descriptors/RICIDescriptorTester.i"
+	@echo "... descriptors/RICIDescriptorTester.s"
+	@echo "... descriptors/SIDescriptorTester.o"
+	@echo "... descriptors/SIDescriptorTester.i"
+	@echo "... descriptors/SIDescriptorTester.s"
+	@echo "... lib/glad/src/glad.o"
+	@echo "... lib/glad/src/glad.i"
+	@echo "... lib/glad/src/glad.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... meshModifier/meshModifier.o"
+	@echo "... meshModifier/meshModifier.i"
+	@echo "... meshModifier/meshModifier.s"
+	@echo "... openglHandler/openglHandler.o"
+	@echo "... openglHandler/openglHandler.i"
+	@echo "... openglHandler/openglHandler.s"
+	@echo "... openglHandler/openglMesh.o"
+	@echo "... openglHandler/openglMesh.i"
+	@echo "... openglHandler/openglMesh.s"
+	@echo "... utilities/generalUtilities.o"
+	@echo "... utilities/generalUtilities.i"
+	@echo "... utilities/generalUtilities.s"
+	@echo "... utilities/mathUtilities.o"
+	@echo "... utilities/mathUtilities.i"
+	@echo "... utilities/mathUtilities.s"
 	@echo "... utilities/meshFunctions.o"
 	@echo "... utilities/meshFunctions.i"
 	@echo "... utilities/meshFunctions.s"

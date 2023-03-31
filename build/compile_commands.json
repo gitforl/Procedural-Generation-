@@ -1,13 +1,148 @@
 [
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
-  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -o CMakeFiles/simple_example.dir/main.cpp.o -c /lhome/lukashg/Procedural-Generation-/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/main.cpp.o -c /lhome/lukashg/Procedural-Generation-/main.cpp",
   "file": "/lhome/lukashg/Procedural-Generation-/main.cpp"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
-  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -o CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp",
   "file": "/lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/generalUtilities.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/utilities/generalUtilities.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/BaseDescriptor.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/descriptors/BaseDescriptor.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/QUICCIDescriptor.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/descriptors/QUICCIDescriptor.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/RICIDescriptorTester.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/descriptors/RICIDescriptorTester.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/SIDescriptorTester.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/descriptors/SIDescriptorTester.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/FPFHDescriptorTester.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/descriptors/FPFHDescriptorTester.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o -c /lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o -c /lhome/lukashg/Procedural-Generation-/openglHandler/openglHandler.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/openglHandler/openglHandler.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o -c /lhome/lukashg/Procedural-Generation-/openglHandler/openglMesh.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/openglHandler/openglMesh.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o -c /lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/context.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/context.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/init.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/init.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/input.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/input.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/monitor.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/monitor.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/vulkan.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/vulkan.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/window.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/window.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_init.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_init.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_monitor.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_window.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/x11_window.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/xkb_unicode.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/posix_time.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/posix_time.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/posix_thread.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/glx_context.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/glx_context.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/egl_context.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/egl_context.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/osmesa_context.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
+  "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/linux_joystick.c",
+  "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/linux_joystick.c"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
@@ -168,6 +303,11 @@
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
   "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp",
   "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",
+  "command": "/usr/bin/g++ -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/glm -I/lhome/lukashg/libShapeDescriptor/lib/lodepng -I/lhome/lukashg/libShapeDescriptor/lib/arrrgh -I/lhome/lukashg/libShapeDescriptor/lib/json -I/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src -I/lhome/lukashg/libShapeDescriptor/lib -I/lhome/lukashg/libShapeDescriptor/lib/fast-obj -g -o CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o -c /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp",
+  "file": "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build/libShapeDescriptor",

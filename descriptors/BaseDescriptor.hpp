@@ -10,6 +10,14 @@
 #include <shapeDescriptor/utilities/copy/mesh.h>
 #include <shapeDescriptor/utilities/copy/array.h>
 
+#include <CGAL/Surface_mesh.h>
+#include <CGAL/Polygon_mesh_processing/self_intersections.h>
+#include <CGAL/Polygon_mesh_processing/IO/polygon_mesh_io.h>
+#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+
+#include <CGAL/Real_timer.h>
+#include <CGAL/tags.h>
+
 #include <utilities/aliases.hpp>
 #include <utilities/meshFunctions.hpp>
 #include <utilities/mathUtilities.hpp>
@@ -40,8 +48,11 @@ class BaseDescriptor {
         virtual void Compare() = 0;
         virtual void ComputeAverageDistance();
         virtual void ComputeStandardDeviation();
+        void ChopUpMesh();
     public:
         virtual void ApplyNoise(float noiseLevel);
-        void RunSingleNoiseTest(float noiseLevel);
-        void RunNoiseTestVaryingLevels(std::vector<float> noiseLevels);
+        void RunNoiseTestAtLevel(float noiseLevel);
+        void RunNoiseTestAtVaryingLevels(std::vector<float> noiseLevels);
+        void MeshSelfIntersects();
+        void CGALMeshTest();
 };

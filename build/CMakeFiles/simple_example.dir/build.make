@@ -97,23 +97,205 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/utilities/meshFunctions.cpp -o CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.s
 
+CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o: ../utilities/mathUtilities.cpp
+CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o -MF CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o.d -o CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp
+
+CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp > CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.i
+
+CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp -o CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.s
+
+CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o: ../utilities/generalUtilities.cpp
+CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o -MF CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o.d -o CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/generalUtilities.cpp
+
+CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/utilities/generalUtilities.cpp > CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.i
+
+CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/utilities/generalUtilities.cpp -o CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.s
+
+CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o: ../descriptors/BaseDescriptor.cpp
+CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o -MF CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o.d -o CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/BaseDescriptor.cpp
+
+CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/descriptors/BaseDescriptor.cpp > CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.i
+
+CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/descriptors/BaseDescriptor.cpp -o CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.s
+
+CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: ../descriptors/QUICCIDescriptor.cpp
+CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o -MF CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o.d -o CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/QUICCIDescriptor.cpp
+
+CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/descriptors/QUICCIDescriptor.cpp > CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.i
+
+CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/descriptors/QUICCIDescriptor.cpp -o CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.s
+
+CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o: ../descriptors/RICIDescriptorTester.cpp
+CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o -MF CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o.d -o CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/RICIDescriptorTester.cpp
+
+CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/descriptors/RICIDescriptorTester.cpp > CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.i
+
+CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/descriptors/RICIDescriptorTester.cpp -o CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.s
+
+CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o: ../descriptors/SIDescriptorTester.cpp
+CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o -MF CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o.d -o CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/SIDescriptorTester.cpp
+
+CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/descriptors/SIDescriptorTester.cpp > CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.i
+
+CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/descriptors/SIDescriptorTester.cpp -o CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.s
+
+CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o: ../descriptors/FPFHDescriptorTester.cpp
+CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o -MF CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o.d -o CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o -c /lhome/lukashg/Procedural-Generation-/descriptors/FPFHDescriptorTester.cpp
+
+CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/descriptors/FPFHDescriptorTester.cpp > CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.i
+
+CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/descriptors/FPFHDescriptorTester.cpp -o CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.s
+
+CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: ../meshModifier/meshModifier.cpp
+CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o -MF CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o.d -o CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o -c /lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp
+
+CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp > CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.i
+
+CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp -o CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.s
+
+CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o: ../openglHandler/openglHandler.cpp
+CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o -MF CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o.d -o CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o -c /lhome/lukashg/Procedural-Generation-/openglHandler/openglHandler.cpp
+
+CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/openglHandler/openglHandler.cpp > CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.i
+
+CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/openglHandler/openglHandler.cpp -o CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.s
+
+CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o: ../openglHandler/openglMesh.cpp
+CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o -MF CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o.d -o CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o -c /lhome/lukashg/Procedural-Generation-/openglHandler/openglMesh.cpp
+
+CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/openglHandler/openglMesh.cpp > CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.i
+
+CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/openglHandler/openglMesh.cpp -o CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.s
+
+CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o: ../lib/glad/src/glad.cpp
+CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o -MF CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o.d -o CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o -c /lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp
+
+CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp > CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.i
+
+CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp -o CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s
+
 # Object files for target simple_example
 simple_example_OBJECTS = \
 "CMakeFiles/simple_example.dir/main.cpp.o" \
-"CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o"
+"CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o" \
+"CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o" \
+"CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o" \
+"CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o" \
+"CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o" \
+"CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o" \
+"CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o" \
+"CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o" \
+"CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o" \
+"CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o" \
+"CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o" \
+"CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o"
 
 # External object files for target simple_example
 simple_example_EXTERNAL_OBJECTS =
 
 simple_example: CMakeFiles/simple_example.dir/main.cpp.o
 simple_example: CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o
+simple_example: CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o
+simple_example: CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o
+simple_example: CMakeFiles/simple_example.dir/descriptors/BaseDescriptor.cpp.o
+simple_example: CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o
+simple_example: CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o
+simple_example: CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.o
+simple_example: CMakeFiles/simple_example.dir/descriptors/FPFHDescriptorTester.cpp.o
+simple_example: CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o
+simple_example: CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o
+simple_example: CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o
+simple_example: CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o
 simple_example: CMakeFiles/simple_example.dir/build.make
 simple_example: libShapeDescriptor/libShapeDescriptor.a
+simple_example: lib/glfw/src/libglfw3.a
 simple_example: /usr/local/cuda/lib64/libcudart_static.a
-simple_example: /usr/lib/x86_64-linux-gnu/librt.a
 simple_example: libShapeDescriptor/fast-lzma2/libfast-lzma2.a
+simple_example: /usr/lib/x86_64-linux-gnu/librt.a
+simple_example: /usr/lib/x86_64-linux-gnu/libm.so
+simple_example: /usr/lib/x86_64-linux-gnu/libX11.so
+simple_example: /usr/lib/x86_64-linux-gnu/libgmpxx.so
+simple_example: /usr/lib/x86_64-linux-gnu/libmpfr.so
+simple_example: /usr/lib/x86_64-linux-gnu/libgmp.so
 simple_example: CMakeFiles/simple_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable simple_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable simple_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

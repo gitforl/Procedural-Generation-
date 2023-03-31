@@ -40,6 +40,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o" "gcc" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp.o.d"
   "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o" "gcc" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o.d"
   "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o" "gcc" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o.d"
+  "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o" "gcc" "libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o.d"
   )
 
 # Targets to which this target links.

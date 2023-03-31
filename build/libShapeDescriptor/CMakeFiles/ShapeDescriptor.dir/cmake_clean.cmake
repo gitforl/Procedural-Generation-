@@ -76,6 +76,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/read/XYZLoader.cpp.o.d"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o"
   "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp.o.d"
+  "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o"
+  "CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/write/XYZWriter.cpp.o.d"
   "libShapeDescriptor.a"
   "libShapeDescriptor.pdb"
 )
