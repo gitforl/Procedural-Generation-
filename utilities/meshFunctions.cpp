@@ -1,6 +1,27 @@
 #include <utilities/meshFunctions.hpp>
 
 
+MeshFunctions::boundingBox::boundingBox(ShapeDescriptor::cpu::Mesh &mesh){
+    for (int i = 0; i < mesh.vertexCount; i++){
+        if(mesh.vertices[i].x < min.x) min.x = mesh.vertices[i].x;
+        if(mesh.vertices[i].y < min.y) min.y = mesh.vertices[i].y;
+        if(mesh.vertices[i].z < min.z) min.z = mesh.vertices[i].z;
+        if(mesh.vertices[i].x > max.x) max.x = mesh.vertices[i].x;
+        if(mesh.vertices[i].y > max.y) max.y = mesh.vertices[i].y;
+        if(mesh.vertices[i].z > max.z) max.z = mesh.vertices[i].z;
+    }
+}
+
+ShapeDescriptor::cpu::float3 MeshFunctions::boundingBox::center(){
+    ShapeDescriptor::cpu::float3 center = (min + max) / 2;
+    return center;
+}
+
+ShapeDescriptor::cpu::float3 MeshFunctions::boundingBox::span(){
+    ShapeDescriptor::cpu::float3 span = max - min;
+    return span;
+}
+
 UIntVector MeshFunctions::FindSimilarVerticesIndices(unsigned int targetIndex, ShapeDescriptor::cpu::Mesh * mesh){
 
     ShapeDescriptor::cpu::float3 targetVertex = mesh->vertices[targetIndex];

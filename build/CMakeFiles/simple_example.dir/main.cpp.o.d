@@ -283,6 +283,7 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h \
  /lhome/lukashg/Procedural-Generation-/./utilities/aliases.hpp \
  /lhome/lukashg/Procedural-Generation-/./utilities/meshFunctions.hpp \
+ /lhome/lukashg/Procedural-Generation-/./utilities/boundingBox.hpp \
  /lhome/lukashg/Procedural-Generation-/./descriptors/BaseDescriptor.hpp \
  /usr/include/CGAL/Surface_mesh.h \
  /usr/include/CGAL/license/Surface_mesh.h /usr/include/CGAL/config.h \
@@ -2051,16 +2052,6 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/./utilities/mathUtilities.hpp \
  /lhome/lukashg/Procedural-Generation-/./descriptors/QUICCIDescriptor.hpp \
  /lhome/lukashg/Procedural-Generation-/./utilities/generalUtilities.hpp \
- /lhome/lukashg/Procedural-Generation-/./descriptors/RICIDescriptorTester.hpp \
- /lhome/lukashg/Procedural-Generation-/./descriptors/SIDescriptorTester.hpp \
- /lhome/lukashg/Procedural-Generation-/./descriptors/FPFHDescriptorTester.hpp \
- /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramSearcher.cuh \
- /lhome/lukashg/Procedural-Generation-/./meshModifier/meshModifier.hpp \
- /lhome/lukashg/Procedural-Generation-/lib/glad/include/glad/glad.h \
- /lhome/lukashg/Procedural-Generation-/lib/glad/include/KHR/khrplatform.h \
- /usr/include/inttypes.h \
- /lhome/lukashg/Procedural-Generation-/lib/glfw/include/GLFW/glfw3.h \
- /usr/include/GL/gl.h \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/glm.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/_fixes.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/setup.hpp \
@@ -2199,6 +2190,16 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/type_half.inl \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/integer.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/func_integer.inl \
+ /lhome/lukashg/Procedural-Generation-/./descriptors/RICIDescriptorTester.hpp \
+ /lhome/lukashg/Procedural-Generation-/./descriptors/SIDescriptorTester.hpp \
+ /lhome/lukashg/Procedural-Generation-/./descriptors/FPFHDescriptorTester.hpp \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramSearcher.cuh \
+ /lhome/lukashg/Procedural-Generation-/./meshModifier/meshModifier.hpp \
+ /lhome/lukashg/Procedural-Generation-/lib/glad/include/glad/glad.h \
+ /lhome/lukashg/Procedural-Generation-/lib/glad/include/KHR/khrplatform.h \
+ /usr/include/inttypes.h \
+ /lhome/lukashg/Procedural-Generation-/lib/glfw/include/GLFW/glfw3.h \
+ /usr/include/GL/gl.h \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/gtc/type_ptr.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/gtc/../gtc/quaternion.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/gtc/../gtc/../gtc/constants.hpp \
@@ -2252,4 +2253,348 @@ CMakeFiles/simple_example.dir/main.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/gtc/type_ptr.inl \
  /lhome/lukashg/Procedural-Generation-/./openglHandler/openglHandler.hpp \
  /lhome/lukashg/Procedural-Generation-/./openglHandler/openglMesh.hpp \
- /lhome/lukashg/Procedural-Generation-/./openglHandler/shader.hpp
+ /lhome/lukashg/Procedural-Generation-/./openglHandler/shader.hpp \
+ /lhome/lukashg/Procedural-Generation-/./meshModifier/model.hpp \
+ /lhome/lukashg/Procedural-Generation-/./utilities/cgalMeshFunctions.hpp \
+ /usr/include/CGAL/Polygon_mesh_processing/intersection.h \
+ /usr/include/CGAL/license/Polygon_mesh_processing/corefinement.h \
+ /usr/include/CGAL/AABB_face_graph_triangle_primitive.h \
+ /usr/include/CGAL/license/AABB_tree.h /usr/include/CGAL/AABB_primitive.h \
+ /usr/include/CGAL/AABB_tree/internal/Has_nested_type_Shared_data.h \
+ /usr/include/CGAL/boost/graph/property_maps.h \
+ /usr/include/CGAL/AABB_traits.h \
+ /usr/include/CGAL/AABB_tree/internal/Is_ray_intersection_geomtraits.h \
+ /usr/include/CGAL/AABB_tree/internal/Primitive_helper.h \
+ /usr/include/CGAL/Kernel_23/internal/Has_boolean_tags.h \
+ /usr/include/CGAL/AABB_tree.h \
+ /usr/include/CGAL/AABB_tree/internal/AABB_traversal_traits.h \
+ /usr/include/CGAL/AABB_tree/internal/AABB_node.h \
+ /usr/include/CGAL/AABB_tree/internal/AABB_search_tree.h \
+ /usr/include/CGAL/Orthogonal_k_neighbor_search.h \
+ /usr/include/CGAL/license/Spatial_searching.h \
+ /usr/include/CGAL/Spatial_searching/internal/K_neighbor_search.h \
+ /usr/include/CGAL/Kd_tree_node.h /usr/include/CGAL/Splitters.h \
+ /usr/include/CGAL/Point_container.h \
+ /usr/include/CGAL/Kd_tree_rectangle.h \
+ /usr/include/CGAL/Spatial_searching/internal/Get_dimension_tag.h \
+ /usr/include/CGAL/Plane_separator.h \
+ /usr/include/CGAL/Compact_container.h /usr/include/CGAL/CC_safe_handle.h \
+ /usr/include/CGAL/Time_stamper.h /usr/include/CGAL/Has_timestamp.h \
+ /usr/include/CGAL/Spatial_searching/internal/Search_helpers.h \
+ /usr/include/CGAL/Kd_tree.h /usr/include/boost/container/deque.hpp \
+ /usr/include/CGAL/mutex.h /usr/include/CGAL/Euclidean_distance.h \
+ /usr/include/CGAL/Spatial_searching/internal/bounded_priority_queue.h \
+ /usr/include/CGAL/Search_traits_3.h /usr/include/boost/lambda/lambda.hpp \
+ /usr/include/boost/lambda/core.hpp \
+ /usr/include/boost/type_traits/transform_traits.hpp \
+ /usr/include/boost/lambda/detail/lambda_config.hpp \
+ /usr/include/boost/lambda/detail/lambda_fwd.hpp \
+ /usr/include/boost/lambda/detail/arity_code.hpp \
+ /usr/include/boost/lambda/detail/actions.hpp \
+ /usr/include/boost/lambda/detail/lambda_traits.hpp \
+ /usr/include/boost/type_traits/object_traits.hpp \
+ /usr/include/boost/lambda/detail/function_adaptors.hpp \
+ /usr/include/boost/lambda/detail/return_type_traits.hpp \
+ /usr/include/boost/lambda/detail/select_functions.hpp \
+ /usr/include/boost/lambda/detail/lambda_functor_base.hpp \
+ /usr/include/boost/lambda/detail/lambda_functors.hpp \
+ /usr/include/boost/is_placeholder.hpp \
+ /usr/include/boost/lambda/detail/ret.hpp \
+ /usr/include/boost/lambda/detail/operator_actions.hpp \
+ /usr/include/boost/lambda/detail/operator_lambda_func_base.hpp \
+ /usr/include/boost/lambda/detail/operator_return_type_traits.hpp \
+ /usr/include/boost/lambda/detail/is_instance_of.hpp \
+ /usr/include/boost/preprocessor/repeat_2nd.hpp \
+ /usr/include/boost/indirect_reference.hpp \
+ /usr/include/boost/detail/is_incrementable.hpp \
+ /usr/include/boost/type_traits/detail/bool_trait_undef.hpp \
+ /usr/include/boost/pointee.hpp \
+ /usr/include/boost/lambda/detail/operators.hpp \
+ /usr/include/boost/lambda/detail/member_ptr.hpp \
+ /usr/include/CGAL/AABB_tree/internal/AABB_ray_intersection.h \
+ /usr/include/boost/heap/priority_queue.hpp /usr/include/c++/11/queue \
+ /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/boost/heap/detail/heap_comparison.hpp \
+ /usr/include/boost/heap/heap_concepts.hpp \
+ /usr/include/boost/heap/detail/stable_heap.hpp \
+ /usr/include/boost/heap/policies.hpp \
+ /usr/include/boost/parameter/name.hpp \
+ /usr/include/boost/parameter/aux_/name.hpp \
+ /usr/include/boost/parameter/value_type.hpp \
+ /usr/include/boost/parameter/aux_/void.hpp \
+ /usr/include/boost/parameter/config.hpp \
+ /usr/include/boost/mp11/integral.hpp /usr/include/boost/mp11/version.hpp \
+ /usr/include/boost/mp11/list.hpp \
+ /usr/include/boost/mp11/detail/mp_list.hpp \
+ /usr/include/boost/mp11/detail/mp_is_list.hpp \
+ /usr/include/boost/mp11/detail/mp_append.hpp \
+ /usr/include/boost/mp11/utility.hpp \
+ /usr/include/boost/mp11/detail/mp_fold.hpp \
+ /usr/include/boost/mp11/detail/config.hpp \
+ /usr/include/boost/parameter/aux_/is_placeholder.hpp \
+ /usr/include/boost/mp11/bind.hpp /usr/include/boost/mp11/algorithm.hpp \
+ /usr/include/boost/mp11/set.hpp /usr/include/boost/mp11/function.hpp \
+ /usr/include/boost/mp11/detail/mp_count.hpp \
+ /usr/include/boost/mp11/detail/mp_plus.hpp \
+ /usr/include/boost/mp11/detail/mp_min_element.hpp \
+ /usr/include/boost/mp11/detail/mp_void.hpp \
+ /usr/include/boost/mp11/detail/mp_copy_if.hpp \
+ /usr/include/boost/mp11/detail/mp_remove_if.hpp \
+ /usr/include/boost/mp11/detail/mp_map_find.hpp \
+ /usr/include/boost/mp11/detail/mp_with_index.hpp \
+ /usr/include/boost/mp11/integer_sequence.hpp \
+ /usr/include/boost/parameter/aux_/result_of0.hpp \
+ /usr/include/boost/parameter/aux_/use_default_tag.hpp \
+ /usr/include/boost/parameter/aux_/lambda_tag.hpp \
+ /usr/include/boost/parameter/binding.hpp \
+ /usr/include/boost/parameter/keyword.hpp \
+ /usr/include/boost/parameter/aux_/tag.hpp \
+ /usr/include/boost/parameter/aux_/unwrap_cv_reference.hpp \
+ /usr/include/boost/parameter/aux_/yesno.hpp \
+ /usr/include/boost/parameter/aux_/preprocessor/nullptr.hpp \
+ /usr/include/boost/parameter/aux_/tagged_argument.hpp \
+ /usr/include/boost/parameter/keyword_fwd.hpp \
+ /usr/include/boost/parameter/aux_/tagged_argument_fwd.hpp \
+ /usr/include/boost/parameter/aux_/is_tagged_argument.hpp \
+ /usr/include/boost/parameter/aux_/default.hpp \
+ /usr/include/boost/parameter/aux_/arg_list.hpp \
+ /usr/include/boost/parameter/aux_/is_maybe.hpp \
+ /usr/include/boost/parameter/aux_/parameter_requirements.hpp \
+ /usr/include/boost/parameter/aux_/pack/parameter_requirements.hpp \
+ /usr/include/boost/parameter/aux_/augment_predicate.hpp \
+ /usr/include/boost/parameter/aux_/has_nested_template_fn.hpp \
+ /usr/include/boost/mpl/has_key_fwd.hpp \
+ /usr/include/boost/mpl/count_fwd.hpp \
+ /usr/include/boost/mpl/key_type_fwd.hpp \
+ /usr/include/boost/mpl/value_type_fwd.hpp \
+ /usr/include/boost/mpl/order_fwd.hpp \
+ /usr/include/boost/parameter/aux_/preprocessor/qualifier.hpp \
+ /usr/include/boost/preprocessor/facilities/is_empty.hpp \
+ /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
+ /usr/include/boost/preprocessor/punctuation/is_begin_parens.hpp \
+ /usr/include/boost/preprocessor/punctuation/detail/is_begin_parens.hpp \
+ /usr/include/boost/preprocessor/facilities/detail/is_empty.hpp \
+ /usr/include/boost/parameter/aux_/preprocessor/is_binary.hpp \
+ /usr/include/boost/parameter/template_keyword.hpp \
+ /usr/include/boost/parameter/aux_/template_keyword.hpp \
+ /usr/include/boost/parameter/parameters.hpp \
+ /usr/include/boost/parameter/aux_/pack/make_arg_list.hpp \
+ /usr/include/boost/parameter/aux_/pack/unmatched_argument.hpp \
+ /usr/include/boost/parameter/aux_/pack/tag_type.hpp \
+ /usr/include/boost/parameter/deduced.hpp \
+ /usr/include/boost/parameter/aux_/use_default.hpp \
+ /usr/include/boost/parameter/required.hpp \
+ /usr/include/boost/parameter/optional.hpp \
+ /usr/include/boost/parameter/aux_/pack/is_named_argument.hpp \
+ /usr/include/boost/parameter/aux_/pack/insert_tagged.hpp \
+ /usr/include/boost/parameter/aux_/set.hpp \
+ /usr/include/boost/parameter/aux_/pack/deduce_tag.hpp \
+ /usr/include/boost/parameter/aux_/pack/tag_deduced.hpp \
+ /usr/include/boost/parameter/aux_/pack/make_parameter_spec_items.hpp \
+ /usr/include/boost/parameter/aux_/pack/make_deduced_items.hpp \
+ /usr/include/boost/parameter/aux_/pack/deduced_item.hpp \
+ /usr/include/boost/parameter/aux_/pack/satisfies.hpp \
+ /usr/include/boost/parameter/aux_/pack/as_parameter_requirements.hpp \
+ /usr/include/boost/parameter/aux_/pack/predicate.hpp \
+ /usr/include/boost/parameter/aux_/always_true_predicate.hpp \
+ /usr/include/boost/parameter/aux_/pack/make_items.hpp \
+ /usr/include/boost/parameter/aux_/pack/item.hpp \
+ /usr/include/boost/parameter/aux_/pack/tag_keyword_arg.hpp \
+ /usr/include/boost/parameter/aux_/pack/tag_template_keyword_arg.hpp \
+ /usr/include/boost/heap/heap_merge.hpp \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_impl.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_callbacks.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/Intersection_type.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_of_coplanar_triangles_3.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_nodes.h \
+ /usr/include/CGAL/Exact_predicates_exact_constructions_kernel.h \
+ /usr/include/CGAL/Lazy_kernel.h \
+ /usr/include/CGAL/Static_filtered_predicate.h \
+ /usr/include/CGAL/Epic_converter.h \
+ /usr/include/CGAL/Filtered_kernel/Cartesian_coordinate_iterator_2.h \
+ /usr/include/CGAL/Filtered_kernel/Cartesian_coordinate_iterator_3.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersect_triangle_and_segment_3.h \
+ /usr/include/CGAL/Polygon_mesh_processing/Non_manifold_feature_map.h \
+ /usr/include/boost/unordered_set.hpp \
+ /usr/include/boost/unordered/unordered_set.hpp \
+ /usr/include/boost/unordered/detail/set.hpp \
+ /usr/include/boost/unordered/unordered_set_fwd.hpp \
+ /usr/include/CGAL/Polygon_mesh_processing/bbox.h \
+ /usr/include/CGAL/license/Polygon_mesh_processing/miscellaneous.h \
+ /usr/include/CGAL/Polygon_mesh_processing/connected_components.h \
+ /usr/include/CGAL/license/Polygon_mesh_processing/connected_components.h \
+ /usr/include/CGAL/boost/graph/Face_filtered_graph.h \
+ /usr/include/boost/iterator/filter_iterator.hpp \
+ /usr/include/CGAL/boost/graph/Dual.h \
+ /usr/include/CGAL/Side_of_triangle_mesh.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Side_of_triangle_mesh/Point_inside_vertical_ray_cast.h \
+ /usr/include/CGAL/Polygon_mesh_processing/internal/Side_of_triangle_mesh/Ray_3_Triangle_3_traversal_traits.h \
+ /usr/include/boost/logic/tribool.hpp \
+ /usr/include/boost/logic/tribool_fwd.hpp \
+ /usr/include/CGAL/point_generators_3.h /usr/include/CGAL/generators.h \
+ /usr/include/CGAL/point_generators_2.h \
+ /usr/include/CGAL/Generator/internal/Generic_random_point_generator.h \
+ /usr/include/CGAL/Polygon_mesh_processing/transform.h \
+ /usr/include/CGAL/Surface_mesh_simplification/edge_collapse.h \
+ /usr/include/CGAL/license/Surface_mesh_simplification.h \
+ /usr/include/CGAL/Surface_mesh_simplification/internal/Common.h \
+ /usr/include/boost/iterator_adaptors.hpp /usr/include/boost/format.hpp \
+ /usr/include/boost/format/detail/compat_workarounds.hpp \
+ /usr/include/boost/format/detail/config_macros.hpp \
+ /usr/include/boost/format/detail/workarounds_gcc-2_95.hpp \
+ /usr/include/boost/format/detail/workarounds_stlport.hpp \
+ /usr/include/boost/format/format_fwd.hpp \
+ /usr/include/boost/format/internals_fwd.hpp \
+ /usr/include/boost/format/internals.hpp \
+ /usr/include/boost/core/ignore_unused.hpp \
+ /usr/include/boost/format/alt_sstream.hpp \
+ /usr/include/boost/shared_ptr.hpp \
+ /usr/include/boost/format/alt_sstream_impl.hpp \
+ /usr/include/boost/format/format_class.hpp \
+ /usr/include/boost/format/exceptions.hpp \
+ /usr/include/boost/format/format_implementation.hpp \
+ /usr/include/boost/format/group.hpp \
+ /usr/include/boost/format/feed_args.hpp \
+ /usr/include/boost/format/detail/msvc_disambiguater.hpp \
+ /usr/include/boost/format/parsing.hpp \
+ /usr/include/boost/format/free_funcs.hpp \
+ /usr/include/boost/format/detail/unset_macros.hpp \
+ /usr/include/boost/graph/adjacency_list.hpp \
+ /usr/include/boost/scoped_ptr.hpp \
+ /usr/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/include/boost/graph/graph_mutability_traits.hpp \
+ /usr/include/boost/graph/graph_selectors.hpp \
+ /usr/include/boost/graph/detail/edge.hpp \
+ /usr/include/boost/graph/named_graph.hpp \
+ /usr/include/boost/multi_index/hashed_index.hpp \
+ /usr/include/boost/multi_index/detail/access_specifier.hpp \
+ /usr/include/boost/multi_index/detail/adl_swap.hpp \
+ /usr/include/boost/multi_index/detail/allocator_traits.hpp \
+ /usr/include/boost/multi_index/detail/auto_space.hpp \
+ /usr/include/boost/multi_index/detail/bucket_array.hpp \
+ /usr/include/boost/multi_index/detail/hash_index_node.hpp \
+ /usr/include/boost/multi_index/detail/raw_ptr.hpp \
+ /usr/include/boost/archive/archive_exception.hpp \
+ /usr/include/boost/archive/detail/decl.hpp \
+ /usr/include/boost/archive/detail/abi_prefix.hpp \
+ /usr/include/boost/config/abi_prefix.hpp \
+ /usr/include/boost/archive/detail/abi_suffix.hpp \
+ /usr/include/boost/config/abi_suffix.hpp \
+ /usr/include/boost/serialization/access.hpp \
+ /usr/include/boost/multi_index/detail/do_not_copy_elements_tag.hpp \
+ /usr/include/boost/multi_index/detail/hash_index_iterator.hpp \
+ /usr/include/boost/serialization/nvp.hpp \
+ /usr/include/boost/serialization/level.hpp \
+ /usr/include/boost/serialization/level_enum.hpp \
+ /usr/include/boost/serialization/tracking.hpp \
+ /usr/include/boost/serialization/tracking_enum.hpp \
+ /usr/include/boost/serialization/type_info_implementation.hpp \
+ /usr/include/boost/serialization/traits.hpp \
+ /usr/include/boost/serialization/split_free.hpp \
+ /usr/include/boost/serialization/serialization.hpp \
+ /usr/include/boost/serialization/strong_typedef.hpp \
+ /usr/include/boost/serialization/wrapper.hpp \
+ /usr/include/boost/serialization/base_object.hpp \
+ /usr/include/boost/serialization/force_include.hpp \
+ /usr/include/boost/serialization/void_cast_fwd.hpp \
+ /usr/include/boost/serialization/split_member.hpp \
+ /usr/include/boost/serialization/version.hpp \
+ /usr/include/boost/multi_index/detail/index_node_base.hpp \
+ /usr/include/boost/multi_index/detail/ignore_wstrict_aliasing.hpp \
+ /usr/include/boost/multi_index/detail/restore_wstrict_aliasing.hpp \
+ /usr/include/boost/multi_index/detail/modify_key_adaptor.hpp \
+ /usr/include/boost/multi_index/detail/node_handle.hpp \
+ /usr/include/boost/multi_index_container_fwd.hpp \
+ /usr/include/boost/multi_index/identity.hpp \
+ /usr/include/boost/multi_index/identity_fwd.hpp \
+ /usr/include/boost/multi_index/indexed_by.hpp \
+ /usr/include/boost/preprocessor/control/expr_if.hpp \
+ /usr/include/boost/multi_index/ordered_index_fwd.hpp \
+ /usr/include/boost/multi_index/detail/ord_index_args.hpp \
+ /usr/include/boost/multi_index/tag.hpp \
+ /usr/include/boost/multi_index/detail/no_duplicate_tags.hpp \
+ /usr/include/boost/mpl/set/set0.hpp \
+ /usr/include/boost/mpl/set/aux_/at_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/has_key_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/tag.hpp \
+ /usr/include/boost/mpl/aux_/overload_names.hpp \
+ /usr/include/boost/mpl/aux_/ptr_to_ref.hpp \
+ /usr/include/boost/mpl/aux_/config/operators.hpp \
+ /usr/include/boost/mpl/set/aux_/clear_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/set0.hpp \
+ /usr/include/boost/mpl/set/aux_/size_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/empty_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/insert_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/item.hpp /usr/include/boost/mpl/base.hpp \
+ /usr/include/boost/mpl/set/aux_/insert_range_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/erase_impl.hpp \
+ /usr/include/boost/mpl/erase_fwd.hpp \
+ /usr/include/boost/mpl/set/aux_/erase_key_impl.hpp \
+ /usr/include/boost/mpl/erase_key_fwd.hpp \
+ /usr/include/boost/mpl/set/aux_/key_type_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/value_type_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/begin_end_impl.hpp \
+ /usr/include/boost/mpl/set/aux_/iterator.hpp \
+ /usr/include/boost/mpl/has_key.hpp \
+ /usr/include/boost/mpl/aux_/has_key_impl.hpp \
+ /usr/include/boost/multi_index/detail/ord_index_impl_fwd.hpp \
+ /usr/include/boost/multi_index/detail/define_if_constexpr_macro.hpp \
+ /usr/include/boost/multi_index/detail/undef_if_constexpr_macro.hpp \
+ /usr/include/boost/multi_index/detail/promotes_arg.hpp \
+ /usr/include/boost/multi_index/detail/is_transparent.hpp \
+ /usr/include/boost/multi_index/detail/safe_mode.hpp \
+ /usr/include/boost/multi_index/detail/scope_guard.hpp \
+ /usr/include/boost/multi_index/detail/vartempl_support.hpp \
+ /usr/include/boost/multi_index/hashed_index_fwd.hpp \
+ /usr/include/boost/multi_index/detail/hash_index_args.hpp \
+ /usr/include/boost/multi_index/member.hpp \
+ /usr/include/boost/multi_index_container.hpp \
+ /usr/include/boost/multi_index/detail/base_type.hpp \
+ /usr/include/boost/multi_index/detail/index_base.hpp \
+ /usr/include/boost/multi_index/detail/copy_map.hpp \
+ /usr/include/boost/multi_index/detail/node_type.hpp \
+ /usr/include/boost/mpl/reverse_iter_fold.hpp \
+ /usr/include/boost/mpl/aux_/reverse_iter_fold_impl.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_iter_fold_impl.hpp \
+ /usr/include/boost/multi_index/detail/header_holder.hpp \
+ /usr/include/boost/multi_index/detail/is_index_list.hpp \
+ /usr/include/boost/multi_index/detail/index_loader.hpp \
+ /usr/include/boost/multi_index/detail/index_saver.hpp \
+ /usr/include/boost/multi_index/detail/index_matcher.hpp \
+ /usr/include/boost/multi_index/detail/converter.hpp \
+ /usr/include/boost/multi_index/detail/has_tag.hpp \
+ /usr/include/boost/multi_index/detail/archive_constructed.hpp \
+ /usr/include/boost/multi_index/detail/serialization_version.hpp \
+ /usr/include/boost/serialization/collection_size_type.hpp \
+ /usr/include/boost/serialization/is_bitwise_serializable.hpp \
+ /usr/include/boost/pending/container_traits.hpp \
+ /usr/include/boost/graph/detail/adjacency_list.hpp \
+ /usr/include/boost/range/irange.hpp \
+ /usr/include/boost/graph/graph_concepts.hpp \
+ /usr/include/boost/graph/numeric_values.hpp \
+ /usr/include/boost/graph/buffer_concepts.hpp \
+ /usr/include/boost/typeof/typeof.hpp \
+ /usr/include/boost/typeof/message.hpp \
+ /usr/include/boost/typeof/decltype.hpp \
+ /usr/include/boost/graph/detail/adj_list_edge_iterator.hpp \
+ /usr/include/boost/graph/adjacency_iterator.hpp \
+ /usr/include/CGAL/Surface_mesh_simplification/internal/Edge_collapse.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/Edge_profile.h \
+ /usr/include/CGAL/Modifiable_priority_queue.h \
+ /usr/include/CGAL/STL_Extension/internal/boost/mutable_queue.hpp \
+ /usr/include/CGAL/STL_Extension/internal/boost/mutable_heap.hpp \
+ /usr/include/CGAL/STL_Extension/internal/boost/array_binary_tree.hpp \
+ /usr/include/boost/scoped_array.hpp \
+ /usr/include/boost/smart_ptr/scoped_array.hpp \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/LindstromTurk.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/LindstromTurk_cost.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/internal/Lindstrom_Turk_core.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/internal/LindstromTurk_params.h \
+ /usr/include/CGAL/Cartesian/MatrixC33.h /usr/include/CGAL/Null_matrix.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/LindstromTurk_placement.h \
+ /usr/include/CGAL/Surface_mesh_simplification/Policies/Edge_collapse/Count_ratio_stop_predicate.h \
+ /usr/include/CGAL/Timer.h /usr/include/CGAL/Timer_impl.h \
+ /usr/include/x86_64-linux-gnu/sys/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
+ /lhome/lukashg/Procedural-Generation-/./meshModifier/cgalMesh.hpp

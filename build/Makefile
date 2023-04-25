@@ -408,6 +408,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+meshModifier/cgalMesh.o: meshModifier/cgalMesh.cpp.o
+.PHONY : meshModifier/cgalMesh.o
+
+# target to build an object file
+meshModifier/cgalMesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.o
+.PHONY : meshModifier/cgalMesh.cpp.o
+
+meshModifier/cgalMesh.i: meshModifier/cgalMesh.cpp.i
+.PHONY : meshModifier/cgalMesh.i
+
+# target to preprocess a source file
+meshModifier/cgalMesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.i
+.PHONY : meshModifier/cgalMesh.cpp.i
+
+meshModifier/cgalMesh.s: meshModifier/cgalMesh.cpp.s
+.PHONY : meshModifier/cgalMesh.s
+
+# target to generate assembly for a file
+meshModifier/cgalMesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.s
+.PHONY : meshModifier/cgalMesh.cpp.s
+
 meshModifier/meshModifier.o: meshModifier/meshModifier.cpp.o
 .PHONY : meshModifier/meshModifier.o
 
@@ -431,6 +455,30 @@ meshModifier/meshModifier.s: meshModifier/meshModifier.cpp.s
 meshModifier/meshModifier.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.s
 .PHONY : meshModifier/meshModifier.cpp.s
+
+meshModifier/model.o: meshModifier/model.cpp.o
+.PHONY : meshModifier/model.o
+
+# target to build an object file
+meshModifier/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/model.cpp.o
+.PHONY : meshModifier/model.cpp.o
+
+meshModifier/model.i: meshModifier/model.cpp.i
+.PHONY : meshModifier/model.i
+
+# target to preprocess a source file
+meshModifier/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/model.cpp.i
+.PHONY : meshModifier/model.cpp.i
+
+meshModifier/model.s: meshModifier/model.cpp.s
+.PHONY : meshModifier/model.s
+
+# target to generate assembly for a file
+meshModifier/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/meshModifier/model.cpp.s
+.PHONY : meshModifier/model.cpp.s
 
 openglHandler/openglHandler.o: openglHandler/openglHandler.cpp.o
 .PHONY : openglHandler/openglHandler.o
@@ -479,6 +527,54 @@ openglHandler/openglMesh.s: openglHandler/openglMesh.cpp.s
 openglHandler/openglMesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.s
 .PHONY : openglHandler/openglMesh.cpp.s
+
+utilities/boundingBox.o: utilities/boundingBox.cpp.o
+.PHONY : utilities/boundingBox.o
+
+# target to build an object file
+utilities/boundingBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.o
+.PHONY : utilities/boundingBox.cpp.o
+
+utilities/boundingBox.i: utilities/boundingBox.cpp.i
+.PHONY : utilities/boundingBox.i
+
+# target to preprocess a source file
+utilities/boundingBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.i
+.PHONY : utilities/boundingBox.cpp.i
+
+utilities/boundingBox.s: utilities/boundingBox.cpp.s
+.PHONY : utilities/boundingBox.s
+
+# target to generate assembly for a file
+utilities/boundingBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.s
+.PHONY : utilities/boundingBox.cpp.s
+
+utilities/cgalMeshFunctions.o: utilities/cgalMeshFunctions.cpp.o
+.PHONY : utilities/cgalMeshFunctions.o
+
+# target to build an object file
+utilities/cgalMeshFunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.o
+.PHONY : utilities/cgalMeshFunctions.cpp.o
+
+utilities/cgalMeshFunctions.i: utilities/cgalMeshFunctions.cpp.i
+.PHONY : utilities/cgalMeshFunctions.i
+
+# target to preprocess a source file
+utilities/cgalMeshFunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.i
+.PHONY : utilities/cgalMeshFunctions.cpp.i
+
+utilities/cgalMeshFunctions.s: utilities/cgalMeshFunctions.cpp.s
+.PHONY : utilities/cgalMeshFunctions.s
+
+# target to generate assembly for a file
+utilities/cgalMeshFunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.s
+.PHONY : utilities/cgalMeshFunctions.cpp.s
 
 utilities/generalUtilities.o: utilities/generalUtilities.cpp.o
 .PHONY : utilities/generalUtilities.o
@@ -591,15 +687,27 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... meshModifier/cgalMesh.o"
+	@echo "... meshModifier/cgalMesh.i"
+	@echo "... meshModifier/cgalMesh.s"
 	@echo "... meshModifier/meshModifier.o"
 	@echo "... meshModifier/meshModifier.i"
 	@echo "... meshModifier/meshModifier.s"
+	@echo "... meshModifier/model.o"
+	@echo "... meshModifier/model.i"
+	@echo "... meshModifier/model.s"
 	@echo "... openglHandler/openglHandler.o"
 	@echo "... openglHandler/openglHandler.i"
 	@echo "... openglHandler/openglHandler.s"
 	@echo "... openglHandler/openglMesh.o"
 	@echo "... openglHandler/openglMesh.i"
 	@echo "... openglHandler/openglMesh.s"
+	@echo "... utilities/boundingBox.o"
+	@echo "... utilities/boundingBox.i"
+	@echo "... utilities/boundingBox.s"
+	@echo "... utilities/cgalMeshFunctions.o"
+	@echo "... utilities/cgalMeshFunctions.i"
+	@echo "... utilities/cgalMeshFunctions.s"
 	@echo "... utilities/generalUtilities.o"
 	@echo "... utilities/generalUtilities.i"
 	@echo "... utilities/generalUtilities.s"

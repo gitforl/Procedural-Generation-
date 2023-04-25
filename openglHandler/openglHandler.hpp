@@ -16,6 +16,12 @@
 #include <openglHandler/openglMesh.hpp>
 #include <openglHandler/shader.hpp>
 
+#include <utilities/meshFunctions.hpp>
+#include <utilities/generalUtilities.hpp>
+
+#include <meshModifier/model.hpp>
+#include <utilities/boundingBox.hpp>
+
 class OpenGLHandler {
     private:
         const unsigned int SCR_WIDTH = 800;
@@ -25,13 +31,20 @@ class OpenGLHandler {
         Shader shader;
 
         std::vector<OpenGLMesh> meshes;
+        std::vector<MeshFunctions::boundingBox> boundingBoxes;
+        std::vector<Model> models;
 
+        std::vector<BoundingBoxUtilities::BoundingBoxTree> boundTrees;
+        BoundingBoxUtilities::BoundingBoxTree * currentBoundTreePointer = NULL;
+        
         //Occlusion
 
         glm::vec3 occlusionDetectionCameraPosition = glm::vec3(0.0f, 0.0f, 10.0f);
 
         unsigned int offscreenTextureWidth;
         unsigned int offscreenTextureHeight;
+
+        void DrawLeafBoundingBoxes(BoundingBoxUtilities::BoundingBoxNode * node, glm::mat4 &VP, int lineTransformationLoc, OpenGLMesh &boundMesh);
 
         unsigned int CreateAndBindFrameBuffer();
         unsigned int CreateAndBindFrameBufferTexture();
@@ -46,7 +59,10 @@ class OpenGLHandler {
         OpenGLHandler();
         ~OpenGLHandler();
         void AddMesh(OpenGLMesh mesh);
+        void AddModel(Model model);
+        void AddBoundingBox(ShapeDescriptor::cpu::Mesh mesh);
         void CreateMeshFromVisibleTriangles();
+        void AddBoundTree(BoundingBoxUtilities::BoundingBoxTree &tree);
         void Draw();
 
 };

@@ -4,6 +4,9 @@
 #include <vector>
 #include <iostream>
 
+#include <glm/glm.hpp>
+#include <shapeDescriptor/cpu/types/float3.h>
+
 namespace GeneralUtilities{
 
     template <typename T>
@@ -14,4 +17,5 @@ namespace GeneralUtilities{
             std::cout << element << std::endl;
         }
     }
+
 }

@@ -6,6 +6,8 @@ find_package(CUDA REQUIRED)
 # Add main.cpp file of project root directory as source file
 set(SOURCE_FILES main.cpp
                  utilities/meshFunctions.cpp
+                 utilities/boundingBox.cpp
+                 utilities/cgalMeshFunctions.cpp
                  utilities/mathUtilities.cpp
                  utilities/generalUtilities.cpp
                  descriptors/BaseDescriptor.cpp
@@ -14,6 +16,8 @@ set(SOURCE_FILES main.cpp
                  descriptors/SIDescriptorTester.cpp
                  descriptors/FPFHDescriptorTester.cpp
                  meshModifier/meshModifier.cpp
+                 meshModifier/model.cpp
+                 meshModifier/cgalMesh.cpp
                  openglHandler/openglHandler.cpp
                  openglHandler/openglMesh.cpp
                  lib/glad/src/glad.cpp

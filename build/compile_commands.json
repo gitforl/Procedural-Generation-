@@ -11,6 +11,16 @@
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/boundingBox.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/utilities/boundingBox.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/cgalMeshFunctions.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/utilities/cgalMeshFunctions.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o -c /lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp",
   "file": "/lhome/lukashg/Procedural-Generation-/utilities/mathUtilities.cpp"
 },
@@ -48,6 +58,16 @@
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o -c /lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp",
   "file": "/lhome/lukashg/Procedural-Generation-/meshModifier/meshModifier.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/meshModifier/model.cpp.o -c /lhome/lukashg/Procedural-Generation-/meshModifier/model.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/meshModifier/model.cpp"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -frounding-math -o CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.o -c /lhome/lukashg/Procedural-Generation-/meshModifier/cgalMesh.cpp",
+  "file": "/lhome/lukashg/Procedural-Generation-/meshModifier/cgalMesh.cpp"
 },
 {
   "directory": "/lhome/lukashg/Procedural-Generation-/build",
