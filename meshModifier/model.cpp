@@ -6,9 +6,9 @@ inline ShapeDescriptor::cpu::float3 convertVec3ToFloat3(glm::vec3 vector)
     return {vector.x, vector.y, vector.z};
 }
 
-Model::Model(ShapeDescriptor::cpu::Mesh &mesh, glm::vec3 position):
+Model::Model(ShapeDescriptor::cpu::Mesh &mesh, glm::vec3 position, meshTypes meshType):
 mesh(mesh),
-openGlmesh(OpenGLMesh(mesh, meshTypes::Occlusion)),
+openGlmesh(OpenGLMesh(mesh, meshType)),
 bound(MeshFunctions::boundingBox(mesh)),
 position(position)
 {

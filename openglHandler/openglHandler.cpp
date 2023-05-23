@@ -85,21 +85,32 @@ void OpenGLHandler::AddModel(Model model)
     models.push_back(model);
 }
 
-void OpenGLHandler::AddBoundingBox(ShapeDescriptor::cpu::Mesh mesh)
-{
-    boundingBoxes.push_back(MeshFunctions::boundingBox(mesh));
-}
+// void OpenGLHandler::AddBoundingBox(ShapeDescriptor::cpu::Mesh mesh)
+// {
+//     boundingBoxes.push_back(MeshFunctions::boundingBox(mesh));
+// }
 
 void OpenGLHandler::Draw()
 {
 
+
+    cameraRotation = glm::rotate(cameraRotation, glm::radians(-40.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    cameraRotation = glm::rotate(cameraRotation, glm::radians(-25.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    cameraRotation = glm::rotate(cameraRotation, glm::radians(10.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    distanceFromCenter = 10.0f;
+
     Shader lineShader;
     lineShader.Create("../res/shaders/line.vert", "../res/shaders/line.frag");
+
+
+    Shader basicShader;
+    basicShader.Create("../res/shaders/basicVisualizer.vert", "../res/shaders/basicVisualizer.frag");
 
     shader.Use();
 
     int transformationLoc = glGetUniformLocation(shader.GetId(), "transformation");
     int lineTransformationLoc = glGetUniformLocation(lineShader.GetId(), "transformation");
+    int basicTransformationLoc = glGetUniformLocation(basicShader.GetId(), "transformation");
     // int modelLoc = glGetUniformLocation(shader.GetId(), "model");
     // int viewLoc = glGetUniformLocation(shader.GetId(), "view");
     // int colorLoc = glGetUniformLocation(shader.GetId(), "uColor");
@@ -159,32 +170,26 @@ void OpenGLHandler::Draw()
 
         //
         auto VP = projection * view;
-        // glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        // // glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        // glUniformMatrix4fv(transformationLoc, 1, GL_FALSE, glm::value_ptr(MVP));
 
-        shader.Use();
-        // for(auto mesh : meshes)
-        // {
-        //     auto MVP = VP * glm::translate(glm::mat4(1.0f), mesh.GetPosition());
-        //     glUniformMatrix4fv(transformationLoc, 1, GL_FALSE, glm::value_ptr(MVP));
-        //     mesh.Draw();
-        // }
+        basicShader.Use();
 
         for (auto model : models)
         {
             auto MVP = VP * glm::translate(glm::mat4(1.0f), model.GetPosition());
-            glUniformMatrix4fv(transformationLoc, 1, GL_FALSE, glm::value_ptr(MVP));
+            glUniformMatrix4fv(basicTransformationLoc, 1, GL_FALSE, glm::value_ptr(MVP));
             model.Draw();
         }
 
         lineShader.Use();
 
-        for (auto tree : boundTrees)
+        for (auto model : models)
         {
-            currentBoundTreePointer = &tree;
-            DrawLeafBoundingBoxes(tree.root, VP, lineTransformationLoc, boundMesh);
-            currentBoundTreePointer = NULL;
+            if(model.GetTreePointer() != NULL)
+            {
+                currentBoundTreePointer = model.GetTreePointer();
+                DrawLeafBoundingBoxes(model.GetTreePointer()->root, VP, lineTransformationLoc, boundMesh);
+                currentBoundTreePointer = NULL;
+            }
 
         }
 
@@ -200,7 +205,7 @@ void OpenGLHandler::Draw()
     }
 }
 
-void OpenGLHandler::CreateMeshFromVisibleTriangles()
+void OpenGLHandler::CreateMeshWithOcclusion(ShapeDescriptor::cpu::Mesh &mesh)//, std::unordered_map<size_t, size_t> *mapping)
 {
 
     // Copy of Bart's
@@ -223,8 +228,8 @@ void OpenGLHandler::CreateMeshFromVisibleTriangles()
 
     // draw
 
-    auto mesh = ShapeDescriptor::utilities::loadOBJ("../objects/T100.obj", true);
-    auto openglMesh = OpenGLMesh(mesh);
+    // auto mesh = ShapeDescriptor::utilities::loadOBJ("../objects/T100.obj", true);
+    auto openglMesh = OpenGLMesh(mesh, meshTypes::Occlusion);
     openglMesh.Draw();
 
     std::cout << "Object Drawn" << std::endl;
@@ -249,10 +254,14 @@ void OpenGLHandler::CreateMeshFromVisibleTriangles()
 
     ShapeDescriptor::cpu::Mesh outMesh(mesh.vertexCount);
 
-    ConstructMeshFromVisibleTriangles(mesh, outMesh, triangleAppearsInImage);
+    MeshFunctions::ConstructMeshFromVisibleTriangles(mesh, outMesh, triangleAppearsInImage, mapping);
 
     std::cout << "New mesh computed" << std::endl;
 
+    CleanUpOcclusionDetection(fbo, texture, rbo);
+
+    mesh = outMesh.clone();
+    mesh.vertexCount = outMesh.vertexCount;
     //
 
     ShapeDescriptor::dump::mesh(outMesh, "../objects/OCCLUDED2.obj");
@@ -278,11 +287,6 @@ void OpenGLHandler::DrawLeafBoundingBoxes(BoundingBoxUtilities::BoundingBoxNode 
         glUniformMatrix4fv(lineTransformationLoc, 1, GL_FALSE, glm::value_ptr(MVP));
         boundMesh.Draw();
     }
-}
-
-void OpenGLHandler::AddBoundTree(BoundingBoxUtilities::BoundingBoxTree &tree)
-{
-    boundTrees.push_back(tree);
 }
 
 unsigned int OpenGLHandler::CreateAndBindFrameBuffer()
@@ -331,7 +335,7 @@ void OpenGLHandler::SetupOcclusionDetectionShader()
 {
     shader.Use();
 
-    glm::mat4 view = glm::lookAt(occlusionDetectionCameraPosition, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::mat4 view = glm::lookAt(viewPoint, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
     glm::mat4 transformation = projection * view;
     int transformationLoc = glGetUniformLocation(shader.GetId(), "transformation");
@@ -360,7 +364,7 @@ void OpenGLHandler::CheckIfTriangleAppearsInImage(std::vector<unsigned char> &lo
     }
 }
 
-void OpenGLHandler::ConstructMeshFromVisibleTriangles(ShapeDescriptor::cpu::Mesh mesh, ShapeDescriptor::cpu::Mesh outMesh, std::vector<bool> &triangleAppearsInImage)
+void OpenGLHandler::ConstructMeshFromVisibleTriangles(ShapeDescriptor::cpu::Mesh &mesh, ShapeDescriptor::cpu::Mesh &outMesh, std::vector<bool> &triangleAppearsInImage)
 {
     unsigned int visibleVertexCount = 0;
     for (unsigned int triangle = 0; triangle < triangleAppearsInImage.size(); triangle++)
@@ -380,4 +384,24 @@ void OpenGLHandler::ConstructMeshFromVisibleTriangles(ShapeDescriptor::cpu::Mesh
     }
 
     std::cout << "Visible count: " << visibleVertexCount << std::endl;
+}
+
+void OpenGLHandler::CleanUpOcclusionDetection(
+    unsigned int &fbo,
+    unsigned int &texture,
+    unsigned int &rbo
+    )
+{
+
+    glDeleteFramebuffers(1, &fbo);
+    glDeleteTextures(1, &texture);
+    glDeleteRenderbuffers(1, &rbo);
+
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
+}
+
+OcclusionProvider &OpenGLHandler::GetOcclusionProvider()
+{
+    return dynamic_cast<OcclusionProvider&>(*this);
 }

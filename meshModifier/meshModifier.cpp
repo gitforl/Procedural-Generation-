@@ -1,23 +1,14 @@
 #include "meshModifier.hpp"
 
-MeshModifier::MeshModifier(std::string objSrcPath):
-objSrcPath(objSrcPath)
+
+void MeshModifier::ApplyNoiseToMesh(ShapeDescriptor::cpu::Mesh &mesh, float maxDistance, std::unordered_map<size_t, size_t> *mapping)
 {
-    mesh = ShapeDescriptor::utilities::loadOBJ(objSrcPath, true);
-    std::cout << "Mesh Modifier created" << std::endl;
+    auto vertexMap = MeshFunctions::MapVertexIndices(&mesh);
+    MeshFunctions::MoveVerticesAlongAverageNormal(&mesh, vertexMap, maxDistance);
 }
 
-MeshModifier::~MeshModifier(){
-    std::cout << "Mesh Modifier destroyed" << std::endl;
-}
 
-void MeshModifier::CheckMesh(){
-    std::cout << "number of vertices: " << mesh.vertexCount << std::endl;
+void ApplyOcclusionToMesh(ShapeDescriptor::cpu::Mesh &mesh, float maxDistance, std::unordered_map<size_t, size_t> *mapping)
+{
 
-    // indices = array[]
-
-    // for(int i = 0; i < mesh.vertexCount; i += 3)
-    // {
-
-    // }
 }

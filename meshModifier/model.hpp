@@ -16,7 +16,7 @@ class Model {
         BoundingBoxUtilities::BoundingBoxTree *treePointer = NULL;
 
     public:
-        Model(ShapeDescriptor::cpu::Mesh &mesh, glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f));
+        Model(ShapeDescriptor::cpu::Mesh &mesh, glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), meshTypes meshType = meshTypes::Occlusion);
         ShapeDescriptor::cpu::Mesh& GetMesh();
         BoundingBoxUtilities::BoundingBoxTree* GetTreePointer();
         glm::vec3 GetBoundCenter();

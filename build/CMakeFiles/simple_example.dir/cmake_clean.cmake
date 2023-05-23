@@ -27,6 +27,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.o.d"
   "CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.o"
   "CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.o.d"
+  "CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.o"
+  "CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.o.d"
+  "CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.o"
+  "CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.o.d"
   "CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o"
   "CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o.d"
   "CMakeFiles/simple_example.dir/utilities/mathUtilities.cpp.o"
@@ -38,6 +42,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang CUDA CXX)
   include(CMakeFiles/simple_example.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

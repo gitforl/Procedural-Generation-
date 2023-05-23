@@ -2,20 +2,17 @@
 
 #include <iostream>
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include <utilities/aliases.hpp>
+#include <utilities/meshFunctions.hpp>
+#include <shapeDescriptor/cpu/types/Mesh.h>
+#include <shapeDescriptor/utilities/read/MeshLoadUtils.h>
 
-#include <shapeDescriptor/utilities/read/OBJLoader.h>
-#include <shapeDescriptor/utilities/free/mesh.h>
+#include <unordered_map>
 
-class MeshModifier {
-    private:
-        std::string objSrcPath;
-        ShapeDescriptor::cpu::Mesh mesh;
-    public:
-        MeshModifier(std::string objSrcPath);
-        ~MeshModifier();
-        void CheckMesh();
+namespace MeshModifier {
+    
+    void ApplyNoiseToMesh(ShapeDescriptor::cpu::Mesh &mesh, float maxDistance = 0.0f, std::unordered_map<size_t, size_t> *mapping = nullptr);
+    void ApplyOcclusionToMesh(ShapeDescriptor::cpu::Mesh &mesh, float maxDistance = 0.0f, std::unordered_map<size_t, size_t> *mapping = nullptr);
+    void ApplyClutterToMesh(ShapeDescriptor::cpu::Mesh &mesh, float maxDistance = 0.0f, std::unordered_map<size_t, size_t> *mapping = nullptr);
+
 };

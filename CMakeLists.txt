@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.13)  # CMake version check
+# set(CMAKE_CUDA_ARCHITECTURES 70)
 project(simple_example LANGUAGES CXX CUDA)               # Create project "simple_example"
 set(CMAKE_CXX_STANDARD 17)            # Enable c++14 standard
 find_package(CUDA REQUIRED)
@@ -10,6 +11,8 @@ set(SOURCE_FILES main.cpp
                  utilities/cgalMeshFunctions.cpp
                  utilities/mathUtilities.cpp
                  utilities/generalUtilities.cpp
+                 utilities/descriptorDistance.cpp
+                 utilities/descriptorDistance.cu
                  descriptors/BaseDescriptor.cpp
                  descriptors/QUICCIDescriptor.cpp
                  descriptors/RICIDescriptorTester.cpp
@@ -22,7 +25,6 @@ set(SOURCE_FILES main.cpp
                  openglHandler/openglMesh.cpp
                  lib/glad/src/glad.cpp
     )
-
 
 #
 # GLFW options
@@ -58,6 +60,11 @@ set(CGAL_DO_NOT_WARN_ABOUT_CMAKE_BUILD_TYPE TRUE)
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(simple_example ${SOURCE_FILES})
 target_link_libraries(simple_example PRIVATE ShapeDescriptor glfw)
+
+find_package(OpenMP REQUIRED)
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(simple_example PUBLIC OpenMP::OpenMP_CXX)
+endif()
 
 if(CGAL_FOUND)
     target_link_libraries(simple_example PUBLIC CGAL::CGAL)

@@ -8,6 +8,10 @@ objSrcPath(objSrcPath) {
 
     vertexMap = MeshFunctions::MapVertexIndices(&mesh);
 }
+BaseDescriptor::BaseDescriptor()
+{
+    std::cout << "partial init of base descriptor" << std::endl;
+}
 
 void BaseDescriptor::InitializeMesh() {
     mesh = ShapeDescriptor::utilities::loadOBJ(objSrcPath, true);
@@ -65,6 +69,8 @@ void BaseDescriptor::RunNoiseTestAtVaryingLevels(std::vector<float> noiseLevels)
         std::cout << "standard deviation: " << standardDeviation << std::endl;
     }
 }
+
+
 
 void BaseDescriptor::MeshSelfIntersects(){
     CGAL::Surface_mesh<CGAL::Exact_predicates_inexact_constructions_kernel::Point_3> CGAL_mesh;

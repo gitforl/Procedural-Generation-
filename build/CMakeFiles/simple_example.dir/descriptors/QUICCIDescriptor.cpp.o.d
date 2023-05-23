@@ -2038,6 +2038,9 @@ CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/./utilities/mathUtilities.hpp \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cuh \
  /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h \
  /lhome/lukashg/Procedural-Generation-/./utilities/generalUtilities.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/glm.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/_fixes.hpp \
@@ -2176,4 +2179,7 @@ CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/type_half.hpp \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/type_half.inl \
  /lhome/lukashg/Procedural-Generation-/lib/glm/glm/integer.hpp \
- /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/func_integer.inl
+ /lhome/lukashg/Procedural-Generation-/lib/glm/glm/detail/func_integer.inl \
+ /lhome/lukashg/Procedural-Generation-/./utilities/descriptorDistance.cuh \
+ /lhome/lukashg/Procedural-Generation-/./utilities/descriptorDistance.hpp \
+ /lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh

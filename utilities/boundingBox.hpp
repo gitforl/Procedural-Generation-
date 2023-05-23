@@ -6,53 +6,66 @@
 
 namespace BoundingBoxUtilities{
 
-    namespace GeometricTerms{
+    namespace GeometricTerms
+    {
         enum Axis{X = 0, Y = 1, Z = 2};
     };
 
     struct BoundingBox
     {
-        ShapeDescriptor::cpu::float3 min, max;
         BoundingBox(ShapeDescriptor::cpu::float3 min, ShapeDescriptor::cpu::float3 max);
         BoundingBox(ShapeDescriptor::cpu::float3 * vertices, size_t vertexCount);
+
+        ShapeDescriptor::cpu::float3 min, max;
+
         ShapeDescriptor::cpu::float3 center() const;
         ShapeDescriptor::cpu::float3 span() const;
     };
 
-    struct BoundingBoxNode {
+    struct BoundingBoxNode
+    {
+        BoundingBoxNode(ShapeDescriptor::cpu::float3 min, ShapeDescriptor::cpu::float3 max);
+
         BoundingBox boundingBox;
         BoundingBoxNode *left = NULL;
         BoundingBoxNode *right = NULL;
-        BoundingBoxNode(ShapeDescriptor::cpu::float3 min, ShapeDescriptor::cpu::float3 max);
+
         void SplitBoundingBox(ShapeDescriptor::cpu::float3 * vertices, size_t vertexCount, unsigned int n);
     };
 
-    struct BoundingBoxTree {
+    struct BoundingBoxTree
+    {
+        BoundingBoxTree(ShapeDescriptor::cpu::float3 * vertices, size_t vertexCount, unsigned int depth);
+
         BoundingBoxNode *root;
         ShapeDescriptor::cpu::float3 translation;
         float scale;
-        BoundingBoxTree(ShapeDescriptor::cpu::float3 * vertices, size_t vertexCount, unsigned int depth);
+
         void setTranslation(ShapeDescriptor::cpu::float3 newTranslation);
         void setScale(float newScale);
     };
 
     struct MinimumVolumeBinarySplit
     {
+        MinimumVolumeBinarySplit(ShapeDescriptor::cpu::float3 * vertices, const size_t vertexCount, const BoundingBox &parentBound);
+
         ShapeDescriptor::cpu::float3 * leftArray;
         ShapeDescriptor::cpu::float3 * rightArray;
         size_t leftVertexCount, rightVertexCount;
 
         ShapeDescriptor::cpu::float3 leftMin, leftMax;
         ShapeDescriptor::cpu::float3 rightMin, rightMax;
-        MinimumVolumeBinarySplit(ShapeDescriptor::cpu::float3 * vertices, const size_t vertexCount, const BoundingBox &parentBound);
+
         bool CanSplitFurther();
     };
 
     struct DistanceUntilBoundingBoxesTouchFinder
     {
         DistanceUntilBoundingBoxesTouchFinder(const BoundingBoxTree &movingObjectTree, const BoundingBoxTree &stationaryObjectTree);
+
         float FindMaxDistance(const ShapeDescriptor::cpu::float3 direction, float previousMax = 0.0f);
         float FindMaxDistanceAccelerated(const ShapeDescriptor::cpu::float3 direction, float previousMax = 0.0f);
+        
         private:
             const BoundingBoxTree &movingObjectTree;
             const BoundingBoxTree &stationaryObjectTree;

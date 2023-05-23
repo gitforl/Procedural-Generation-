@@ -237,20 +237,20 @@ BoundingBoxUtilities::MinimumVolumeBinarySplit::MinimumVolumeBinarySplit(ShapeDe
             auto vertex = vertices[i];
             if(Float3LessAlongAxis(vertex, parentCenter, axis)){
 
-                for(auto otherAxis : axes)
+                for(auto vertexComponent : axes)
                 {
-                    UpdateFloat3IfOtherLessAlongAxis(leftMin, vertex, otherAxis);
-                    UpdateFloat3IfOtherGreaterAlongAxis(leftMax, vertex, otherAxis);
+                    UpdateFloat3IfOtherLessAlongAxis(leftMin, vertex, vertexComponent);
+                    UpdateFloat3IfOtherGreaterAlongAxis(leftMax, vertex, vertexComponent);
                 }
 
                 verticesDividedAlongCenter[index] = vertex;
                 index++;
             }
             else {
-                for(auto otherAxis : axes)
+                for(auto vertexComponent : axes)
                 {
-                    UpdateFloat3IfOtherLessAlongAxis(rightMin, vertex, otherAxis);
-                    UpdateFloat3IfOtherGreaterAlongAxis(rightMax, vertex, otherAxis);
+                    UpdateFloat3IfOtherLessAlongAxis(rightMin, vertex, vertexComponent);
+                    UpdateFloat3IfOtherGreaterAlongAxis(rightMax, vertex, vertexComponent);
                 }
 
                 verticesDividedAlongCenter[reverseIndex] = vertices[i];

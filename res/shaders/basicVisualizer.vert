@@ -5,12 +5,11 @@ layout (location = 1) in vec3 aNom;
 
 out vec3 uNom;
 
-uniform mat4 model;
-uniform mat4 view;
+uniform mat4 transformation;
 
 void main()
 {
-   gl_Position = view * vec4(aPos, 1.0);
-   vec4 uN = view * vec4(aNom, 1.0f);
-   uNom = vec3(uN.x, uN.y, uN.z);
+   gl_Position = transformation * vec4(aPos, 1.0);
+   //vec4 uN = transformation * vec4(aNom, 1.0f);
+   uNom = aNom;//vec3(uN.x, uN.y, uN.z);
 }

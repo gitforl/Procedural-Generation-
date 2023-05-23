@@ -55,7 +55,8 @@ void OpenGLMesh::occlusionMeshInit(ShapeDescriptor::cpu::Mesh &mesh)
     vertexCount = mesh.vertexCount;
     unsigned int triangleCount = vertexCount / 3;
 
-    float data[mesh.vertexCount * 6];
+    std::vector<float> data;
+    data.reserve(mesh.vertexCount * 6);
 
     float scaler = 0.01;
 
@@ -67,13 +68,14 @@ void OpenGLMesh::occlusionMeshInit(ShapeDescriptor::cpu::Mesh &mesh)
 
         for(unsigned int j = 0; j < 3; j++)
         {
-            data[i * 18 + j * 6 + 0] = scaler * mesh.vertices[i * 3 + j].x;
-            data[i * 18 + j * 6 + 1] = scaler * mesh.vertices[i * 3 + j].y;
-            data[i * 18 + j * 6 + 2] = scaler * mesh.vertices[i * 3 + j].z;
 
-            data[i * 18 + j * 6 + 3] = red;
-            data[i * 18 + j * 6 + 4] = green;
-            data[i * 18 + j * 6 + 5] = blue;
+            data.emplace_back( scaler * mesh.vertices[i * 3 + j].x );
+            data.emplace_back( scaler * mesh.vertices[i * 3 + j].y );
+            data.emplace_back( scaler * mesh.vertices[i * 3 + j].z );
+
+            data.emplace_back( red );
+            data.emplace_back( green );
+            data.emplace_back( blue );
         }
     }
 
@@ -83,7 +85,7 @@ void OpenGLMesh::occlusionMeshInit(ShapeDescriptor::cpu::Mesh &mesh)
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(data), data, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(float), &data.front(), GL_STATIC_DRAW);
 
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
@@ -101,15 +103,18 @@ void OpenGLMesh::simpleMeshInit(ShapeDescriptor::cpu::Mesh &mesh, float scaler){
 
     float vertices[mesh.vertexCount * 6];
 
+    std::vector<float> data;
+    data.reserve(mesh.vertexCount * 6);
+
     for(int i = 0; i < mesh.vertexCount; i++)
     {
-        vertices[i * 6 + 0] = scaler * mesh.vertices[i].x;
-        vertices[i * 6 + 1] = scaler * mesh.vertices[i].y;
-        vertices[i * 6 + 2] = scaler * mesh.vertices[i].z;
+        data.emplace_back( scaler * mesh.vertices[i].x );
+        data.emplace_back( scaler * mesh.vertices[i].y );
+        data.emplace_back( scaler * mesh.vertices[i].z );
 
-        vertices[i * 6 + 3] = scaler * mesh.normals[i].x;
-        vertices[i * 6 + 4] = scaler * mesh.normals[i].y;
-        vertices[i * 6 + 5] = scaler * mesh.normals[i].z;
+        data.emplace_back( mesh.normals[i].x );
+        data.emplace_back( mesh.normals[i].y );
+        data.emplace_back( mesh.normals[i].z );
     }
 
     glGenVertexArrays(1, &VAO);
@@ -118,7 +123,7 @@ void OpenGLMesh::simpleMeshInit(ShapeDescriptor::cpu::Mesh &mesh, float scaler){
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(float), &data.front(), GL_STATIC_DRAW);
 
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);

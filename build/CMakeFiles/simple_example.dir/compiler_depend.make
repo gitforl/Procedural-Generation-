@@ -6765,6 +6765,9 @@ CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: ../descriptors
   ../utilities/mathUtilities.hpp \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cuh \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h \
   ../utilities/generalUtilities.hpp \
   ../lib/glm/glm/glm.hpp \
   ../lib/glm/glm/detail/_fixes.hpp \
@@ -6903,7 +6906,10 @@ CMakeFiles/simple_example.dir/descriptors/QUICCIDescriptor.cpp.o: ../descriptors
   ../lib/glm/glm/detail/type_half.hpp \
   ../lib/glm/glm/detail/type_half.inl \
   ../lib/glm/glm/integer.hpp \
-  ../lib/glm/glm/detail/func_integer.inl
+  ../lib/glm/glm/detail/func_integer.inl \
+  ../utilities/descriptorDistance.cuh \
+  ../utilities/descriptorDistance.hpp \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh
 
 CMakeFiles/simple_example.dir/descriptors/RICIDescriptorTester.cpp.o: ../descriptors/RICIDescriptorTester.cpp \
   /usr/include/stdc-predef.h \
@@ -11801,6 +11807,11 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h \
   ../utilities/aliases.hpp \
   ../utilities/meshFunctions.hpp \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   ../utilities/boundingBox.hpp \
   ../descriptors/BaseDescriptor.hpp \
   /usr/include/CGAL/Surface_mesh.h \
@@ -11980,11 +11991,6 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
@@ -13873,11 +13879,15 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   ../lib/glm/glm/detail/type_half.inl \
   ../lib/glm/glm/integer.hpp \
   ../lib/glm/glm/detail/func_integer.inl \
+  ../utilities/descriptorDistance.cuh \
+  ../utilities/descriptorDistance.hpp \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh \
   ../descriptors/RICIDescriptorTester.hpp \
   ../descriptors/SIDescriptorTester.hpp \
   ../descriptors/FPFHDescriptorTester.hpp \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramSearcher.cuh \
   ../meshModifier/meshModifier.hpp \
+  ../openglHandler/openglHandler.hpp \
   ../lib/glad/include/glad/glad.h \
   ../lib/glad/include/KHR/khrplatform.h \
   /usr/include/inttypes.h \
@@ -13934,7 +13944,6 @@ CMakeFiles/simple_example.dir/main.cpp.o: ../main.cpp \
   ../lib/glm/glm/ext/vector_uint1.hpp \
   ../lib/glm/glm/ext/vector_uint1_precision.hpp \
   ../lib/glm/glm/gtc/type_ptr.inl \
-  ../openglHandler/openglHandler.hpp \
   ../openglHandler/openglMesh.hpp \
   ../openglHandler/shader.hpp \
   ../meshModifier/model.hpp \
@@ -14482,13 +14491,26 @@ CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: ../meshModifier/m
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../lib/glad/include/glad/glad.h \
-  ../lib/glad/include/KHR/khrplatform.h \
-  /usr/include/inttypes.h \
-  ../lib/glfw/include/GLFW/glfw3.h \
-  /usr/include/GL/gl.h \
-  ../lib/glm/glm/glm.hpp \
-  ../lib/glm/glm/detail/_fixes.hpp \
+  ../utilities/aliases.hpp \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -14514,12 +14536,25 @@ CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: ../meshModifier/m
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  ../lib/glm/glm/detail/setup.hpp \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
+  /usr/local/cuda/include/vector_types.h \
+  /usr/local/cuda/include/crt/host_defines.h \
+  ../utilities/meshFunctions.hpp \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
   /usr/include/c++/11/cstddef \
-  ../lib/glm/glm/simd/platform.h \
-  /usr/include/c++/11/climits \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+  /usr/local/cuda/include/cuda_runtime_api.h \
+  /usr/local/cuda/include/builtin_types.h \
+  /usr/local/cuda/include/device_types.h \
+  /usr/local/cuda/include/driver_types.h \
+  /usr/local/cuda/include/vector_types.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
   /usr/include/limits.h \
@@ -14529,262 +14564,28 @@ CMakeFiles/simple_example.dir/meshModifier/meshModifier.cpp.o: ../meshModifier/m
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/c++/11/cfloat \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  ../lib/glm/glm/fwd.hpp \
-  ../lib/glm/glm/detail/qualifier.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/vec2.hpp \
-  ../lib/glm/glm/ext/vector_bool2.hpp \
-  ../lib/glm/glm/detail/type_vec2.hpp \
-  ../lib/glm/glm/detail/type_vec2.inl \
-  ../lib/glm/glm/detail/compute_vector_relational.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/ext/vector_bool2_precision.hpp \
-  ../lib/glm/glm/ext/vector_float2.hpp \
-  ../lib/glm/glm/ext/vector_float2_precision.hpp \
-  ../lib/glm/glm/ext/vector_double2.hpp \
-  ../lib/glm/glm/ext/vector_double2_precision.hpp \
-  ../lib/glm/glm/ext/vector_int2.hpp \
-  ../lib/glm/glm/ext/vector_int2_precision.hpp \
-  ../lib/glm/glm/ext/vector_uint2.hpp \
-  ../lib/glm/glm/ext/vector_uint2_precision.hpp \
-  ../lib/glm/glm/vec3.hpp \
-  ../lib/glm/glm/ext/vector_bool3.hpp \
-  ../lib/glm/glm/detail/type_vec3.hpp \
-  ../lib/glm/glm/detail/type_vec3.inl \
-  ../lib/glm/glm/ext/vector_bool3_precision.hpp \
-  ../lib/glm/glm/ext/vector_float3.hpp \
-  ../lib/glm/glm/ext/vector_float3_precision.hpp \
-  ../lib/glm/glm/ext/vector_double3.hpp \
-  ../lib/glm/glm/ext/vector_double3_precision.hpp \
-  ../lib/glm/glm/ext/vector_int3.hpp \
-  ../lib/glm/glm/ext/vector_int3_precision.hpp \
-  ../lib/glm/glm/ext/vector_uint3.hpp \
-  ../lib/glm/glm/ext/vector_uint3_precision.hpp \
-  ../lib/glm/glm/vec4.hpp \
-  ../lib/glm/glm/ext/vector_bool4.hpp \
-  ../lib/glm/glm/detail/type_vec4.hpp \
-  ../lib/glm/glm/detail/type_vec4.inl \
-  ../lib/glm/glm/ext/vector_bool4_precision.hpp \
-  ../lib/glm/glm/ext/vector_float4.hpp \
-  ../lib/glm/glm/ext/vector_float4_precision.hpp \
-  ../lib/glm/glm/ext/vector_double4.hpp \
-  ../lib/glm/glm/ext/vector_double4_precision.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/ext/vector_int4.hpp \
-  ../lib/glm/glm/ext/vector_int4_precision.hpp \
-  ../lib/glm/glm/ext/vector_uint4.hpp \
-  ../lib/glm/glm/ext/vector_uint4_precision.hpp \
-  ../lib/glm/glm/mat2x2.hpp \
-  ../lib/glm/glm/ext/matrix_double2x2.hpp \
-  ../lib/glm/glm/detail/type_mat2x2.hpp \
-  ../lib/glm/glm/detail/type_mat2x2.inl \
-  ../lib/glm/glm/matrix.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/mat2x3.hpp \
-  ../lib/glm/glm/ext/matrix_double2x3.hpp \
-  ../lib/glm/glm/detail/type_mat2x3.hpp \
-  ../lib/glm/glm/detail/type_mat2x3.inl \
-  ../lib/glm/glm/ext/matrix_double2x3_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float2x3.hpp \
-  ../lib/glm/glm/ext/matrix_float2x3_precision.hpp \
-  ../lib/glm/glm/mat2x4.hpp \
-  ../lib/glm/glm/ext/matrix_double2x4.hpp \
-  ../lib/glm/glm/detail/type_mat2x4.hpp \
-  ../lib/glm/glm/detail/type_mat2x4.inl \
-  ../lib/glm/glm/ext/matrix_double2x4_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float2x4.hpp \
-  ../lib/glm/glm/ext/matrix_float2x4_precision.hpp \
-  ../lib/glm/glm/mat3x2.hpp \
-  ../lib/glm/glm/ext/matrix_double3x2.hpp \
-  ../lib/glm/glm/detail/type_mat3x2.hpp \
-  ../lib/glm/glm/detail/type_mat3x2.inl \
-  ../lib/glm/glm/ext/matrix_double3x2_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float3x2.hpp \
-  ../lib/glm/glm/ext/matrix_float3x2_precision.hpp \
-  ../lib/glm/glm/mat3x3.hpp \
-  ../lib/glm/glm/ext/matrix_double3x3.hpp \
-  ../lib/glm/glm/detail/type_mat3x3.hpp \
-  ../lib/glm/glm/detail/type_mat3x3.inl \
-  ../lib/glm/glm/ext/matrix_double3x3_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float3x3.hpp \
-  ../lib/glm/glm/ext/matrix_float3x3_precision.hpp \
-  ../lib/glm/glm/mat3x4.hpp \
-  ../lib/glm/glm/ext/matrix_double3x4.hpp \
-  ../lib/glm/glm/detail/type_mat3x4.hpp \
-  ../lib/glm/glm/detail/type_mat3x4.inl \
-  ../lib/glm/glm/ext/matrix_double3x4_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float3x4.hpp \
-  ../lib/glm/glm/ext/matrix_float3x4_precision.hpp \
-  ../lib/glm/glm/mat4x2.hpp \
-  ../lib/glm/glm/ext/matrix_double4x2.hpp \
-  ../lib/glm/glm/detail/type_mat4x2.hpp \
-  ../lib/glm/glm/detail/type_mat4x2.inl \
-  ../lib/glm/glm/ext/matrix_double4x2_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float4x2.hpp \
-  ../lib/glm/glm/ext/matrix_float4x2_precision.hpp \
-  ../lib/glm/glm/mat4x3.hpp \
-  ../lib/glm/glm/ext/matrix_double4x3.hpp \
-  ../lib/glm/glm/detail/type_mat4x3.hpp \
-  ../lib/glm/glm/detail/type_mat4x3.inl \
-  ../lib/glm/glm/ext/matrix_double4x3_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float4x3.hpp \
-  ../lib/glm/glm/ext/matrix_float4x3_precision.hpp \
-  ../lib/glm/glm/mat4x4.hpp \
-  ../lib/glm/glm/ext/matrix_double4x4.hpp \
-  ../lib/glm/glm/detail/type_mat4x4.hpp \
-  ../lib/glm/glm/detail/type_mat4x4.inl \
-  ../lib/glm/glm/ext/matrix_double4x4_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float4x4.hpp \
-  ../lib/glm/glm/ext/matrix_float4x4_precision.hpp \
-  ../lib/glm/glm/detail/func_matrix.inl \
-  ../lib/glm/glm/geometric.hpp \
-  ../lib/glm/glm/detail/func_geometric.inl \
-  ../lib/glm/glm/exponential.hpp \
-  ../lib/glm/glm/detail/type_vec1.hpp \
-  ../lib/glm/glm/detail/type_vec1.inl \
-  ../lib/glm/glm/detail/func_exponential.inl \
-  ../lib/glm/glm/vector_relational.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/detail/func_vector_relational.inl \
-  ../lib/glm/glm/detail/_vectorize.hpp \
-  ../lib/glm/glm/common.hpp \
-  ../lib/glm/glm/detail/_fixes.hpp \
-  ../lib/glm/glm/detail/func_common.inl \
-  ../lib/glm/glm/detail/compute_common.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/ext/matrix_double2x2_precision.hpp \
-  ../lib/glm/glm/ext/matrix_float2x2.hpp \
-  ../lib/glm/glm/ext/matrix_float2x2_precision.hpp \
-  ../lib/glm/glm/trigonometric.hpp \
-  ../lib/glm/glm/detail/func_trigonometric.inl \
-  ../lib/glm/glm/packing.hpp \
-  ../lib/glm/glm/detail/func_packing.inl \
-  ../lib/glm/glm/detail/type_half.hpp \
-  ../lib/glm/glm/detail/type_half.inl \
-  ../lib/glm/glm/integer.hpp \
-  ../lib/glm/glm/detail/func_integer.inl \
-  ../lib/glm/glm/gtc/type_ptr.hpp \
-  ../lib/glm/glm/gtc/quaternion.hpp \
-  ../lib/glm/glm/gtc/constants.hpp \
-  ../lib/glm/glm/ext/scalar_constants.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/ext/scalar_constants.inl \
-  ../lib/glm/glm/gtc/constants.inl \
-  ../lib/glm/glm/gtc/matrix_transform.hpp \
-  ../lib/glm/glm/ext/matrix_projection.hpp \
-  ../lib/glm/glm/ext/matrix_projection.inl \
-  ../lib/glm/glm/ext/matrix_clip_space.hpp \
-  ../lib/glm/glm/ext/matrix_clip_space.inl \
-  ../lib/glm/glm/ext/matrix_transform.hpp \
-  ../lib/glm/glm/ext/matrix_transform.inl \
-  ../lib/glm/glm/gtc/matrix_transform.inl \
-  ../lib/glm/glm/ext/vector_relational.hpp \
-  ../lib/glm/glm/ext/vector_relational.inl \
-  ../lib/glm/glm/detail/type_float.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/ext/quaternion_common.hpp \
-  ../lib/glm/glm/ext/quaternion_geometric.hpp \
-  ../lib/glm/glm/ext/quaternion_geometric.inl \
-  ../lib/glm/glm/ext/quaternion_common.inl \
-  ../lib/glm/glm/ext/quaternion_float.hpp \
-  ../lib/glm/glm/detail/type_quat.hpp \
-  ../lib/glm/glm/ext/quaternion_relational.hpp \
-  ../lib/glm/glm/ext/quaternion_relational.inl \
-  ../lib/glm/glm/detail/type_quat.inl \
-  ../lib/glm/glm/ext/quaternion_float_precision.hpp \
-  ../lib/glm/glm/ext/quaternion_double.hpp \
-  ../lib/glm/glm/ext/quaternion_double_precision.hpp \
-  ../lib/glm/glm/ext/quaternion_trigonometric.hpp \
-  ../lib/glm/glm/ext/quaternion_trigonometric.inl \
-  ../lib/glm/glm/ext/quaternion_transform.hpp \
-  ../lib/glm/glm/ext/quaternion_transform.inl \
-  ../lib/glm/glm/gtc/quaternion.inl \
-  ../lib/glm/glm/gtc/epsilon.hpp \
-  ../lib/glm/glm/detail/setup.hpp \
-  ../lib/glm/glm/gtc/epsilon.inl \
-  ../lib/glm/glm/gtc/vec1.hpp \
-  ../lib/glm/glm/ext/vector_bool1.hpp \
-  ../lib/glm/glm/ext/vector_bool1_precision.hpp \
-  ../lib/glm/glm/ext/vector_float1.hpp \
-  ../lib/glm/glm/ext/vector_float1_precision.hpp \
-  ../lib/glm/glm/ext/vector_double1.hpp \
-  ../lib/glm/glm/ext/vector_double1_precision.hpp \
-  ../lib/glm/glm/ext/vector_int1.hpp \
-  ../lib/glm/glm/ext/vector_int1_precision.hpp \
-  ../lib/glm/glm/ext/vector_uint1.hpp \
-  ../lib/glm/glm/ext/vector_uint1_precision.hpp \
-  /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  ../lib/glm/glm/gtc/type_ptr.inl \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.h \
-  /usr/include/c++/11/filesystem \
-  /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/bits/fs_path.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
-  /usr/local/cuda/include/cuda_runtime_api.h \
-  /usr/local/cuda/include/crt/host_defines.h \
-  /usr/local/cuda/include/builtin_types.h \
-  /usr/local/cuda/include/device_types.h \
-  /usr/local/cuda/include/driver_types.h \
-  /usr/local/cuda/include/vector_types.h \
   /usr/local/cuda/include/surface_types.h \
   /usr/local/cuda/include/texture_types.h \
   /usr/local/cuda/include/cuda_device_runtime_api.h \
   /usr/local/cuda/include/device_launch_parameters.h \
   /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
   /usr/include/c++/11/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
   /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
-  /usr/local/cuda/include/vector_types.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h
 
 CMakeFiles/simple_example.dir/meshModifier/model.cpp.o: ../meshModifier/model.cpp \
   /usr/include/stdc-predef.h \
@@ -15257,6 +15058,11 @@ CMakeFiles/simple_example.dir/meshModifier/model.cpp.o: ../meshModifier/model.cp
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   ../utilities/boundingBox.hpp
 
 CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o: ../openglHandler/openglHandler.cpp \
@@ -15775,6 +15581,11 @@ CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o: ../openglHandle
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   ../openglHandler/shader.hpp \
   ../utilities/generalUtilities.hpp \
   ../meshModifier/model.hpp \
@@ -16249,7 +16060,12 @@ CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o: ../openglHandler/o
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h
 
 CMakeFiles/simple_example.dir/utilities/boundingBox.cpp.o: ../utilities/boundingBox.cpp \
   /usr/include/stdc-predef.h \
@@ -19265,6 +19081,621 @@ CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.o: ../utilities/cg
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
   ../utilities/boundingBox.hpp
 
+CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.o: ../utilities/descriptorDistance.cpp \
+  /usr/include/stdc-predef.h \
+  ../utilities/descriptorDistance.hpp \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/string \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/local/cuda/include/cuda_runtime.h \
+  /usr/local/cuda/include/crt/host_config.h \
+  /usr/local/cuda/include/builtin_types.h \
+  /usr/local/cuda/include/device_types.h \
+  /usr/local/cuda/include/crt/host_defines.h \
+  /usr/local/cuda/include/driver_types.h \
+  /usr/local/cuda/include/vector_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/local/cuda/include/surface_types.h \
+  /usr/local/cuda/include/texture_types.h \
+  /usr/local/cuda/include/library_types.h \
+  /usr/local/cuda/include/channel_descriptor.h \
+  /usr/local/cuda/include/cuda_runtime_api.h \
+  /usr/local/cuda/include/cuda_device_runtime_api.h \
+  /usr/local/cuda/include/driver_functions.h \
+  /usr/local/cuda/include/vector_functions.h \
+  /usr/local/cuda/include/vector_functions.hpp \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
+  /usr/local/cuda/include/cuda_runtime_api.h \
+  /usr/local/cuda/include/device_launch_parameters.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
+  /usr/local/cuda/include/vector_types.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+  /usr/include/c++/11/iostream \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/QUICCIDescriptor.h
+
+CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.o: ../utilities/descriptorDistance.cu \
+  /usr/include/stdc-predef.h \
+  /usr/local/cuda/include/cuda_runtime.h \
+  /usr/local/cuda/include/crt/host_config.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/local/cuda/include/builtin_types.h \
+  /usr/local/cuda/include/device_types.h \
+  /usr/local/cuda/include/crt/host_defines.h \
+  /usr/local/cuda/include/driver_types.h \
+  /usr/local/cuda/include/vector_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/local/cuda/include/surface_types.h \
+  /usr/local/cuda/include/texture_types.h \
+  /usr/local/cuda/include/library_types.h \
+  /usr/local/cuda/include/channel_descriptor.h \
+  /usr/local/cuda/include/cuda_runtime_api.h \
+  /usr/local/cuda/include/cuda_device_runtime_api.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/local/cuda/include/driver_functions.h \
+  /usr/local/cuda/include/vector_functions.h \
+  /usr/local/cuda/include/vector_functions.hpp \
+  /usr/local/cuda/include/crt/common_functions.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/assert.h \
+  /usr/local/cuda/include/crt/math_functions.h \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/local/cuda/include/crt/math_functions.hpp \
+  /usr/local/cuda/include/crt/device_functions.h \
+  /usr/local/cuda/include/crt/device_functions.hpp \
+  /usr/local/cuda/include/device_atomic_functions.h \
+  /usr/local/cuda/include/device_atomic_functions.hpp \
+  /usr/local/cuda/include/crt/device_double_functions.h \
+  /usr/local/cuda/include/crt/device_double_functions.hpp \
+  /usr/local/cuda/include/sm_20_atomic_functions.h \
+  /usr/local/cuda/include/sm_20_atomic_functions.hpp \
+  /usr/local/cuda/include/sm_32_atomic_functions.h \
+  /usr/local/cuda/include/sm_32_atomic_functions.hpp \
+  /usr/local/cuda/include/sm_35_atomic_functions.h \
+  /usr/local/cuda/include/sm_60_atomic_functions.h \
+  /usr/local/cuda/include/sm_60_atomic_functions.hpp \
+  /usr/local/cuda/include/sm_20_intrinsics.h \
+  /usr/local/cuda/include/sm_20_intrinsics.hpp \
+  /usr/local/cuda/include/sm_30_intrinsics.h \
+  /usr/local/cuda/include/sm_30_intrinsics.hpp \
+  /usr/local/cuda/include/sm_32_intrinsics.h \
+  /usr/local/cuda/include/sm_32_intrinsics.hpp \
+  /usr/local/cuda/include/sm_35_intrinsics.h \
+  /usr/local/cuda/include/sm_61_intrinsics.h \
+  /usr/local/cuda/include/sm_61_intrinsics.hpp \
+  /usr/local/cuda/include/crt/sm_70_rt.h \
+  /usr/local/cuda/include/crt/sm_70_rt.hpp \
+  /usr/local/cuda/include/crt/sm_80_rt.h \
+  /usr/local/cuda/include/crt/sm_80_rt.hpp \
+  /usr/local/cuda/include/crt/sm_90_rt.h \
+  /usr/local/cuda/include/crt/sm_90_rt.hpp \
+  /usr/local/cuda/include/texture_indirect_functions.h \
+  /usr/local/cuda/include/surface_indirect_functions.h \
+  /usr/local/cuda/include/crt/cudacc_ext.h \
+  /usr/local/cuda/include/device_launch_parameters.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/initializer_list \
+  ../utilities/descriptorDistance.cuh \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_cuda.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_string.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/bitset \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/cassert \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h \
+  /lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common/nvidia/helper_math.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h \
+  /usr/include/c++/11/iostream \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/QUICCIDescriptor.h \
+  ../utilities/descriptorDistance.hpp \
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  ../utilities/aliases.hpp \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h
+
 CMakeFiles/simple_example.dir/utilities/generalUtilities.cpp.o: ../utilities/generalUtilities.cpp \
   /usr/include/stdc-predef.h \
   ../utilities/generalUtilities.hpp \
@@ -20017,12 +20448,41 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
   /usr/include/c++/11/bits/fstream.tcc \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h \
   /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h \
-  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h
+  /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h
 
 
 ../utilities/mathUtilities.cpp:
 
 ../utilities/generalUtilities.cpp:
+
+/usr/local/cuda/include/crt/cudacc_ext.h:
+
+/usr/local/cuda/include/texture_indirect_functions.h:
+
+/usr/local/cuda/include/crt/sm_80_rt.h:
+
+/usr/local/cuda/include/crt/sm_70_rt.hpp:
+
+/usr/local/cuda/include/sm_32_intrinsics.hpp:
+
+/usr/local/cuda/include/sm_30_intrinsics.hpp:
+
+/usr/local/cuda/include/sm_60_atomic_functions.hpp:
+
+/usr/local/cuda/include/sm_60_atomic_functions.h:
+
+/usr/local/cuda/include/sm_35_atomic_functions.h:
+
+/usr/local/cuda/include/crt/device_functions.h:
+
+/usr/local/cuda/include/crt/math_functions.h:
+
+../utilities/descriptorDistance.cpp:
 
 ../utilities/cgalMeshFunctions.cpp:
 
@@ -20150,11 +20610,15 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/multi_index/indexed_by.hpp:
 
+/usr/local/cuda/include/sm_32_intrinsics.h:
+
 /usr/include/boost/multi_index/identity_fwd.hpp:
 
 /usr/include/boost/multi_index/identity.hpp:
 
 /usr/include/boost/multi_index_container_fwd.hpp:
+
+/usr/local/cuda/include/sm_61_intrinsics.h:
 
 /usr/include/boost/multi_index/detail/node_handle.hpp:
 
@@ -20434,6 +20898,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 ../utilities/meshFunctions.cpp:
 
+/usr/local/cuda/include/crt/device_functions.hpp:
+
 /usr/include/CGAL/Spatial_searching/internal/Get_dimension_tag.h:
 
 /usr/include/CGAL/Kd_tree_rectangle.h:
@@ -20481,6 +20947,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 ../lib/glm/glm/ext/vector_uint1_precision.hpp:
 
 ../lib/glm/glm/ext/vector_uint1.hpp:
+
+/usr/local/cuda/include/crt/device_double_functions.hpp:
 
 ../lib/glm/glm/ext/vector_int1_precision.hpp:
 
@@ -20544,6 +21012,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 ../lib/glm/glm/gtc/quaternion.hpp:
 
+/usr/local/cuda/include/sm_35_intrinsics.h:
+
 /usr/include/boost/parameter/aux_/always_true_predicate.hpp:
 
 ../lib/glfw/include/GLFW/glfw3.h:
@@ -20551,8 +21021,6 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 ../utilities/boundingBox.hpp:
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/3DSCDescriptor.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h:
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h:
 
@@ -20563,8 +21031,6 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/inttypes.h:
 
 ../lib/glad/include/KHR/khrplatform.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h:
 
 /lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageGenerator.cuh:
 
@@ -20628,6 +21094,10 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 ../lib/glm/glm/detail/type_mat4x3.inl:
 
+../lib/glm/glm/detail/type_mat4x3.hpp:
+
+../lib/glm/glm/mat4x3.hpp:
+
 /usr/include/boost/type_traits/has_divides.hpp:
 
 /usr/include/boost/type_traits/has_plus.hpp:
@@ -20677,6 +21147,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/pending/property.hpp:
 
 /usr/include/boost/serialization/level_enum.hpp:
+
+../utilities/descriptorDistance.cuh:
 
 /usr/include/CGAL/Distance_3/Segment_3_Segment_3.h:
 
@@ -20767,6 +21239,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/mpl/distance.hpp:
 
 /usr/include/CGAL/Cache.h:
+
+/usr/local/cuda/include/sm_20_intrinsics.hpp:
 
 /usr/include/boost/mpl/size.hpp:
 
@@ -21061,6 +21535,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/mpl/aux_/comparison_op.hpp:
 
 /usr/include/boost/numeric/conversion/detail/meta.hpp:
+
+/usr/local/cuda/include/sm_61_intrinsics.hpp:
 
 /usr/include/boost/mpl/vector.hpp:
 
@@ -21446,6 +21922,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/type_traits/is_function.hpp:
 
+/usr/local/cuda/include/crt/common_functions.h:
+
 /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:
 
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
@@ -21466,9 +21944,13 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/mpl/or.hpp:
 
+/usr/local/cuda/include/sm_32_atomic_functions.hpp:
+
 /usr/include/boost/range/iterator_range_core.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh:
 
 /usr/include/boost/math/policies/policy.hpp:
 
@@ -21665,6 +22147,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/range/detail/extract_optional_type.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+
+/usr/local/cuda/include/crt/sm_90_rt.h:
 
 /usr/include/boost/preprocessor/tuple/eat.hpp:
 
@@ -22188,6 +22672,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/local/cuda/include/device_atomic_functions.hpp:
+
 /usr/include/boost/move/detail/config_end.hpp:
 
 /usr/include/boost/variant/detail/apply_visitor_binary.hpp:
@@ -22207,10 +22693,6 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h:
-
-/usr/include/CGAL/number_type_config.h:
 
 /usr/include/boost/scoped_array.hpp:
 
@@ -22329,6 +22811,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/CGAL/Distance_3/Point_3_Triangle_3.h:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
+
+/usr/local/cuda/include/crt/sm_90_rt.hpp:
 
 /usr/include/stdc-predef.h:
 
@@ -22482,6 +22966,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/mpl/list/aux_/front.hpp:
 
+/usr/local/cuda/include/surface_indirect_functions.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/boost/mpl/aux_/config/preprocessor.hpp:
@@ -22541,6 +23027,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/predef/compiler/visualc.h:
 
 /usr/include/c++/11/unordered_set:
+
+/usr/local/cuda/include/crt/sm_80_rt.hpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
@@ -22806,8 +23294,6 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/features-time64.h:
 
-../lib/glm/glm/mat4x3.hpp:
-
 /usr/include/CGAL/Side_of_triangle_mesh.h:
 
 /usr/include/c++/11/system_error:
@@ -23026,6 +23512,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/c++/11/bits/invoke.h:
 
+/usr/local/cuda/include/device_atomic_functions.h:
+
 /usr/include/boost/predef/architecture/z.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
@@ -23059,6 +23547,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/smart_ptr/detail/yield_k.hpp:
 
 /usr/include/CGAL/assertions_behaviour.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h:
 
 /usr/include/c++/11/bits/functexcept.h:
 
@@ -23484,6 +23974,10 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/math/tools/complex.hpp:
 
+/usr/include/CGAL/number_type_config.h:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h:
+
 /usr/include/CGAL/Filtered_kernel/internal/Static_filters/Static_filter_error.h:
 
 /usr/include/boost/parameter/aux_/pack/deduced_item.hpp:
@@ -23599,6 +24093,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector10.hpp:
 
 /usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/local/cuda/include/sm_30_intrinsics.h:
 
 /usr/include/boost/type_traits/has_greater_equal.hpp:
 
@@ -23938,6 +24434,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
 
+/usr/local/cuda/include/sm_20_atomic_functions.h:
+
 ../lib/glm/glm/ext/matrix_projection.inl:
 
 /usr/include/boost/preprocessor/enum.hpp:
@@ -23987,6 +24485,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/functional/hash_fwd.hpp:
 
 /usr/include/boost/variant/detail/std_hash.hpp:
+
+/usr/local/cuda/include/sm_20_atomic_functions.hpp:
 
 /usr/include/CGAL/Vector_2.h:
 
@@ -24223,6 +24723,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/container_hash/detail/hash_float.hpp:
 
 /usr/include/boost/container_hash/detail/limits.hpp:
+
+/usr/local/cuda/include/sm_32_atomic_functions.h:
 
 /usr/include/boost/integer/static_log2.hpp:
 
@@ -24582,6 +25084,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/boost/multiprecision/detail/functions/constants.hpp:
 
+/usr/local/cuda/include/crt/sm_70_rt.h:
+
 /usr/include/CGAL/Weighted_point_3.h:
 
 /usr/include/CGAL/Vector_3.h:
@@ -24851,6 +25355,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/container/detail/variadic_templates_tools.hpp:
 
 /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Point_2.h:
+
+../utilities/descriptorDistance.cu:
 
 /usr/include/CGAL/Intersections_2/Bbox_2_Ray_2.h:
 
@@ -25272,6 +25778,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/CGAL/Cartesian/predicates_on_points_3.h:
 
+/usr/local/cuda/include/sm_20_intrinsics.h:
+
 /usr/include/CGAL/Cartesian/Aff_transformation_3.h:
 
 /usr/include/CGAL/Cartesian/Translation_rep_3.h:
@@ -25384,6 +25892,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 
 /usr/include/c++/11/bits/std_mutex.h:
 
+/usr/local/cuda/include/crt/device_double_functions.h:
+
 /usr/include/boost/random/detail/vector_io.hpp:
 
 /usr/include/CGAL/boost_mp.h:
@@ -25403,6 +25913,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_x_2.h:
 
 /usr/include/boost/multiprecision/detail/generic_interconvert.hpp:
+
+../utilities/descriptorDistance.hpp:
 
 /usr/include/CGAL/Intersections_2/Triangle_2_Triangle_2.h:
 
@@ -25439,6 +25951,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/boost/multiprecision/cpp_int/multiply.hpp:
 
 /usr/include/boost/multiprecision/integer.hpp:
+
+/usr/local/cuda/include/crt/math_functions.hpp:
 
 /usr/include/boost/multiprecision/cpp_int/divide.hpp:
 
@@ -25491,6 +26005,8 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/boost/math/tools/toms748_solve.hpp:
+
+/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h:
 
 /usr/include/CGAL/intersection_2.h:
 
@@ -25697,5 +26213,3 @@ CMakeFiles/simple_example.dir/utilities/meshFunctions.cpp.o: ../utilities/meshFu
 /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Line_3.h:
 
 ../lib/glm/glm/detail/type_mat4x2.inl:
-
-../lib/glm/glm/detail/type_mat4x3.hpp:

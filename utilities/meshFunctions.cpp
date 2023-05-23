@@ -189,3 +189,46 @@ void MeshFunctions::RecomputeVertices(ShapeDescriptor::cpu::Mesh &mesh, StringFl
     mesh.vertexCount *= 4;
 
 }
+
+void MeshFunctions::ConstructMeshFromVisibleTriangles(
+    ShapeDescriptor::cpu::Mesh &mesh,
+    ShapeDescriptor::cpu::Mesh &outMesh,
+    std::vector<bool> &triangleAppearsInImage,
+    std::unordered_map<size_t, size_t> *mapping
+)
+{
+
+    if(mapping != nullptr)
+    {
+        mapping->reserve(mesh.vertexCount);
+        mapping->clear();
+    }
+
+    size_t visibleVertexCount = 0;
+    for (size_t triangle = 0; triangle < triangleAppearsInImage.size(); triangle++)
+    {
+        if (triangleAppearsInImage.at(triangle))
+        {
+            outMesh.vertices[visibleVertexCount + 0] = mesh.vertices[3 * triangle + 0];
+            outMesh.vertices[visibleVertexCount + 1] = mesh.vertices[3 * triangle + 1];
+            outMesh.vertices[visibleVertexCount + 2] = mesh.vertices[3 * triangle + 2];
+
+            outMesh.normals[visibleVertexCount + 0] = mesh.normals[3 * triangle + 0];
+            outMesh.normals[visibleVertexCount + 1] = mesh.normals[3 * triangle + 1];
+            outMesh.normals[visibleVertexCount + 2] = mesh.normals[3 * triangle + 2];
+
+
+            if(mapping != nullptr) {
+                mapping->insert({visibleVertexCount + 0, 3 * triangle + 0});
+                mapping->insert({visibleVertexCount + 1, 3 * triangle + 1});
+                mapping->insert({visibleVertexCount + 2, 3 * triangle + 2});
+            }
+
+            visibleVertexCount += 3;
+        }
+    }
+
+    outMesh.vertexCount = visibleVertexCount;
+
+    std::cout << "Visible count: " << visibleVertexCount << std::endl;
+}

@@ -25,6 +25,7 @@
 class BaseDescriptor {
     protected:
         BaseDescriptor(std::string objSrcPath);
+        BaseDescriptor();
 
         std::string objSrcPath;
         ShapeDescriptor::cpu::Mesh mesh;
@@ -48,9 +49,9 @@ class BaseDescriptor {
         virtual void Compare() = 0;
         virtual void ComputeAverageDistance();
         virtual void ComputeStandardDeviation();
-        void ChopUpMesh();
     public:
         virtual void ApplyNoise(float noiseLevel);
+        virtual void computeElementWiseDistances(BaseDescriptor &otherDescriptor){};
         void RunNoiseTestAtLevel(float noiseLevel);
         void RunNoiseTestAtVaryingLevels(std::vector<float> noiseLevels);
         void MeshSelfIntersects();

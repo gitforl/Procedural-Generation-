@@ -22,7 +22,30 @@
 #include <meshModifier/model.hpp>
 #include <utilities/boundingBox.hpp>
 
-class OpenGLHandler {
+class OcclusionProvider {
+
+    protected:
+
+        std::unordered_map<size_t, size_t> *mapping = nullptr;
+        glm::vec3 viewPoint = glm::vec3(0.0f, 0.0f, 10.0f);
+
+    public:
+
+        void SetViewPoint(glm::vec3 newViewPoint)
+        {
+            viewPoint = newViewPoint;
+        }
+
+        void SetIndexMapping(std::unordered_map<size_t, size_t> *newMapping)
+        {
+            mapping = newMapping;
+        }
+
+        virtual void CreateMeshWithOcclusion(ShapeDescriptor::cpu::Mesh &mesh) = 0; 
+
+};
+
+class OpenGLHandler : OcclusionProvider {
     private:
         const unsigned int SCR_WIDTH = 800;
         const unsigned int SCR_HEIGHT = 600;
@@ -31,10 +54,9 @@ class OpenGLHandler {
         Shader shader;
 
         std::vector<OpenGLMesh> meshes;
-        std::vector<MeshFunctions::boundingBox> boundingBoxes;
+        // std::vector<MeshFunctions::boundingBox> boundingBoxes;
         std::vector<Model> models;
 
-        std::vector<BoundingBoxUtilities::BoundingBoxTree> boundTrees;
         BoundingBoxUtilities::BoundingBoxTree * currentBoundTreePointer = NULL;
         
         //Occlusion
@@ -53,7 +75,8 @@ class OpenGLHandler {
         void SetupOcclusionDetectionShader();
         void CopyTextureToLocalBuffer(unsigned int texture, std::vector<unsigned char> &localFramebufferCopy);
         void CheckIfTriangleAppearsInImage(std::vector<unsigned char> &localFramebufferCopy, std::vector<bool> &triangleAppearsInImage);
-        void ConstructMeshFromVisibleTriangles(ShapeDescriptor::cpu::Mesh mesh, ShapeDescriptor::cpu::Mesh outMesh, std::vector<bool> &triangleAppearsInImage);
+        void ConstructMeshFromVisibleTriangles(ShapeDescriptor::cpu::Mesh &mesh, ShapeDescriptor::cpu::Mesh &outMesh, std::vector<bool> &triangleAppearsInImage);
+        void CleanUpOcclusionDetection(unsigned int &fbo, unsigned int &texture, unsigned int &rbo);
         
     public:
         OpenGLHandler();
@@ -61,8 +84,8 @@ class OpenGLHandler {
         void AddMesh(OpenGLMesh mesh);
         void AddModel(Model model);
         void AddBoundingBox(ShapeDescriptor::cpu::Mesh mesh);
-        void CreateMeshFromVisibleTriangles();
-        void AddBoundTree(BoundingBoxUtilities::BoundingBoxTree &tree);
+        void CreateMeshWithOcclusion(ShapeDescriptor::cpu::Mesh &mesh);//, std::unordered_map<size_t, size_t> *mapping = nullptr);
         void Draw();
 
+        OcclusionProvider &GetOcclusionProvider();
 };

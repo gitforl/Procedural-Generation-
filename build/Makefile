@@ -576,6 +576,54 @@ utilities/cgalMeshFunctions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/cgalMeshFunctions.cpp.s
 .PHONY : utilities/cgalMeshFunctions.cpp.s
 
+utilities/descriptorDistance.o: utilities/descriptorDistance.cpp.o
+.PHONY : utilities/descriptorDistance.o
+
+# target to build an object file
+utilities/descriptorDistance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.o
+.PHONY : utilities/descriptorDistance.cpp.o
+
+utilities/descriptorDistance.i: utilities/descriptorDistance.cpp.i
+.PHONY : utilities/descriptorDistance.i
+
+# target to preprocess a source file
+utilities/descriptorDistance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.i
+.PHONY : utilities/descriptorDistance.cpp.i
+
+utilities/descriptorDistance.s: utilities/descriptorDistance.cpp.s
+.PHONY : utilities/descriptorDistance.s
+
+# target to generate assembly for a file
+utilities/descriptorDistance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cpp.s
+.PHONY : utilities/descriptorDistance.cpp.s
+
+utilities/descriptorDistance.o: utilities/descriptorDistance.cu.o
+.PHONY : utilities/descriptorDistance.o
+
+# target to build an object file
+utilities/descriptorDistance.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.o
+.PHONY : utilities/descriptorDistance.cu.o
+
+utilities/descriptorDistance.i: utilities/descriptorDistance.cu.i
+.PHONY : utilities/descriptorDistance.i
+
+# target to preprocess a source file
+utilities/descriptorDistance.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.i
+.PHONY : utilities/descriptorDistance.cu.i
+
+utilities/descriptorDistance.s: utilities/descriptorDistance.cu.s
+.PHONY : utilities/descriptorDistance.s
+
+# target to generate assembly for a file
+utilities/descriptorDistance.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/utilities/descriptorDistance.cu.s
+.PHONY : utilities/descriptorDistance.cu.s
+
 utilities/generalUtilities.o: utilities/generalUtilities.cpp.o
 .PHONY : utilities/generalUtilities.o
 
@@ -708,6 +756,12 @@ help:
 	@echo "... utilities/cgalMeshFunctions.o"
 	@echo "... utilities/cgalMeshFunctions.i"
 	@echo "... utilities/cgalMeshFunctions.s"
+	@echo "... utilities/descriptorDistance.o"
+	@echo "... utilities/descriptorDistance.i"
+	@echo "... utilities/descriptorDistance.s"
+	@echo "... utilities/descriptorDistance.o"
+	@echo "... utilities/descriptorDistance.i"
+	@echo "... utilities/descriptorDistance.s"
 	@echo "... utilities/generalUtilities.o"
 	@echo "... utilities/generalUtilities.i"
 	@echo "... utilities/generalUtilities.s"
