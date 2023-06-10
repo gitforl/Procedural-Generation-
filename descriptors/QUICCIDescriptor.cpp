@@ -43,7 +43,7 @@ void QUICCIDescriptor::FindElementWiseDistances(BaseDescriptor &otherDescriptor,
         return;
     }
 
-    DescriptorDistance::Hamming::FindElementWiseDistances(descriptors, otherDescriptorPtr->descriptors, pairs);
+    // DescriptorDistance::Hamming::FindElementWiseDistances(descriptors, otherDescriptorPtr->descriptors, pairs);
 }
 
 void QUICCIDescriptor::FindMinDistances(BaseDescriptor &otherDescriptor)
@@ -56,7 +56,7 @@ void QUICCIDescriptor::FindMinDistances(BaseDescriptor &otherDescriptor)
         return;
     }
 
-    DescriptorDistance::Hamming::FindMinDistance(descriptors, otherDescriptorPtr->descriptors);
+    // DescriptorDistance::Hamming::FindMinDistance(descriptors, otherDescriptorPtr->descriptors);
 }
 
 void QUICCIDescriptor::FindDistances(BaseDescriptor &otherDescriptor)
@@ -69,7 +69,7 @@ void QUICCIDescriptor::FindDistances(BaseDescriptor &otherDescriptor)
         return;
     }
 
-    DescriptorDistance::Hamming::FindDistances(descriptors, otherDescriptorPtr->descriptors);
+    // DescriptorDistance::Hamming::FindDistances(descriptors, otherDescriptorPtr->descriptors);
 }
 
 void QUICCIDescriptor::CreateReferenceDescriptors(){

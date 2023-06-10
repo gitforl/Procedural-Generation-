@@ -97,7 +97,11 @@ void OpenGLHandler::Draw()
     cameraRotation = glm::rotate(cameraRotation, glm::radians(-40.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     cameraRotation = glm::rotate(cameraRotation, glm::radians(-25.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     cameraRotation = glm::rotate(cameraRotation, glm::radians(10.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-    distanceFromCenter = 10.0f;
+
+    // cameraRotation = glm::rotate(cameraRotation, glm::radians(50.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    // cameraRotation = glm::rotate(cameraRotation, glm::radians(-25.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    // cameraRotation = glm::rotate(cameraRotation, glm::radians(15.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    distanceFromCenter = 4.0f;
 
     Shader lineShader;
     lineShader.Create("../res/shaders/line.vert", "../res/shaders/line.frag");

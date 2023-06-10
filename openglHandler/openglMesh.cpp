@@ -101,8 +101,6 @@ void OpenGLMesh::occlusionMeshInit(ShapeDescriptor::cpu::Mesh &mesh)
 void OpenGLMesh::simpleMeshInit(ShapeDescriptor::cpu::Mesh &mesh, float scaler){
     vertexCount = mesh.vertexCount;
 
-    float vertices[mesh.vertexCount * 6];
-
     std::vector<float> data;
     data.reserve(mesh.vertexCount * 6);
 

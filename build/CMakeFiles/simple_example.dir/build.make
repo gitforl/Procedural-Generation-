@@ -335,6 +335,62 @@ CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp -o CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.s
 
+CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o: ../distances/quicciDistances.cu
+CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CUDA object CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o -MF CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o.d -x cu -c /lhome/lukashg/Procedural-Generation-/distances/quicciDistances.cu -o CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o
+
+CMakeFiles/simple_example.dir/distances/quicciDistances.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/simple_example.dir/distances/quicciDistances.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/simple_example.dir/distances/quicciDistances.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/simple_example.dir/distances/quicciDistances.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/simple_example.dir/distances/riciDistances.cu.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/distances/riciDistances.cu.o: ../distances/riciDistances.cu
+CMakeFiles/simple_example.dir/distances/riciDistances.cu.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CUDA object CMakeFiles/simple_example.dir/distances/riciDistances.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/simple_example.dir/distances/riciDistances.cu.o -MF CMakeFiles/simple_example.dir/distances/riciDistances.cu.o.d -x cu -c /lhome/lukashg/Procedural-Generation-/distances/riciDistances.cu -o CMakeFiles/simple_example.dir/distances/riciDistances.cu.o
+
+CMakeFiles/simple_example.dir/distances/riciDistances.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/simple_example.dir/distances/riciDistances.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/simple_example.dir/distances/riciDistances.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/simple_example.dir/distances/riciDistances.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/simple_example.dir/distances/siDistances.cu.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/distances/siDistances.cu.o: ../distances/siDistances.cu
+CMakeFiles/simple_example.dir/distances/siDistances.cu.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CUDA object CMakeFiles/simple_example.dir/distances/siDistances.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/simple_example.dir/distances/siDistances.cu.o -MF CMakeFiles/simple_example.dir/distances/siDistances.cu.o.d -x cu -c /lhome/lukashg/Procedural-Generation-/distances/siDistances.cu -o CMakeFiles/simple_example.dir/distances/siDistances.cu.o
+
+CMakeFiles/simple_example.dir/distances/siDistances.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/simple_example.dir/distances/siDistances.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/simple_example.dir/distances/siDistances.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/simple_example.dir/distances/siDistances.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/simple_example.dir/distances/utility.cu.o: CMakeFiles/simple_example.dir/flags.make
+CMakeFiles/simple_example.dir/distances/utility.cu.o: ../distances/utility.cu
+CMakeFiles/simple_example.dir/distances/utility.cu.o: CMakeFiles/simple_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CUDA object CMakeFiles/simple_example.dir/distances/utility.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/simple_example.dir/distances/utility.cu.o -MF CMakeFiles/simple_example.dir/distances/utility.cu.o.d -x cu -c /lhome/lukashg/Procedural-Generation-/distances/utility.cu -o CMakeFiles/simple_example.dir/distances/utility.cu.o
+
+CMakeFiles/simple_example.dir/distances/utility.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/simple_example.dir/distances/utility.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/simple_example.dir/distances/utility.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/simple_example.dir/distances/utility.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 # Object files for target simple_example
 simple_example_OBJECTS = \
 "CMakeFiles/simple_example.dir/main.cpp.o" \
@@ -355,7 +411,11 @@ simple_example_OBJECTS = \
 "CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.o" \
 "CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o" \
 "CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o" \
-"CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o"
+"CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o" \
+"CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o" \
+"CMakeFiles/simple_example.dir/distances/riciDistances.cu.o" \
+"CMakeFiles/simple_example.dir/distances/siDistances.cu.o" \
+"CMakeFiles/simple_example.dir/distances/utility.cu.o"
 
 # External object files for target simple_example
 simple_example_EXTERNAL_OBJECTS =
@@ -379,6 +439,10 @@ simple_example: CMakeFiles/simple_example.dir/meshModifier/cgalMesh.cpp.o
 simple_example: CMakeFiles/simple_example.dir/openglHandler/openglHandler.cpp.o
 simple_example: CMakeFiles/simple_example.dir/openglHandler/openglMesh.cpp.o
 simple_example: CMakeFiles/simple_example.dir/lib/glad/src/glad.cpp.o
+simple_example: CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o
+simple_example: CMakeFiles/simple_example.dir/distances/riciDistances.cu.o
+simple_example: CMakeFiles/simple_example.dir/distances/siDistances.cu.o
+simple_example: CMakeFiles/simple_example.dir/distances/utility.cu.o
 simple_example: CMakeFiles/simple_example.dir/build.make
 simple_example: libShapeDescriptor/libShapeDescriptor.a
 simple_example: lib/glfw/src/libglfw3.a
@@ -393,7 +457,7 @@ simple_example: /usr/lib/x86_64-linux-gnu/libgmpxx.so
 simple_example: /usr/lib/x86_64-linux-gnu/libmpfr.so
 simple_example: /usr/lib/x86_64-linux-gnu/libgmp.so
 simple_example: CMakeFiles/simple_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable simple_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lhome/lukashg/Procedural-Generation-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable simple_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

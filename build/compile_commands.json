@@ -95,6 +95,26 @@
   "file": "/lhome/lukashg/Procedural-Generation-/lib/glad/src/glad.cpp"
 },
 {
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -x cu -c /lhome/lukashg/Procedural-Generation-/distances/quicciDistances.cu -o CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o",
+  "file": "/lhome/lukashg/Procedural-Generation-/distances/quicciDistances.cu"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -x cu -c /lhome/lukashg/Procedural-Generation-/distances/riciDistances.cu -o CMakeFiles/simple_example.dir/distances/riciDistances.cu.o",
+  "file": "/lhome/lukashg/Procedural-Generation-/distances/riciDistances.cu"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -x cu -c /lhome/lukashg/Procedural-Generation-/distances/siDistances.cu -o CMakeFiles/simple_example.dir/distances/siDistances.cu.o",
+  "file": "/lhome/lukashg/Procedural-Generation-/distances/siDistances.cu"
+},
+{
+  "directory": "/lhome/lukashg/Procedural-Generation-/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1 -DDESCRIPTOR_CUDA_KERNELS_ENABLED -I/lhome/lukashg/Procedural-Generation-/. -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/src -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib -I/lhome/lukashg/Procedural-Generation-/../libShapeDescriptor/lib/nvidia-samples-common -I/usr/local/cuda/include -I/lhome/lukashg/Procedural-Generation-/lib -I/lhome/lukashg/Procedural-Generation-/lib/glm -I/lhome/lukashg/Procedural-Generation-/lib/glad/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation- -I/lhome/lukashg/libShapeDescriptor/src -I/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common -g -x cu -c /lhome/lukashg/Procedural-Generation-/distances/utility.cu -o CMakeFiles/simple_example.dir/distances/utility.cu.o",
+  "file": "/lhome/lukashg/Procedural-Generation-/distances/utility.cu"
+},
+{
   "directory": "/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src",
   "command": "/usr/bin/gcc -D_GLFW_USE_CONFIG_H -I/lhome/lukashg/Procedural-Generation-/lib/glfw/include -I/lhome/lukashg/Procedural-Generation-/lib/glfw/src -I/lhome/lukashg/Procedural-Generation-/build/lib/glfw/src -g -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /lhome/lukashg/Procedural-Generation-/lib/glfw/src/context.c",
   "file": "/lhome/lukashg/Procedural-Generation-/lib/glfw/src/context.c"

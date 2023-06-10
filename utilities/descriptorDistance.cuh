@@ -12,6 +12,8 @@
 
 #include <bitset>
 #include <shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh>
+#include <shapeDescriptor/gpu/radialIntersectionCountImageGenerator.cuh>
+#include <shapeDescriptor/gpu/spinImageGenerator.cuh>
 #include <utilities/descriptorDistance.hpp>
 
 #include <shapeDescriptor/utilities/weightedHamming.cuh>
@@ -22,115 +24,129 @@
 
 namespace DescriptorDistance {
 
-    struct distances {
-        float min, max, avg;
+    namespace QUICCI {
+        void ComputePairWise(ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors);
+        void ComputeCrossWise(ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors);
+        void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors, ShapeDescriptor::gpu::array<float> thresolds);
+    };
+
+    namespace RICI {
+        void ComputePairWise(ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> haystackDescriptors);
+        void ComputeCrossWise(ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> haystackDescriptors);
+        void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> haystackDescriptors, ShapeDescriptor::gpu::array<float> thresolds);
+    };
+
+    namespace SI {
+        void ComputePairWise(ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> haystackDescriptors);
+        void ComputeCrossWise(ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> haystackDescriptors);
+        void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> needleDescriptors, ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> haystackDescriptors, ShapeDescriptor::gpu::array<float> thresolds);
     };
 
     namespace Hamming {
 
-        void NumberOfDistancesToRandomDesciptorsLowerThanTrueDistance(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> correspondingDescriptors,
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors
-            );
+        // void NumberOfDistancesToRandomDesciptorsLowerThanTrueDistance(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> correspondingDescriptors,
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors
+        //     );
 
-        __global__
-        void ComputeCUDA(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors,
-            const unsigned int numNeedleDescriptors,
-            const unsigned int numHaystackDescriptors,
-            float *results
-            );
-        void ComputeCUDAWrapper(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors,
-            const unsigned int numNeedleDescriptors,
-            const unsigned int numHaystackDescriptors
-            );
+        // __global__
+        // void ComputeCUDA(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors,
+        //     const unsigned int numNeedleDescriptors,
+        //     const unsigned int numHaystackDescriptors,
+        //     float *results
+        //     );
+        // void ComputeCUDAWrapper(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors,
+        //     const unsigned int numNeedleDescriptors,
+        //     const unsigned int numHaystackDescriptors
+        //     );
 
-        void FindMinDistance(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
-        );
+        // void FindMinDistance(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
+        // );
 
-        __global__
-        void FindMinDistanceCuda(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
-            float *results
-        );
+        // __global__
+        // void FindMinDistanceCuda(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
+        //     float *results
+        // );
 
-        void FindDistances(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
-        );
+        // void FindDistances(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
+        // );
 
-        __global__
-        void FindDistancesCuda(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
-            distances *results
-        );
+        // __global__
+        // void FindDistancesCuda(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
+        //     distances *results
+        // );
 
-        void FindElementWiseDistances(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors, 
-            ShapeDescriptor::gpu::array<IndexPair> pairs
-        );
+        // void FindElementWiseDistances(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors, 
+        //     ShapeDescriptor::gpu::array<IndexPair> pairs
+        // );
 
 
-        __global__
-        void FindElementWiseDistancesCuda(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors, 
-            ShapeDescriptor::gpu::array<IndexPair> pairs,
-            float *results
-        );
+        // __global__
+        // void FindElementWiseDistancesCuda(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors, 
+        //     ShapeDescriptor::gpu::array<IndexPair> pairs,
+        //     float *results
+        // );
 
-        __global__
-        void ComputeElementWiseCuda(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
-            const unsigned int numDescriptors,
-            float *results
-            );
-        void ComputeElementWiseCUDAWrapper(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
-            );
+        // __global__
+        // void ComputeElementWiseCuda(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors,
+        //     const unsigned int numDescriptors,
+        //     float *results
+        //     );
+        // void ComputeElementWiseCUDAWrapper(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> otherDescriptors
+        //     );
 
-        __global__
-        void CudaComputeDistances(
-            ShapeDescriptor::QUICCIDescriptor needle, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            const unsigned int numDescriptors,
-            float *result
-            );
+        // __global__
+        // void CudaComputeDistances(
+        //     ShapeDescriptor::QUICCIDescriptor needle, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     const unsigned int numDescriptors,
+        //     float *result
+        //     );
 
-        void CudaComputeDistancesWrapper(
-            ShapeDescriptor::QUICCIDescriptor needle, 
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
-            const unsigned int numDescriptors
-            );
+        // void CudaComputeDistancesWrapper(
+        //     ShapeDescriptor::QUICCIDescriptor needle, 
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors, 
+        //     const unsigned int numDescriptors
+        //     );
 
-        void CompareDescriptors(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> correspondingDescriptors,
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors
-            );
+        // void CompareDescriptors(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> correspondingDescriptors,
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors
+        //     );
 
-        __global__
-        void CudaCompareDescriptors(
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
-            ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors,
-            float *trueDescriptorDistance,
-            unsigned int *results
-            );
+        // __global__
+        // void CudaCompareDescriptors(
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> descriptors,
+        //     ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> randomDescriptors,
+        //     float *trueDescriptorDistance,
+        //     unsigned int *results
+        //     );
 
-        void testWrapper();
-        __global__
-        void test(int *n);
+        // void testWrapper();
+        // __global__
+        // void test(int *n);
 
     }
 }

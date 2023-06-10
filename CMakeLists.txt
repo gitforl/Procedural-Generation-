@@ -24,6 +24,10 @@ set(SOURCE_FILES main.cpp
                  openglHandler/openglHandler.cpp
                  openglHandler/openglMesh.cpp
                  lib/glad/src/glad.cpp
+                 distances/quicciDistances.cu
+                 distances/riciDistances.cu
+                 distances/siDistances.cu
+                 distances/utility.cu
     )
 
 #

@@ -28,6 +28,7 @@
 
 #include <utilities/aliases.hpp>
 #include <utilities/meshFunctions.hpp>
+#include <utilities/generalUtilities.hpp>
 #include <utilities/boundingBox.hpp>
 #include <descriptors/BaseDescriptor.hpp>
 #include <descriptors/QUICCIDescriptor.hpp>
@@ -159,7 +160,7 @@ void run3DContextDescriptor()
     // ShapeDescriptor::dump::descriptors(hostDescriptors, "../images/test3DSC.png", true, 50);
 }
 
-void FindMeshSpatialSpan(ShapeDescriptor::cpu::Mesh &mesh)
+void FindMeshMaxDistance(ShapeDescriptor::cpu::Mesh &mesh)
 {
     ShapeDescriptor::cpu::float3 meshCenter = {0.0, 0.0, 0.0};
 
@@ -197,6 +198,28 @@ void FindMeshSpatialSpan(ShapeDescriptor::cpu::Mesh &mesh)
     std::cout << "max: " << maxDistance << std::endl;
     std::cout << "origin max: " << maxOriginDistance << std::endl;
     // std::cout << "Center: " << meshCenter.x << ", " << meshCenter.y << ", " << meshCenter.z << std::endl;
+
+}
+
+void PrintMeshSpan(ShapeDescriptor::cpu::Mesh &mesh)
+{
+    ShapeDescriptor::cpu::float3 min = {std::numeric_limits<float>::max(), std::numeric_limits<float>::max(), std::numeric_limits<float>::max()};
+    ShapeDescriptor::cpu::float3 max = {std::numeric_limits<float>::min(), std::numeric_limits<float>::min(), std::numeric_limits<float>::min()};
+
+    for(unsigned int i = 0; i < mesh.vertexCount; i++)
+    {
+        if(mesh.vertices[i].x < min.x) min.x = mesh.vertices[i].x;
+        if(mesh.vertices[i].y < min.y) min.y = mesh.vertices[i].y;
+        if(mesh.vertices[i].z < min.z) min.z = mesh.vertices[i].z;
+
+        if(mesh.vertices[i].x > max.x) max.x = mesh.vertices[i].x;
+        if(mesh.vertices[i].y > max.y) max.y = mesh.vertices[i].y;
+        if(mesh.vertices[i].z > max.z) max.z = mesh.vertices[i].z;
+    }
+
+    std::cout << "min: " << min.x << ", " << min.y << ", " << min.z << std::endl;
+    std::cout << "max: " << max.x << ", " << max.y << ", " << max.z << std::endl;
+    std::cout << "span: " << (max.x - min.x) << ", " << (max.y - min.y) << ", " << (max.z - min.z) << std::endl;
 
 }
 
@@ -507,6 +530,31 @@ void CreateIndexPairsFromOriginalMesh(std::vector<IndexPair> &pairs, ShapeDescri
     }
 }
 
+namespace ShapeDescriptorOrigins
+{   
+    ShapeDescriptor::cpu::array<ShapeDescriptor::OrientedPoint>
+    GenerateUniqueFromIndices(const ShapeDescriptor::cpu::Mesh &mesh, std::vector<size_t> &indices) {
+          
+            std::vector<ShapeDescriptor::OrientedPoint> originBuffer;
+            originBuffer.reserve(mesh.vertexCount);
+            std::unordered_set<ShapeDescriptor::OrientedPoint> seenSet;
+            
+            for(const auto &i : indices) {
+
+                ShapeDescriptor::OrientedPoint currentPoint = ShapeDescriptor::OrientedPoint{mesh.vertices[i], mesh.normals[i]};
+
+                if(seenSet.count(currentPoint) == 0) {
+                    seenSet.insert(currentPoint);
+                    originBuffer.emplace_back(currentPoint);
+                }
+            }
+
+            ShapeDescriptor::cpu::array<ShapeDescriptor::OrientedPoint> outputBuffer(originBuffer.size());
+            std::copy(originBuffer.begin(), originBuffer.end(), outputBuffer.content);
+            return outputBuffer;
+        }
+}
+
 namespace EXAMPLE {
     void ShowSceneWithClutter(OpenGLHandler &openGLHandler)
     {
@@ -605,117 +653,374 @@ namespace DistanceEvaluation {
 
     enum class DescriptorType {
         QUICCI,
+        RICI,
+        SI,
     };
 
     enum class DistanceType {
-        Cross,
+        CrossWise,
+        PairWise,
+        Threshold,
     };
 
-    class DistanceEvaluator {
+    class GpuVariables {
+        public:
+            ShapeDescriptor::gpu::Mesh mesh;
+            ShapeDescriptor::gpu::array<ShapeDescriptor::OrientedPoint> origins;
+
+            GpuVariables(ShapeDescriptor::cpu::Mesh &cpuMesh)
+            {
+                mesh = ShapeDescriptor::copy::hostMeshToDevice(cpuMesh);
+
+                auto cpuOrigins = ShapeDescriptor::utilities::generateUniqueSpinOriginBuffer(cpuMesh);
+
+                origins = ShapeDescriptor::copy::hostArrayToDevice(cpuOrigins);
+
+                ShapeDescriptor::free::array(cpuOrigins);
+            }
+
+            GpuVariables(ShapeDescriptor::cpu::Mesh &cpuMesh, std::vector<size_t> indices)
+            {
+                mesh = ShapeDescriptor::copy::hostMeshToDevice(cpuMesh);
+
+                auto cpuOrigins = ShapeDescriptorOrigins::GenerateUniqueFromIndices(cpuMesh, indices);
+
+                origins = ShapeDescriptor::copy::hostArrayToDevice(cpuOrigins);
+
+                ShapeDescriptor::free::array(cpuOrigins);
+            }
+
+            ~GpuVariables()
+            {
+                ShapeDescriptor::free::array(origins);
+                ShapeDescriptor::free::mesh(mesh);
+            }
+    };
+
+    class IndexPairSplitter {
+        public:
+            std::vector<size_t> left;
+            std::vector<size_t> right;
+
+            IndexPairSplitter(std::vector<IndexPair> &pairs)
+            {
+                left.reserve(pairs.size());
+                right.reserve(pairs.size());
+
+                for(const auto & pair : pairs)
+                {
+                    left.emplace_back(pair.left);
+                    right.emplace_back(pair.right);
+                }
+            }
+    };
+
+    class DescriptorDistanceProvider {
 
         public: 
-            virtual void ComputeInternalElementWise(std::vector<IndexPair> &pairs) = 0;
+            virtual void ComputePairWise() = 0;
             virtual void ComputeCrossWise() = 0;
+            virtual void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<float> &thresholds) = 0;
             // virtual void ComputeExternal() = 0;
 
             // virtual DistanceEvaluator* GetAsDistanceEvaluator() = 0;
 
     };
 
-    class QUICCIDistanceEvaluator : public DistanceEvaluator {
+    class QUICCIDistanceProvider : public DescriptorDistanceProvider {
 
         ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> needleDescriptors;
         ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> haystackDescriptors;
 
-        ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> computeDescriptorFromMesh(ShapeDescriptor::cpu::Mesh &mesh)
+        ShapeDescriptor::gpu::array<ShapeDescriptor::QUICCIDescriptor> computeDescriptor(GpuVariables &gpuVariables)
         {
-
-            auto gpuMesh = ShapeDescriptor::copy::hostMeshToDevice(mesh);
-
-            auto descriptorOrigins = ShapeDescriptor::utilities::generateUniqueSpinOriginBuffer(mesh);
-            auto gpuDescriptorOrigins = ShapeDescriptor::copy::hostArrayToDevice(descriptorOrigins);
-
-            std::cout << descriptorOrigins.length << std::endl;
-
-            float supportRadius = 15.0f;
+            float supportRadius = 25.0f;
 
             auto descriptors = ShapeDescriptor::gpu::generateQUICCImages(
-                gpuMesh,
-                gpuDescriptorOrigins,
+                gpuVariables.mesh,
+                gpuVariables.origins,
                 supportRadius);
-
-            ShapeDescriptor::free::mesh(gpuMesh);
 
             return descriptors;
         }
 
-        public: 
-
-            QUICCIDistanceEvaluator(ShapeDescriptor::cpu::Mesh &needleMesh, ShapeDescriptor::cpu::Mesh &otherMesh)
+        void saveImages()
+        {
+            if(needleDescriptors.length > 0)
             {
-                needleDescriptors = computeDescriptorFromMesh(needleMesh);
-                haystackDescriptors = computeDescriptorFromMesh(otherMesh);
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(needleDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/QUICCI_OUTPUT_1.png");
             }
 
-            void ComputeInternalElementWise(std::vector<IndexPair> &pairs)
+            if(haystackDescriptors.length > 0)
             {
-                ShapeDescriptor::cpu::array<IndexPair> cpuPairs(pairs.size());
-                std::copy(pairs.begin(), pairs.end(), cpuPairs.content);
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(haystackDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/QUICCI_OUTPUT_2.png");
+            }
+        }
 
-                ShapeDescriptor::gpu::array<IndexPair> gpuPairs = ShapeDescriptor::copy::hostArrayToDevice(cpuPairs);
+        public: 
 
-                DescriptorDistance::Hamming::FindElementWiseDistances(needleDescriptors, haystackDescriptors, gpuPairs);
-                
-                ShapeDescriptor::free::array(cpuPairs);
-                ShapeDescriptor::free::array(gpuPairs);
+            QUICCIDistanceProvider(GpuVariables &needle, GpuVariables &haystack)
+            {
+                needleDescriptors = computeDescriptor(needle);
+                haystackDescriptors = computeDescriptor(haystack);
+
+                // saveImages();
+            }
+
+            void ComputePairWise()
+            {
+                DescriptorDistance::QUICCI::ComputePairWise(needleDescriptors, haystackDescriptors);   
             }
 
             void ComputeCrossWise()
             {
-                DescriptorDistance::Hamming::FindMinDistance(needleDescriptors, haystackDescriptors);
+                DescriptorDistance::QUICCI::ComputeCrossWise(needleDescriptors, haystackDescriptors);
             }
 
-            // void ComputeExternal() = 0;
-
-            // virtual DistanceEvaluator* GetAsDistanceEvaluator();
+            void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<float> &thresholds)
+            {
+                DescriptorDistance::QUICCI::ComputeCrossWiseWithThreshold(needleDescriptors, haystackDescriptors, thresholds);
+            }
 
     };
 
-    void ComputeDistance(DistanceEvaluator &evaluator, DistanceType type)
-    {
-        switch (type)
+    class RICIDistanceProvider : public DescriptorDistanceProvider {
+
+        ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> needleDescriptors;
+        ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> haystackDescriptors;
+
+        ShapeDescriptor::gpu::array<ShapeDescriptor::RICIDescriptor> computeDescriptor(GpuVariables &gpuVariables)
         {
-        case DistanceType::Cross :
-            evaluator.ComputeCrossWise();
-            break;
+            float supportRadius = 15.0f;
+
+            auto descriptors = ShapeDescriptor::gpu::generateRadialIntersectionCountImages(
+                gpuVariables.mesh,
+                gpuVariables.origins,
+                supportRadius);
+
+            return descriptors;
         }
 
-    }
-
-
-    void ComputeCrossWise(
-        DescriptorType descriptorType,
-        DistanceType distanceType,
-        ShapeDescriptor::cpu::Mesh &needleMesh,
-        ShapeDescriptor::cpu::Mesh &otherMesh
-        )
-    {
-        
-        switch (descriptorType)
+        void saveImages()
         {
-        case DescriptorType::QUICCI:
+            if(needleDescriptors.length > 0)
             {
-            auto derivedEvaluator = QUICCIDistanceEvaluator(needleMesh, otherMesh);
-            auto &evaluator = dynamic_cast<DistanceEvaluator&>(derivedEvaluator);
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(needleDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/RICI_OUTPUT_1.png");
+            }
 
-            ComputeDistance(evaluator, distanceType);
-
-            break;
+            if(haystackDescriptors.length > 0)
+            {
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(haystackDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/RICI_OUTPUT_2.png");
             }
         }
 
-    }
+        public: 
 
+            RICIDistanceProvider(GpuVariables &needle, GpuVariables &haystack)
+            {
+                needleDescriptors = computeDescriptor(needle);
+                haystackDescriptors = computeDescriptor(haystack);
+            }
+
+            void ComputePairWise()
+            {
+                DescriptorDistance::RICI::ComputePairWise(needleDescriptors, haystackDescriptors);   
+            }
+
+            void ComputeCrossWise()
+            {
+                DescriptorDistance::RICI::ComputeCrossWise(needleDescriptors, haystackDescriptors);
+            }
+
+            void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<float> &thresholds)
+            {
+                DescriptorDistance::RICI::ComputeCrossWiseWithThreshold(needleDescriptors, haystackDescriptors, thresholds);
+            }
+
+    };
+
+    class SIDistanceProvider : public DescriptorDistanceProvider {
+
+        ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> needleDescriptors;
+        ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> haystackDescriptors;
+
+        ShapeDescriptor::gpu::array<ShapeDescriptor::SpinImageDescriptor> computeDescriptor(GpuVariables &gpuVariables)
+        {
+            ShapeDescriptor::gpu::PointCloud pointCloud = ShapeDescriptor::internal::sampleMesh(gpuVariables.mesh, 1000000, 0);
+
+            float supportRadius = 15.0f;
+
+            auto descriptors = ShapeDescriptor::gpu::generateSpinImages(
+                    pointCloud,
+                    gpuVariables.origins,
+                    supportRadius,
+                    90.0f
+                );
+
+            return descriptors;
+        }
+
+        void saveImages()
+        {
+            if(needleDescriptors.length > 0)
+            {
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(needleDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/SI_OUTPUT_1.png");
+            }
+
+            if(haystackDescriptors.length > 0)
+            {
+                auto descriptors = ShapeDescriptor::copy::deviceArrayToHost(haystackDescriptors);
+                ShapeDescriptor::dump::descriptors(descriptors, "../images/outputs/SI_OUTPUT_2.png");
+            }
+        }
+
+        public: 
+
+            SIDistanceProvider(GpuVariables &needle, GpuVariables &haystack)
+            {
+                needleDescriptors = computeDescriptor(needle);
+                haystackDescriptors = computeDescriptor(haystack);
+
+                // saveImages();
+            }
+
+            void ComputePairWise()
+            {
+                DescriptorDistance::SI::ComputePairWise(needleDescriptors, haystackDescriptors);   
+            }
+
+            void ComputeCrossWise()
+            {
+                DescriptorDistance::SI::ComputeCrossWise(needleDescriptors, haystackDescriptors);
+            }
+
+            void ComputeCrossWiseWithThreshold(ShapeDescriptor::gpu::array<float> &thresholds)
+            {
+                DescriptorDistance::SI::ComputeCrossWiseWithThreshold(needleDescriptors, haystackDescriptors, thresholds);
+            }
+
+    };
+
+    class DistanceEvaluator {
+
+        DistanceType distanceType = DistanceType::CrossWise;
+        
+        ShapeDescriptor::gpu::array<float> thresholds;
+
+        void ComputeDistance(DescriptorDistanceProvider &evaluator)
+        {
+            switch (distanceType)
+            {
+            case DistanceType::CrossWise :
+                evaluator.ComputeCrossWise();
+                break;
+            case DistanceType::PairWise :
+                evaluator.ComputePairWise();
+                break;
+            case DistanceType::Threshold :
+                evaluator.ComputeCrossWiseWithThreshold(thresholds);
+                break;
+            }
+        }
+
+        void ChooseDescriptor(DescriptorType descriptorType, GpuVariables &needle, GpuVariables &haystack)
+        {
+            switch (descriptorType)
+            {
+            case DescriptorType::QUICCI:
+                {
+                auto derivedEvaluator = QUICCIDistanceProvider(needle, haystack);
+                auto &evaluator = dynamic_cast<DescriptorDistanceProvider&>(derivedEvaluator);
+
+                ComputeDistance(evaluator);
+
+                break;
+                }
+            case DescriptorType::RICI:
+                {
+                auto derivedEvaluator = RICIDistanceProvider(needle, haystack);
+                auto &evaluator = dynamic_cast<DescriptorDistanceProvider&>(derivedEvaluator);
+
+                ComputeDistance(evaluator);
+
+                break;
+                }
+            case DescriptorType::SI:
+                {
+                auto derivedEvaluator = SIDistanceProvider(needle, haystack);
+                auto &evaluator = dynamic_cast<DescriptorDistanceProvider&>(derivedEvaluator);
+
+                ComputeDistance(evaluator);
+
+                break;
+                }
+            }
+        }
+
+        void SetThresholds(std::vector<float> &newThresholds)
+        {
+            ShapeDescriptor::cpu::array<float> outputBuffer(newThresholds.size());
+            std::copy(newThresholds.begin(), newThresholds.end(), outputBuffer.content);
+
+            thresholds = ShapeDescriptor::copy::hostArrayToDevice(outputBuffer);
+        }
+
+        public:
+
+            void SetEvaluationType(DistanceType type)
+            {
+                distanceType = type;
+            }
+
+            void Evaluate( DescriptorType descriptorType, ShapeDescriptor::cpu::Mesh &needleMesh, ShapeDescriptor::cpu::Mesh &otherMesh, std::vector<IndexPair> &pairs)
+            {    
+                auto separateIndices = IndexPairSplitter(pairs);
+
+                auto needle = GpuVariables(needleMesh, separateIndices.left);
+                auto haystack = GpuVariables(otherMesh, separateIndices.right);
+
+                distanceType = DistanceType::PairWise;
+
+                ChooseDescriptor(descriptorType, needle, haystack);
+            }
+
+            void Evaluate( DescriptorType descriptorType, ShapeDescriptor::cpu::Mesh &needleMesh, ShapeDescriptor::cpu::Mesh &otherMesh, std::vector<size_t> &rightIndices)
+            {    
+                auto needle = GpuVariables(needleMesh);
+                auto haystack = GpuVariables(otherMesh, rightIndices);
+
+                distanceType = DistanceType::CrossWise;
+
+                ChooseDescriptor(descriptorType, needle, haystack);
+            }
+
+            void Evaluate( DescriptorType descriptorType, ShapeDescriptor::cpu::Mesh &needleMesh, ShapeDescriptor::cpu::Mesh &otherMesh, std::vector<float> &newThresholds)
+            {    
+                auto needle = GpuVariables(needleMesh);
+                auto haystack = GpuVariables(otherMesh);
+
+                SetThresholds(newThresholds);
+
+                distanceType = DistanceType::Threshold;
+
+                ChooseDescriptor(descriptorType, needle, haystack);
+            }
+
+            void Evaluate( DescriptorType descriptorType, ShapeDescriptor::cpu::Mesh &needleMesh, ShapeDescriptor::cpu::Mesh &otherMesh)
+            {    
+                auto needle = GpuVariables(needleMesh);
+                auto haystack = GpuVariables(otherMesh);
+
+                distanceType = DistanceType::CrossWise;
+
+                ChooseDescriptor(descriptorType, needle, haystack);
+            }
+    };
 }
 
 class DescriptorTester {
@@ -726,6 +1031,7 @@ class DescriptorTester {
             None,
             Needle,
             Altered,
+            External,
             ClutterWithBoundindBoxes
         };
 
@@ -739,9 +1045,10 @@ class DescriptorTester {
 
         enum class EvaluationType {
             None,
-            Internal,
-            InternalElementWise,
-            External,
+            InternalCrossWise,
+            InternalPairWise,
+            ExternalCrossWise,
+            ExternalWithThreshold,
         };
 
     private:
@@ -766,38 +1073,40 @@ class DescriptorTester {
             "../objects/complete_scans/T45.obj"
         };
 
-        std::vector<std::string> externalMeshPaths = {
-            "../objects/complete_scans/T100.obj",
-            "../objects/complete_scans/T12.obj",
-            "../objects/complete_scans/T13.obj",
-            "../objects/complete_scans/T31.obj",
-            "../objects/complete_scans/T45.obj"
-        };
+
+        std::string externalMeshPath =  "../objects/complete_scans/T13.obj";
+
+        // std::vector<std::string> externalMeshPaths = {
+        //     "../objects/complete_scans/T100.obj",
+        //     "../objects/complete_scans/T12.obj",
+        //     "../objects/complete_scans/T13.obj",
+        //     "../objects/complete_scans/T31.obj",
+        //     "../objects/complete_scans/T45.obj"
+        // };
 
         std::vector<IndexPair> indexPairs;
 
+        bool showNeedleMeshSpan = false;
+
         ShapeDescriptor::cpu::Mesh needleMesh = ShapeDescriptor::utilities::loadOBJ(needleMeshPath, true);
-        ShapeDescriptor::cpu::Mesh otherMesh = ShapeDescriptor::utilities::loadOBJ(needleMeshPath, true);
-
-        // size_t maxNeedleDescriptorCount = 100000;
-        // size_t maxOtherDescriptorCount = 100000;
-
-        // bool reduceDescriptorsRandomly = true;
+        ShapeDescriptor::cpu::Mesh alteredMesh = ShapeDescriptor::utilities::loadOBJ(needleMeshPath, true);
+        ShapeDescriptor::cpu::Mesh externalMesh = ShapeDescriptor::utilities::loadOBJ(externalMeshPath, true);
 
         float noiseScale = 0.0f;
 
+        void ShowMeshSpan()
+        {
+            if(showNeedleMeshSpan) PrintMeshSpan(needleMesh);
+        }
+
         void ApplyDisturbances()
         {
-            if(evaluationType == EvaluationType::InternalElementWise)
+            indexPairs.reserve(needleMesh.vertexCount);
+            for(size_t i = 0; i < needleMesh.vertexCount; i++)
             {
-                indexPairs.reserve(needleMesh.vertexCount);
-                for(size_t i = 0; i < needleMesh.vertexCount; i++)
-                {
-                    IndexPair pair = {i, i};
-                    indexPairs.emplace_back(pair);
-                }
+                IndexPair pair = {i, i};
+                indexPairs.emplace_back(pair);
             }
-
 
             if(applyClutter)
             {
@@ -830,38 +1139,41 @@ class DescriptorTester {
                         openGLHandler.AddModel(model);
                 }
 
-                FillMeshWithModelVertices(otherMesh, pointers);
+                FillMeshWithModelVertices(alteredMesh, pointers);
 
                 for(auto &mesh : meshes)
                     ShapeDescriptor::free::mesh(mesh);
 
             }
 
+            std::cout << "her" << std::endl;
+
             if(applyOcclusion)
             {
                 auto &occlusionProvider = openGLHandler.GetOcclusionProvider();
 
-                std::unordered_map<size_t, size_t> mapping;
-                
-                if(evaluationType == EvaluationType::InternalElementWise)
-                    occlusionProvider.SetIndexMapping(&mapping);
-                
-                occlusionProvider.CreateMeshWithOcclusion(otherMesh);
+                occlusionProvider.SetViewPoint(glm::vec3(0.0, 0.0, 10.0));
 
-                if(evaluationType == EvaluationType::InternalElementWise)
+                std::unordered_map<size_t, size_t> mappings;
+                
+                if(evaluationType == EvaluationType::InternalPairWise)
+                    occlusionProvider.SetIndexMapping(&mappings);
+                
+                occlusionProvider.CreateMeshWithOcclusion(alteredMesh);
+
+                if(evaluationType == EvaluationType::InternalPairWise)
                 {
                     std::vector<IndexPair> pairs;
                     pairs.reserve(needleMesh.vertexCount);
-                    for(const auto &pair : indexPairs)
+                     
+                    for(const auto &mapping : mappings)
                     {
-                        IndexPair newPair = pair;
-                        size_t left =  mapping.at(pair.right);
+                        IndexPair newPair = {mapping.second, mapping.first};
 
-                        if(left >= needleMesh.vertexCount)
-                            break;
-                        
-                        pairs.emplace_back(newPair);
+                        if(newPair.left < needleMesh.vertexCount)
+                            pairs.emplace_back(newPair);
                     }   
+
 
                     pairs.shrink_to_fit();
                     indexPairs = pairs;
@@ -870,15 +1182,10 @@ class DescriptorTester {
 
             if(applyNoise)
             {
-                auto vertexMap = MeshFunctions::MapVertexIndices(&otherMesh);
-                MeshFunctions::MoveVerticesAlongAverageNormal(&otherMesh, vertexMap, noiseScale);
+                auto vertexMap = MeshFunctions::MapVertexIndices(&alteredMesh);
+                MeshFunctions::MoveVerticesAlongAverageNormal(&alteredMesh, vertexMap, noiseScale);
             }
 
-            if(visualizeObject == VisualizeObject::Altered)
-            {
-                auto model = Model(otherMesh, glm::vec3(0.0f), meshTypes::Scaled);
-                openGLHandler.AddModel(model);
-            }
         }
 
         void Draw()
@@ -886,10 +1193,22 @@ class DescriptorTester {
 
             if(visualizeObject == VisualizeObject::None)
                 return;
+
+            if(visualizeObject == VisualizeObject::Altered)
+            {
+                auto model = Model(alteredMesh, glm::vec3(0.0f), meshTypes::Scaled);
+                openGLHandler.AddModel(model);
+            }
       
             if(visualizeObject == VisualizeObject::Needle)
             {
                 auto model = Model(needleMesh, glm::vec3(0.0f), meshTypes::Scaled);
+                openGLHandler.AddModel(model);
+            }
+
+            if(visualizeObject == VisualizeObject::External)
+            {
+                auto model = Model(externalMesh, glm::vec3(0.0f), meshTypes::Scaled);
                 openGLHandler.AddModel(model);
             }
 
@@ -902,9 +1221,48 @@ class DescriptorTester {
                  
             switch (evaluationType)
             {
-            case EvaluationType::Internal : 
-                ComputeCrossWise( descriptorType, DistanceEvaluation::DistanceType::Cross, needleMesh, otherMesh);
+            case EvaluationType::InternalCrossWise : 
+            {
+
+                auto evaluator = DistanceEvaluation::DistanceEvaluator();
+                // evaluator.SetEvaluationType(DistanceEvaluation::DistanceType::CrossWise);
+
+                auto separateIndices = DistanceEvaluation::IndexPairSplitter(indexPairs);
+                auto randomIndices = GeneralUtilities::randomlyReduceIndices(indexPairs.size(), 5000); // reduce size for heavy computations such as RICI distances
+
+                evaluator.Evaluate(descriptorType, needleMesh, alteredMesh, randomIndices);
                 break;
+            }
+            case EvaluationType::InternalPairWise : 
+            {
+                auto evaluator = DistanceEvaluation::DistanceEvaluator();
+                // evaluator.SetEvaluationType(DistanceEvaluation::DistanceType::PairWise);
+                evaluator.Evaluate(descriptorType, needleMesh, alteredMesh, indexPairs);
+                break;
+            }
+            case EvaluationType::ExternalWithThreshold : 
+            {
+                auto evaluator = DistanceEvaluation::DistanceEvaluator();
+                // evaluator.SetEvaluationType(DistanceEvaluation::DistanceType::Threshold);
+
+                std::vector<float> thresholds;
+                thresholds.reserve(needleMesh.vertexCount);
+                for(size_t i = 0; i < needleMesh.vertexCount; i++)
+                    thresholds.emplace_back((1024.0f/2.0f));
+
+                evaluator.Evaluate(descriptorType, needleMesh, externalMesh, thresholds);
+                break;
+            }
+            case EvaluationType::ExternalCrossWise : 
+            {
+                auto evaluator = DistanceEvaluation::DistanceEvaluator();
+                // evaluator.SetEvaluationType(DistanceEvaluation::DistanceType::CrossWise);
+
+                auto randomIndices = GeneralUtilities::randomlyReduceIndices(externalMesh.vertexCount, 1000); 
+
+                evaluator.Evaluate(descriptorType, needleMesh, externalMesh, randomIndices);
+                break;
+            }
                 
             }
 
@@ -916,6 +1274,11 @@ class DescriptorTester {
         OpenGLHandler &GetOpenGLHandlerReference()
         {
             return openGLHandler;
+        }
+
+        void SetShowNeedleSpan(bool mode)
+        {
+            showNeedleMeshSpan = mode;
         }
 
         void SetDrawMode(VisualizeObject mode)
@@ -954,9 +1317,20 @@ class DescriptorTester {
             occlusionProvider.SetViewPoint(newViewPoint);
         }
 
+        void SetDescriptorType(DistanceEvaluation::DescriptorType newDescriptorType)
+        {
+            descriptorType = newDescriptorType;
+        }
+
         void Run()
         {
+            ShowMeshSpan();
+
+            // auto start = std::chrono::high_resolution_clock::now();
             ApplyDisturbances();
+            // auto stop = std::chrono::high_resolution_clock::now();
+            // auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+            // std::cout << "microseconds: " << duration.count() << std::endl;
 
             Draw();
 
@@ -968,15 +1342,23 @@ class DescriptorTester {
 
 int main()
 {
+
+    auto seed = time(NULL);
+    srand(seed);
+
     DescriptorTester tester;
+
+    tester.SetShowNeedleSpan(true);
 
     tester.SetApplyClutter(true);
     tester.SetApplyOcclusion(true);
     tester.SetApplyNoise(true);
 
-    tester.SetNoiseScale(1.0f);
+    tester.SetNoiseScale(0.1f);
 
-    tester.SetTestMode(DescriptorTester::EvaluationType::Internal);
+    tester.SetDescriptorType(DistanceEvaluation::DescriptorType::RICI);
+
+    tester.SetTestMode(DescriptorTester::EvaluationType::InternalPairWise);
     tester.SetDrawMode(DescriptorTester::VisualizeObject::Altered);
     
     tester.Run();

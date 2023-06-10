@@ -360,6 +360,102 @@ descriptors/SIDescriptorTester.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/descriptors/SIDescriptorTester.cpp.s
 .PHONY : descriptors/SIDescriptorTester.cpp.s
 
+distances/quicciDistances.o: distances/quicciDistances.cu.o
+.PHONY : distances/quicciDistances.o
+
+# target to build an object file
+distances/quicciDistances.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/quicciDistances.cu.o
+.PHONY : distances/quicciDistances.cu.o
+
+distances/quicciDistances.i: distances/quicciDistances.cu.i
+.PHONY : distances/quicciDistances.i
+
+# target to preprocess a source file
+distances/quicciDistances.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/quicciDistances.cu.i
+.PHONY : distances/quicciDistances.cu.i
+
+distances/quicciDistances.s: distances/quicciDistances.cu.s
+.PHONY : distances/quicciDistances.s
+
+# target to generate assembly for a file
+distances/quicciDistances.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/quicciDistances.cu.s
+.PHONY : distances/quicciDistances.cu.s
+
+distances/riciDistances.o: distances/riciDistances.cu.o
+.PHONY : distances/riciDistances.o
+
+# target to build an object file
+distances/riciDistances.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/riciDistances.cu.o
+.PHONY : distances/riciDistances.cu.o
+
+distances/riciDistances.i: distances/riciDistances.cu.i
+.PHONY : distances/riciDistances.i
+
+# target to preprocess a source file
+distances/riciDistances.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/riciDistances.cu.i
+.PHONY : distances/riciDistances.cu.i
+
+distances/riciDistances.s: distances/riciDistances.cu.s
+.PHONY : distances/riciDistances.s
+
+# target to generate assembly for a file
+distances/riciDistances.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/riciDistances.cu.s
+.PHONY : distances/riciDistances.cu.s
+
+distances/siDistances.o: distances/siDistances.cu.o
+.PHONY : distances/siDistances.o
+
+# target to build an object file
+distances/siDistances.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/siDistances.cu.o
+.PHONY : distances/siDistances.cu.o
+
+distances/siDistances.i: distances/siDistances.cu.i
+.PHONY : distances/siDistances.i
+
+# target to preprocess a source file
+distances/siDistances.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/siDistances.cu.i
+.PHONY : distances/siDistances.cu.i
+
+distances/siDistances.s: distances/siDistances.cu.s
+.PHONY : distances/siDistances.s
+
+# target to generate assembly for a file
+distances/siDistances.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/siDistances.cu.s
+.PHONY : distances/siDistances.cu.s
+
+distances/utility.o: distances/utility.cu.o
+.PHONY : distances/utility.o
+
+# target to build an object file
+distances/utility.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/utility.cu.o
+.PHONY : distances/utility.cu.o
+
+distances/utility.i: distances/utility.cu.i
+.PHONY : distances/utility.i
+
+# target to preprocess a source file
+distances/utility.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/utility.cu.i
+.PHONY : distances/utility.cu.i
+
+distances/utility.s: distances/utility.cu.s
+.PHONY : distances/utility.s
+
+# target to generate assembly for a file
+distances/utility.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/distances/utility.cu.s
+.PHONY : distances/utility.cu.s
+
 lib/glad/src/glad.o: lib/glad/src/glad.cpp.o
 .PHONY : lib/glad/src/glad.o
 
@@ -729,6 +825,18 @@ help:
 	@echo "... descriptors/SIDescriptorTester.o"
 	@echo "... descriptors/SIDescriptorTester.i"
 	@echo "... descriptors/SIDescriptorTester.s"
+	@echo "... distances/quicciDistances.o"
+	@echo "... distances/quicciDistances.i"
+	@echo "... distances/quicciDistances.s"
+	@echo "... distances/riciDistances.o"
+	@echo "... distances/riciDistances.i"
+	@echo "... distances/riciDistances.s"
+	@echo "... distances/siDistances.o"
+	@echo "... distances/siDistances.i"
+	@echo "... distances/siDistances.s"
+	@echo "... distances/utility.o"
+	@echo "... distances/utility.i"
+	@echo "... distances/utility.s"
 	@echo "... lib/glad/src/glad.o"
 	@echo "... lib/glad/src/glad.i"
 	@echo "... lib/glad/src/glad.s"
