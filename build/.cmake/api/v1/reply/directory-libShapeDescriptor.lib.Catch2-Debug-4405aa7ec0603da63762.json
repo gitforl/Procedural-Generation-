@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "libShapeDescriptor/lib/Catch2",
+		"source" : "/lhome/lukashg/libShapeDescriptor/lib/Catch2"
+	}
+}

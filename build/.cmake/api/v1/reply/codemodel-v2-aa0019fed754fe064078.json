@@ -1,0 +1,253 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "lib/glfw",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-lib.glfw-Debug-70a8ea8819387b23d3e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/glfw"
+				},
+				{
+					"build" : "lib/glfw/src",
+					"jsonFile" : "directory-lib.glfw.src-Debug-0d36f003c6da3f33a22a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "lib/glfw/src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libShapeDescriptor",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"jsonFile" : "directory-libShapeDescriptor-Debug-6d9b816133ce36c1520b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "/lhome/lukashg/libShapeDescriptor",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "libShapeDescriptor/lib/Catch2",
+					"jsonFile" : "directory-libShapeDescriptor.lib.Catch2-Debug-4405aa7ec0603da63762.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "/lhome/lukashg/libShapeDescriptor/lib/Catch2"
+				},
+				{
+					"build" : "libShapeDescriptor/fast-lzma2",
+					"jsonFile" : "directory-libShapeDescriptor.fast-lzma2-Debug-7713122debaa06f24cbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "simple_example",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "ShapeDescriptor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Catch2",
+					"parentIndex" : 2
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "fast-lzma2",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "ShapeDescriptor::@ba4df1e3298f180bb94a",
+					"jsonFile" : "target-ShapeDescriptor-Debug-39072adc73806da1e8cc.json",
+					"name" : "ShapeDescriptor",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fast-lzma2::@f86b2dd7130382e38d02",
+					"jsonFile" : "target-fast-lzma2-Debug-ae8922470f3c2cc680d3.json",
+					"name" : "fast-lzma2",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@17f284a5fc0809a54549",
+					"jsonFile" : "target-glfw-Debug-aa259727efac81bc600e.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "imagerenderer::@ba4df1e3298f180bb94a",
+					"jsonFile" : "target-imagerenderer-Debug-4fd38e303606d6787247.json",
+					"name" : "imagerenderer",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "quiccidumper::@ba4df1e3298f180bb94a",
+					"jsonFile" : "target-quiccidumper-Debug-1b14bfac3122fd7b4e14.json",
+					"name" : "quiccidumper",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "quicciviewer::@ba4df1e3298f180bb94a",
+					"jsonFile" : "target-quicciviewer-Debug-2fb595d1bcb4718b5d5f.json",
+					"name" : "quicciviewer",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "runTests::@ba4df1e3298f180bb94a",
+					"jsonFile" : "target-runTests-Debug-5127e96ace5331316733.json",
+					"name" : "runTests",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_example-Debug-c8f8665b1248b98a1c63.json",
+					"name" : "simple_example",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/lhome/lukashg/Procedural-Generation-/build",
+		"source" : "/lhome/lukashg/Procedural-Generation-"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

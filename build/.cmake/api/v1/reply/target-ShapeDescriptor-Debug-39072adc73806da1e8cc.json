@@ -1,0 +1,1064 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libShapeDescriptor/libShapeDescriptor.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"cuda_add_library",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake-3.22/Modules/FindCUDA.cmake",
+			"/lhome/lukashg/libShapeDescriptor/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1985,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "DESCRIPTOR_CUDA_KERNELS_ENABLED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/nvidia-samples-common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/usr/local/cuda/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/glm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/lodepng"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/arrrgh"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/json"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/fast-lzma2/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/lhome/lukashg/libShapeDescriptor/lib/fast-obj"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "fast-lzma2::@f86b2dd7130382e38d02"
+		}
+	],
+	"id" : "ShapeDescriptor::@ba4df1e3298f180bb94a",
+	"name" : "ShapeDescriptor",
+	"nameOnDisk" : "libShapeDescriptor.a",
+	"paths" : 
+	{
+		"build" : "libShapeDescriptor",
+		"source" : "/lhome/lukashg/libShapeDescriptor"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				72,
+				79,
+				80,
+				81,
+				82,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				104,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				119
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				68,
+				69,
+				70,
+				71,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				83,
+				103,
+				105,
+				118
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextGenerator.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_3dShapeContextSearcher.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramGenerator.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_fastPointFeatureHistogramSearcher.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageGenerator.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_quickIntersectionCountImageSearcher.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageGenerator.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_radialIntersectionCountImageSearcher.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageGenerator.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/gpu/ShapeDescriptor_generated_spinImageSearcher.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_gpuMeshSampler.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_pointCloudUtils.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/libShapeDescriptor/CMakeFiles/ShapeDescriptor.dir/src/shapeDescriptor/utilities/kernels/ShapeDescriptor_generated_setValue.cu.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/lib/fast-obj/fast_obj.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/lib/lodepng/lodepng.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/quickIntersectionCountImageGenerator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/radialIntersectionCountImageGenerator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/spinImageGenerator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/CudaLaunchDimensions.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAAvailability.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/compress/byteCompressor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/VertexList.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/pointCloud.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/QUICCIDescriptors.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/fileutils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/pointCloud.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/meshSampler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/print/QuicciDescriptor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OFFLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PointCloudLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/buildSettingsPreamble.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/buildSettings/derivedBuildSettings.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/BoundingBox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/OrientedPoint.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/SampleBounds.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/3DSCDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/FPFHDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/QUICCIDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/RICIDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/common/types/methods/SpinImageDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/quickIntersectionCountImageGenerator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/radialIntersectionCountImageGenerator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/spinImageGenerator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/Mesh.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/PointCloud.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/array.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/double3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float2.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/float4.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/cpu/types/uchar4.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/3dShapeContextGenerator.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/3dShapeContextSearcher.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramGenerator.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramSearcher.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/gpuCommon.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageGenerator.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageSearcher.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageGenerator.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageSearcher.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/CudaLaunchDimensions.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/ImageSearchResults.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/Mesh.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/PointCloud.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/VertexList.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/array.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float2.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/types/float3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/libraryBuildSettings.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAAvailability.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/CUDAContextCreator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/compress/byteCompressor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/VertexList.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/array.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/mesh.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/copy/pointCloud.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/QUICCIDescriptors.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/descriptorImages.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/meshDumper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/dump/searchResultDumper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/fileutils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/array.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/mesh.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/free/pointCloud.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/pointCloudUtils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/mesh/MeshScaler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/meshSampler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/print/QuicciDescriptor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoadUtils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/MeshLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OBJLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/OFFLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PLYLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/PointCloudLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/QUICCIDescriptors.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/read/XYZLoader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/spinOriginsGenerator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/weightedHamming.cuh",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/write/XYZWriter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/3dShapeContextGenerator.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/3dShapeContextSearcher.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramGenerator.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/fastPointFeatureHistogramSearcher.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageGenerator.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/quickIntersectionCountImageSearcher.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageGenerator.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/radialIntersectionCountImageSearcher.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageGenerator.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/gpu/spinImageSearcher.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/gpuMeshSampler.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/pointCloudUtils.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/lhome/lukashg/libShapeDescriptor/src/shapeDescriptor/utilities/kernels/setValue.cu",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
